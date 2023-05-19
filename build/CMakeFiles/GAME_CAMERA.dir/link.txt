@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libGAME_CAMERA.a CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj
+C:/MinGW/bin/ranlib.exe libGAME_CAMERA.a

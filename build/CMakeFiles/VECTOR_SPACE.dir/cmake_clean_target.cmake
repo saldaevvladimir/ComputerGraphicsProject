@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "libVECTOR_SPACE.a"
+)

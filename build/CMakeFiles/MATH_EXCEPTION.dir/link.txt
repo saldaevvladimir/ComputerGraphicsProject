@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libMATH_EXCEPTION.a CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj
+C:/MinGW/bin/ranlib.exe libMATH_EXCEPTION.a

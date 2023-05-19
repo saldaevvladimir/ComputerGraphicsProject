@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libIDENTIFIER.a CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj
+C:/MinGW/bin/ranlib.exe libIDENTIFIER.a

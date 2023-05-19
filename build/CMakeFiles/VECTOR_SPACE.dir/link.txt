@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libVECTOR_SPACE.a CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.obj
+C:/MinGW/bin/ranlib.exe libVECTOR_SPACE.a

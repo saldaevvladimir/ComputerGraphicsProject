@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libRAY.a CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.obj
+C:/MinGW/bin/ranlib.exe libRAY.a

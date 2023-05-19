@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libENTITY.a CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.obj
+C:/MinGW/bin/ranlib.exe libENTITY.a

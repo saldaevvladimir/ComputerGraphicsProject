@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libFUNCTIONS.a CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.obj
+C:/MinGW/bin/ranlib.exe libFUNCTIONS.a

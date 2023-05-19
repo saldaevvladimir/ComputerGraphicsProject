@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libENGINE_BASIC_CLASSES.a CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj
+C:/MinGW/bin/ranlib.exe libENGINE_BASIC_CLASSES.a

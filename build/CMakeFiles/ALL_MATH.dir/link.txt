@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libALL_MATH.a CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj
+C:/MinGW/bin/ranlib.exe libALL_MATH.a

@@ -1,0 +1,240 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GraphicsEngine",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ACCURACY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ACCURACY-Debug-88e514beefc8edbcb132.json",
+					"name" : "ACCURACY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_MATH::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_MATH-Debug-1526f172369e4dfe7bfb.json",
+					"name" : "ALL_MATH",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "COORDINATE_SYSTEM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-COORDINATE_SYSTEM-Debug-4e3c712c9df47043b8c6.json",
+					"name" : "COORDINATE_SYSTEM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENGINE_BASIC_CLASSES::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENGINE_BASIC_CLASSES-Debug-12c64c4806ebf0e4b2c1.json",
+					"name" : "ENGINE_BASIC_CLASSES",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENTITIES_LIST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENTITIES_LIST-Debug-1b7e8a8aa87fce348c32.json",
+					"name" : "ENTITIES_LIST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENTITY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENTITY-Debug-108240af61140ca326ee.json",
+					"name" : "ENTITY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EngineTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EngineTests-Debug-9784220094528c06c162.json",
+					"name" : "EngineTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FUNCTIONS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FUNCTIONS-Debug-3fb3928033b8ece612c0.json",
+					"name" : "FUNCTIONS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME-Debug-4be09355a3ca4d414a3f.json",
+					"name" : "GAME",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME_CAMERA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME_CAMERA-Debug-30022f3d6bdcbb56698f.json",
+					"name" : "GAME_CAMERA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME_OBJECT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME_OBJECT-Debug-7a23373fb7482cbaa1b2.json",
+					"name" : "GAME_OBJECT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GameTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GameTests-Debug-d941166b6149e73bb424.json",
+					"name" : "GameTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GraphicsEngine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GraphicsEngine-Debug-285f2e7c504264c06dc0.json",
+					"name" : "GraphicsEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IDENTIFIER::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IDENTIFIER-Debug-e839537009db2dacbd82.json",
+					"name" : "IDENTIFIER",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MATH_EXCEPTION::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MATH_EXCEPTION-Debug-10ad1d1e22e63135f6f7.json",
+					"name" : "MATH_EXCEPTION",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MATRIX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MATRIX-Debug-1ac91b260f1ce9ae8499.json",
+					"name" : "MATRIX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MathTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MathTests-Debug-7ecebcf22ef12f2180d1.json",
+					"name" : "MathTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "POINT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-POINT-Debug-86a1983db187726bffab.json",
+					"name" : "POINT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RAY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RAY-Debug-9da4e1b1af0872598309.json",
+					"name" : "RAY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VECTOR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VECTOR-Debug-0c1cc6548ccb48e3901c.json",
+					"name" : "VECTOR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VECTOR_SPACE::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VECTOR_SPACE-Debug-1db7a6301ac7fb93343d.json",
+					"name" : "VECTOR_SPACE",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Vs2/Desktop/ComputerGraphicsProject/build",
+		"source" : "C:/Users/Vs2/Desktop/ComputerGraphicsProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

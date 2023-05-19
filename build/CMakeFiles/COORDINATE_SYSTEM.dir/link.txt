@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libCOORDINATE_SYSTEM.a CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj
+C:/MinGW/bin/ranlib.exe libCOORDINATE_SYSTEM.a

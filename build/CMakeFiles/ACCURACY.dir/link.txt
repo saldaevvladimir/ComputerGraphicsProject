@@ -1,0 +1,2 @@
+C:/MinGW/bin/ar.exe qc libACCURACY.a CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj
+C:/MinGW/bin/ranlib.exe libACCURACY.a
