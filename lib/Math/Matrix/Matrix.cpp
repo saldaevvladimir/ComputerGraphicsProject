@@ -14,7 +14,7 @@ Matrix::Matrix()
 Matrix::Matrix(int size)
 {
 	if (!CorrectSizes(size, size))
-		throw MatrixException::IncorrectSizes();
+		throw MatrixException::IncorrectSizes(size, size);
 
 	this->height = size;
 	this->width = size;
@@ -32,7 +32,7 @@ Matrix::Matrix(int size)
 Matrix::Matrix(int height, int width)
 {
 	if (!CorrectSizes(height, width))
-		throw MatrixException::IncorrectSizes();
+		throw MatrixException::IncorrectSizes(height, width);
 
 	this->height = height;
 	this->width = width;
@@ -57,7 +57,7 @@ Matrix::Matrix(std::initializer_list<std::initializer_list<float>> matrix)
 			width = row.size();
 
 	if (!CorrectSizes(matrix.size(), width))
-		throw MatrixException::IncorrectSizes();
+		throw MatrixException::IncorrectSizes(matrix.size(), width);
 
 	this->height = matrix.size();
 	this->width = width;
@@ -138,7 +138,7 @@ bool Matrix::AreEqual(Matrix mat1, Matrix mat2)
 Matrix Matrix::Identity(int size)
 {
 	if (!CorrectSizes(size, size))
-		throw MatrixException::IncorrectSizes();
+		throw MatrixException::IncorrectSizes(size, size);
 
 	Matrix identity(size, size);
 	for (int i = 0; i < size; i++)
@@ -152,11 +152,11 @@ Matrix Matrix::Minor(int rowIndex, int colIndex)
 	Matrix& mat = *this;
 
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
 	if (!mat.IsSquare())
-		throw MatrixException::NonSquareMatrixMinor();
+		throw MatrixException::NonSquareMatrixMinor(mat.height, mat.width);
 	if (!mat.CorrectIndexes(rowIndex, colIndex))
-		throw MatrixException::IncorrectElementIndexes();
+		throw MatrixException::IncorrectElementIndexes(mat.height, mat.width, rowIndex, colIndex);
 	if (mat.height == 1)
 		throw MatrixException::SingletonMatrixMinor();
 
@@ -182,9 +182,9 @@ float Matrix::Determinant()
 	Matrix& self = *this;
 
 	if (!self.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(self.height, self.width);
 	if (!self.IsSquare())
-		throw MatrixException::NonSquareMatrixDeterminant();
+		throw MatrixException::NonSquareMatrixDeterminant(self.height, self.width);
 
 	int selfSize = self.height;
 
@@ -201,7 +201,7 @@ float Matrix::Determinant()
 		selfDet += submatrixDet * self[0][c] * std::pow(-1, c);
 	}
 
-	return std::round(selfDet * DEC) / DEC;
+	return Round(selfDet);
 }
 
 Matrix Matrix::Transpose()
@@ -209,7 +209,7 @@ Matrix Matrix::Transpose()
 	Matrix& self = *this;
 
 	if (!self.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(self.height, self.width);
 
 	Matrix transposed(self.width, self.height);
 
@@ -225,7 +225,7 @@ float Matrix::Norm()
 	Matrix& self = *this;
 
 	if (!self.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(self.height, self.width);
 
 	float maxSum = 0.0f;
 
@@ -240,7 +240,7 @@ float Matrix::Norm()
 			maxSum = curSum;
 	}
 
-	return maxSum;
+	return Round(maxSum);
 }
 
 Matrix Matrix::Inverse()
@@ -248,14 +248,14 @@ Matrix Matrix::Inverse()
 	Matrix& self = *this;
 
 	if (!self.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(self.height, self.width);
 	if (!self.IsSquare())
-		throw MatrixException::NonSquareMatrixInverse();
+		throw MatrixException::NonSquareMatrixInverse(self.height, self.width);
 
 	float det = self.Determinant();
 
 	if (fabs(det) < PRECISION)
-		throw MatrixException::SingularMatrixInverse();
+		throw MatrixException::SingularMatrixInverse(det);
 
 	Matrix inverse(self.height, self.width);
 
@@ -263,9 +263,9 @@ Matrix Matrix::Inverse()
 		for (int c = 0; c < self.width; c++)
 		{
 			Matrix minor = self.Minor(r, c);
-			float d = minor.Determinant();
+			float minorDet = minor.Determinant();
 
-			inverse[r][c] = std::pow(-1, r + c) * d;
+			inverse[r][c] = Round(std::pow(-1, r + c) * minorDet);
 		}
 
 	inverse = inverse.Transpose() / det;
@@ -276,19 +276,19 @@ Matrix Matrix::Inverse()
 Matrix Matrix::RotationMatrix(int size, int axisIndex1, int axisIndex2, float angle)
 {
 	if (!CorrectSizes(size, size))
-		throw MatrixException::IncorrectSizes();
+		throw MatrixException::IncorrectSizes(size, size);
 	if (axisIndex1 < 0 || axisIndex2 < 0 || axisIndex1 == axisIndex2)
-		throw MatrixException::IncorrectAxisIndexes();
+		throw MatrixException::IncorrectAxisIndexes(axisIndex1, axisIndex2);
 
 	Matrix rotationMatrix = Matrix::Identity(size);
 
 	int n = (axisIndex1 + axisIndex2 % 2 == 0);
 
-	rotationMatrix[axisIndex1][axisIndex1] = std::round(DEC * float(cos(angle))) / DEC;
-	rotationMatrix[axisIndex2][axisIndex2] = std::round(DEC * float(cos(angle))) / DEC;
+	rotationMatrix[axisIndex1][axisIndex1] = Round(float(cos(angle)));
+	rotationMatrix[axisIndex2][axisIndex2] = Round(float(cos(angle)));
 
-	rotationMatrix[axisIndex2][axisIndex1] = std::round(DEC * float(sin(angle) * std::pow(-1, n))) / DEC;
-	rotationMatrix[axisIndex1][axisIndex2] = std::round(DEC * float(sin(angle) * std::pow(-1, n + 1))) / DEC;
+	rotationMatrix[axisIndex2][axisIndex1] = Round(float(sin(angle) * std::pow(-1, n)));
+	rotationMatrix[axisIndex1][axisIndex2] = Round(float(sin(angle) * std::pow(-1, n + 1)));
 
 	return rotationMatrix;
 }
@@ -329,26 +329,30 @@ void Matrix::Assign(Matrix mat)
 
 Matrix Matrix::Addition(Matrix mat1, Matrix mat2)
 {
-	if (!mat1.IsInitialized() || !mat2.IsInitialized())
-		throw MatrixException::NotInitialized();
+	if (!mat1.IsInitialized())
+		throw MatrixException::NotInitialized(mat1.height, mat1.width);
+	if (!mat2.IsInitialized())
+		throw MatrixException::NotInitialized(mat2.height, mat2.width);
 	if (!EqualSize(mat1, mat2))
-		throw MatrixException::DifferentDimensions();
+		throw MatrixException::DifferentDimensions(mat1.height, mat1.width, mat2.height, mat2.width);
 
 	Matrix sum(mat1.height, mat1.width);
 
 	for (int r = 0; r < sum.height; r++)
 		for (int c = 0; c < sum.width; c++)
-			sum[r][c] = mat1[r][c] + mat2[r][c];
+			sum[r][c] = Round(mat1[r][c] + mat2[r][c]);
 
 	return sum;
 }
 
 Matrix Matrix::Subtraction(Matrix mat1, Matrix mat2)
 {
-	if (!mat1.IsInitialized() || !mat2.IsInitialized())
-		throw MatrixException::NotInitialized();
+	if (!mat1.IsInitialized())
+		throw MatrixException::NotInitialized(mat1.height, mat1.width);
+	if (!mat2.IsInitialized())
+		throw MatrixException::NotInitialized(mat2.height, mat2.width);
 	if (!EqualSize(mat1, mat2))
-		throw MatrixException::DifferentDimensions();
+		throw MatrixException::DifferentDimensions(mat1.height, mat1.width, mat2.height, mat2.width);
 
 	Matrix sub;
 	sub = mat1 + MulByScalar(mat2, (-1.0f));
@@ -359,14 +363,14 @@ Matrix Matrix::Subtraction(Matrix mat1, Matrix mat2)
 Matrix Matrix::MulByScalar(Matrix mat, float num)
 {
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
 
 	Matrix mul;
 	mul = mat;
 
 	for (int r = 0; r < mul.height; r++)
 		for (int c = 0; c < mul.width; c++)
-			mul[r][c] *= num;
+			mul[r][c] = Round(mul[r][c] * num);
 
 	return mul;
 }
@@ -374,7 +378,7 @@ Matrix Matrix::MulByScalar(Matrix mat, float num)
 Matrix Matrix::Division(Matrix mat, float num)
 {
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
 	if (fabs(num) < PRECISION)
 		throw MathException::ZeroDivision();
 
@@ -383,10 +387,12 @@ Matrix Matrix::Division(Matrix mat, float num)
 
 Matrix Matrix::MatrixMul(Matrix mat1, Matrix mat2)
 {
-	if (!mat1.IsInitialized() || !mat2.IsInitialized())
-		throw MatrixException::NotInitialized();
+	if (!mat1.IsInitialized())
+		throw MatrixException::NotInitialized(mat1.height, mat1.width);
+	if (!mat2.IsInitialized())
+		throw MatrixException::NotInitialized(mat2.height, mat2.width);
 	if (mat1.width != mat2.height)
-		throw MatrixException::MatricesCannotBeMultiplied();
+		throw MatrixException::MatricesCannotBeMultiplied(mat1.height, mat1.width, mat2.height, mat2.width);
 
 	Matrix mul(mat1.height, mat2.width);
 
@@ -394,6 +400,10 @@ Matrix Matrix::MatrixMul(Matrix mat1, Matrix mat2)
 		for (int c = 0; c < mul.width; c++)
 			for (int k = 0; k < mat1.width; k++)
 				mul[r][c] += mat1[r][k] * mat2[k][c];
+
+	for (int r = 0; r < mul.height; r++)
+		for (int c = 0; c < mul.width; c++)
+			mul[r][c] = Round(mul[r][c]);
 
 	return mul;
 }
@@ -477,11 +487,14 @@ bool Matrix::operator != (Matrix mat2)
 std::istream& operator >> (std::istream& input, Matrix mat)
 {
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
 
 	for (int r = 0; r < mat.height; r++)
 		for (int c = 0; c < mat.width; c++)
+		{
 			input >> mat[r][c];
+			mat[r][c] = Round(mat[r][c]);
+		}
 
 	return input;
 }
@@ -489,7 +502,7 @@ std::istream& operator >> (std::istream& input, Matrix mat)
 std::ostream& operator << (std::ostream& output, Matrix mat)
 {
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
 
 	for (int r = 0; r < mat.height; r++)
 	{
@@ -507,9 +520,9 @@ float*& Matrix::operator [] (int rowIndex)
 	Matrix& self = *this;
 
 	if (!self.IsInitialized())
-		throw MatrixException::NotInitialized();
+		throw MatrixException::NotInitialized(self.height, self.width);
 	if (!self.CorrectIndexes(rowIndex, 0))
-		throw MatrixException::IncorrectElementIndexes();
+		throw MatrixException::IncorrectElementIndexes(self.height, self.width, rowIndex, 0);
 
 	return self.elements[rowIndex];
 }

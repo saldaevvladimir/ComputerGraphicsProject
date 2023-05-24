@@ -150,9 +150,42 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\quoted_string.h \
  c:\mingw\include\c++\11.2.0\sstream \
  c:\mingw\include\c++\11.2.0\bits\sstream.tcc \
+ c:\mingw\include\c++\11.2.0\cmath \
+ c:\mingw\x86_64-w64-mingw32\include\math.h \
+ c:\mingw\include\c++\11.2.0\bits\specfun.h \
+ c:\mingw\include\c++\11.2.0\limits \
+ c:\mingw\include\c++\11.2.0\tr1\gamma.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\special_function_util.h \
+ c:\mingw\include\c++\11.2.0\tr1\bessel_function.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\beta_function.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\ell_integral.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\exp_integral.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\hypergeometric.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\legendre_function.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\modified_bessel_func.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\poly_hermite.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\poly_laguerre.tcc \
+ c:\mingw\include\c++\11.2.0\tr1\riemann_zeta.tcc \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\allmath\allmath.h \
+ c:\users\vs2\desktop\computergraphicsproject\lib\exceptions\mathexceptions\mathexception.h \
  c:\users\vs2\desktop\computergraphicsproject\lib\math\matrix\matrix.h \
  c:\mingw\include\c++\11.2.0\vector \
  c:\mingw\include\c++\11.2.0\bits\stl_uninitialized.h \
  c:\mingw\include\c++\11.2.0\bits\stl_vector.h \
  c:\mingw\include\c++\11.2.0\bits\stl_bvector.h \
- c:\mingw\include\c++\11.2.0\bits\vector.tcc
+ c:\mingw\include\c++\11.2.0\bits\vector.tcc \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\vector\vector.h \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\point\point.h \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\functions\functions.h \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\vectorspace\vectorspace.h \
+ c:\users\vs2\desktop\computergraphicsproject\lib\math\coordinatesystem\coordinatesystem.h \
+ c:\mingw\include\c++\11.2.0\map \
+ c:\mingw\include\c++\11.2.0\bits\stl_tree.h \
+ c:\mingw\include\c++\11.2.0\ext\aligned_buffer.h \
+ c:\mingw\include\c++\11.2.0\bits\node_handle.h \
+ c:\mingw\include\c++\11.2.0\bits\stl_map.h \
+ c:\mingw\include\c++\11.2.0\bits\stl_multimap.h \
+ c:\mingw\include\c++\11.2.0\bits\erase_if.h \
+ c:\mingw\include\c++\11.2.0\variant \
+ c:\mingw\include\c++\11.2.0\bits\enable_special_members.h \
+ c:\mingw\include\c++\11.2.0\bits\parse_numbers.h

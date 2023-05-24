@@ -1,30 +1,37 @@
 # Change log
 
+## 2.1.5 (21.05.2023)
+
+changed exceptions (added arguments for methods)
+
+plan(
+    change properties realisation
+    change documentation
+)
+
+## 2.1.4 (19.05.2023)
+
+added a constant to set the accuracy of calculations and a rounding function
+
+added rounding in all calculations using the Round function
+
+## 2.1.3 (08.05.2023)
+
+changed project structure
+
+added CMakeLists.txt to build a project
+
+MSTest replaced by GTest
+
 ## 2.1.2 (01.05.2023)
 
-added a file for constants
-
-added realisation for the following classes:
-
-- Ray
-- Identifier
-- Entity
-- EntityList
-- Game
-- Game::Object
-- Game::Camera
+added realisation for Basic Engine classes
 
 ## 2.1.1 (27.04.2023)
 
-deleted constructors which get pointer to float as argument
+removed constructors which get pointer to float as argument
 
-added Basic Engine classes:
-
-- Ray
-- Identifier
-- Entity
-- EntitiesList
-- Game
+added Basic Engine classes
 
 code refactoring
 
@@ -34,13 +41,11 @@ change assign realisation
 
 deleted all try-catch constructions in source files
 
-changed tests 
-
+changed tests
 
 ## 2.0.1 (21.04.2023)
 
 changed exceptions
-
 
 ## 2.0.0 (18.04.2023)
 

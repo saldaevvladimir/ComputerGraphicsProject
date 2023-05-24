@@ -170,8 +170,8 @@ CMakeFiles/MATH_EXCEPTION.dir/clean:
 # Target rules for target CMakeFiles/MATRIX.dir
 
 # All Build rule for target.
-CMakeFiles/MATRIX.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/MATRIX.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/MATRIX.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=31,32 "Built target MATRIX"
@@ -197,8 +197,8 @@ CMakeFiles/MATRIX.dir/clean:
 # Target rules for target CMakeFiles/VECTOR.dir
 
 # All Build rule for target.
-CMakeFiles/VECTOR.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/VECTOR.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/VECTOR.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/VECTOR.dir/all: CMakeFiles/MATRIX.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/build
@@ -225,8 +225,8 @@ CMakeFiles/VECTOR.dir/clean:
 # Target rules for target CMakeFiles/POINT.dir
 
 # All Build rule for target.
-CMakeFiles/POINT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/POINT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/VECTOR.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/depend
@@ -254,8 +254,8 @@ CMakeFiles/POINT.dir/clean:
 # Target rules for target CMakeFiles/FUNCTIONS.dir
 
 # All Build rule for target.
-CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/VECTOR.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/depend
@@ -283,8 +283,8 @@ CMakeFiles/FUNCTIONS.dir/clean:
 # Target rules for target CMakeFiles/VECTOR_SPACE.dir
 
 # All Build rule for target.
-CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/POINT.dir/all
@@ -314,8 +314,8 @@ CMakeFiles/VECTOR_SPACE.dir/clean:
 # Target rules for target CMakeFiles/COORDINATE_SYSTEM.dir
 
 # All Build rule for target.
-CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/POINT.dir/all
@@ -346,8 +346,8 @@ CMakeFiles/COORDINATE_SYSTEM.dir/clean:
 # Target rules for target CMakeFiles/ALL_MATH.dir
 
 # All Build rule for target.
-CMakeFiles/ALL_MATH.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ALL_MATH.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/POINT.dir/all
@@ -379,8 +379,8 @@ CMakeFiles/ALL_MATH.dir/clean:
 # Target rules for target CMakeFiles/RAY.dir
 
 # All Build rule for target.
-CMakeFiles/RAY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/RAY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/POINT.dir/all
@@ -438,8 +438,8 @@ CMakeFiles/IDENTIFIER.dir/clean:
 # Target rules for target CMakeFiles/ENTITY.dir
 
 # All Build rule for target.
-CMakeFiles/ENTITY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ENTITY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/POINT.dir/all
@@ -472,8 +472,8 @@ CMakeFiles/ENTITY.dir/clean:
 # Target rules for target CMakeFiles/ENTITIES_LIST.dir
 
 # All Build rule for target.
-CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/POINT.dir/all
@@ -507,8 +507,8 @@ CMakeFiles/ENTITIES_LIST.dir/clean:
 # Target rules for target CMakeFiles/GAME.dir
 
 # All Build rule for target.
-CMakeFiles/GAME.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/POINT.dir/all
@@ -544,8 +544,8 @@ CMakeFiles/GAME.dir/clean:
 # Target rules for target CMakeFiles/GAME_OBJECT.dir
 
 # All Build rule for target.
-CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/POINT.dir/all
@@ -582,8 +582,8 @@ CMakeFiles/GAME_OBJECT.dir/clean:
 # Target rules for target CMakeFiles/GAME_CAMERA.dir
 
 # All Build rule for target.
-CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/POINT.dir/all
@@ -621,8 +621,8 @@ CMakeFiles/GAME_CAMERA.dir/clean:
 # Target rules for target CMakeFiles/ENGINE_BASIC_CLASSES.dir
 
 # All Build rule for target.
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/POINT.dir/all
@@ -661,8 +661,8 @@ CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean:
 # Target rules for target CMakeFiles/MathTests.dir
 
 # All Build rule for target.
-CMakeFiles/MathTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/MathTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/POINT.dir/all
@@ -695,8 +695,8 @@ CMakeFiles/MathTests.dir/clean:
 # Target rules for target CMakeFiles/EngineTests.dir
 
 # All Build rule for target.
-CMakeFiles/EngineTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/EngineTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/POINT.dir/all
@@ -736,8 +736,8 @@ CMakeFiles/EngineTests.dir/clean:
 # Target rules for target CMakeFiles/GameTests.dir
 
 # All Build rule for target.
-CMakeFiles/GameTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GameTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/POINT.dir/all
@@ -777,8 +777,8 @@ CMakeFiles/GameTests.dir/clean:
 # Target rules for target CMakeFiles/GraphicsEngine.dir
 
 # All Build rule for target.
-CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/POINT.dir/all

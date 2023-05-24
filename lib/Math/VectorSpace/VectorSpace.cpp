@@ -14,20 +14,16 @@ VectorSpace::VectorSpace()
 VectorSpace::VectorSpace(Vector* basis, int dim)
 {
 	if (dim <= 0)
-		throw VectorSpaceException::ZeroBasisSize();
+		throw VectorSpaceException::ZeroBasisSize(dim);
 	if (basis == NULL)
 		throw VectorSpaceException::EmptyVectorList();
 
-	bool sameDim = true;
-
-	for (int i = 1; i < dim && sameDim; i++)
+	for (int i = 1; i < dim; i++)
 		if (!Vector::SameDim(basis[i - 1], basis[i]))
-			sameDim = false;
+			throw VectorException::DifferentDimensions(basis[i - 1].Dim(), basis[i].Dim());
 
-	if (!sameDim)
-		throw VectorException::DifferentDimensions();
 	if (basis[0].Dim() != dim)
-		throw VectorSpaceException::BasisSizeIsNotEqualToVectorsDimension();
+		throw VectorSpaceException::BasisSizeIsNotEqualToVectorsDimension(basis[0].Dim(), dim);
 
 	this->basis = new Vector[dim];
 	this->dim = dim;
@@ -50,10 +46,12 @@ bool VectorSpace::IsInitialized()
 
 float VectorSpace::ScalarProduct(Vector vec1, Vector vec2)
 {
-	if (!vec1.IsInitialized() || !vec2.IsInitialized())
-		throw VectorException::NotInitialized();
+	if (!vec1.IsInitialized())
+		throw VectorException::NotInitialized(vec1.height, vec1.width);
+	if (!vec2.IsInitialized())
+		throw VectorException::NotInitialized(vec2.height, vec2.width);
 	if (!Vector::SameDim(vec1, vec2))
-		throw VectorException::DifferentDimensions();
+		throw VectorException::DifferentDimensions(vec1.Dim(), vec2.Dim());
 
 	Matrix gram;
 	gram = Gram(this->basis, this->dim);
@@ -67,12 +65,14 @@ Vector VectorSpace::VectorProduct(Vector vec1, Vector vec2)
 {
 	VectorSpace& vs = *this;
 
-	if (vs.Dim() != 3 || vs.basis == NULL)
-		throw VectorSpaceException::BasisDimensionIsNotEqualToThree();
-	if (!vec1.IsInitialized() || !vec2.IsInitialized())
-		throw VectorException::NotInitialized();
+	if (vs.Dim() != 3)
+		throw VectorSpaceException::BasisDimensionIsNotEqualToThree(vs.Dim());
+	if (!vec1.IsInitialized())
+		throw VectorException::NotInitialized(vec1.height, vec1.width);
+	if (!vec2.IsInitialized())
+		throw VectorException::NotInitialized(vec2.height, vec2.width);
 	if (vec1.Dim() != 3 || vec2.Dim() != 3)
-		throw VectorSpaceException::VectorsAreNotThreeDimensional();
+		throw VectorSpaceException::VectorsAreNotThreeDimensional(vec1.Dim(), vec2.Dim());
 
 	Vector product =
 		vs.basis[0] * (vec1[1] * vec2[2] - vec1[2] * vec2[1])
@@ -87,9 +87,9 @@ Vector VectorSpace::AsVector(Point p)
 	VectorSpace& vs = *this;
 
 	if (!p.IsInitialized())
-		throw PointException::NotInitialized();
+		throw PointException::NotInitialized(p.Dim());
 	if (!vs.IsInitialized())
-		throw VectorSpaceException::NotInitialized();
+		throw VectorSpaceException::NotInitialized(vs.Dim());
 
 	Vector result(p.Dim());
 	Vector tmp;

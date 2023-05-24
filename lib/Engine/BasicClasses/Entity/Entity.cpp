@@ -8,12 +8,12 @@ namespace Engine
 		this->cs = cs;
 	}
 
-	void Entity::SetProperty(const int& key, const std::string& value)
+	void Entity::SetProperty(const std::string& key, const PropertyType& value)
 	{
 		properties[key] = value;
 	}
 
-	const std::string& Entity::GetProperty(const int& key)
+	const PropertyType& Entity::GetProperty(const std::string& key)
 	{
 		if (properties.find(key) != properties.end())
 			return properties.find(key)->second;
@@ -21,12 +21,12 @@ namespace Engine
 		// exception : incorrect property index
 	}
 
-	void Entity::RemoveProperty(const int& key)
+	void Entity::RemoveProperty(const std::string& key)
 	{
 		properties.erase(key);
 	}
 
-	std::string& Entity::operator [] (const int& key)
+	PropertyType& Entity::operator [] (const std::string& key)
 	{
 		if (properties.find(key) == properties.end())
 			properties[key] = "";
@@ -34,8 +34,4 @@ namespace Engine
 		return properties.find(key)->second;
 	}
 
-	const std::map<int, std::string>::iterator Entity::Property(const int& key)
-	{
-		return properties.find(key);
-	}
 }

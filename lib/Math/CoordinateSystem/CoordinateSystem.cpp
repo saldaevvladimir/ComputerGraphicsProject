@@ -11,11 +11,13 @@ CoordinateSystem::CoordinateSystem()
 
 CoordinateSystem::CoordinateSystem(Point initial, VectorSpace basis)
 {
-	if (!basis.IsInitialized() || !initial.IsInitialized())
-		throw VectorSpaceException::NotInitialized();
+	if (!basis.IsInitialized())
+		throw VectorSpaceException::NotInitialized(basis.Dim());
+	if (!initial.IsInitialized())
+		throw PointException::NotInitialized(initial.Dim());
 
 	if (basis.Dim() != initial.Dim())
-		throw CoordinateSystemException::DifferentDimension();
+		throw CoordinateSystemException::DifferentDimension(basis.Dim(), initial.Dim());
 
 	this->initialPoint = initial;
 	this->space = basis;

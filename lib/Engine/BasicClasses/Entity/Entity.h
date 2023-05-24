@@ -1,9 +1,13 @@
 #pragma once
 
+#define PropertyType std::variant <int, float, bool, std::string, Matrix, Vector, Point, VectorSpace, CoordinateSystem>
+
 #include "..\Identifier\Identifier.h"
 #include "..\..\..\Math\CoordinateSystem\CoordinateSystem.h"
 
 #include <map>
+#include <variant>
+
 
 
 namespace Engine
@@ -13,20 +17,20 @@ namespace Engine
 	public:
 		Identifier identifier;
 		CoordinateSystem cs;
-		std::map<int, std::string> properties;
+		std::map <std::string, PropertyType> properties;
 
 		Entity() {};
 
 		Entity(CoordinateSystem cs);
 
-		void SetProperty(const int& key, const std::string& value);
+		void SetProperty(const std::string& key, const PropertyType& value);
 
-		const std::string& GetProperty(const int& key);
+		const PropertyType& GetProperty(const std::string& key);
 
-		void RemoveProperty(const int& key);
+		void RemoveProperty(const std::string& key);
 
-		std::string& operator [] (const int& key);
+		PropertyType& operator [] (const std::string& key);
 
-		const std::map<int, std::string>::iterator Property(const int& key);
+		
 	};
 }

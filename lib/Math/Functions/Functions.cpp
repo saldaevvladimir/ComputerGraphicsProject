@@ -5,20 +5,16 @@
 Matrix Gram(Vector* vectors, int numOfVectors)
 {
 	if (numOfVectors <= 0)
-		throw FunctionsException::InvalidVectorsNumber();
+		throw FunctionsException::IncorrectVectorsNumber(numOfVectors);
 	if (vectors == NULL)
 		throw FunctionsException::EmptyArray();
 
-	bool sameDim = true;
-
-	for (int i = 1; i < numOfVectors && sameDim; i++)
+	for (int i = 1; i < numOfVectors; i++)
 		if (!Vector::SameDim(vectors[i - 1], vectors[i]))
-			sameDim = false;
-
-	if (!sameDim)
-		throw VectorException::DifferentDimensions();
+			throw VectorException::DifferentDimensions(vectors[i - 1].Dim(), vectors[i].Dim());
+	
 	if (numOfVectors != vectors[0].Dim())
-		throw FunctionsException::VectorsNumberIsNotEqualToVectorsDimension();
+		throw FunctionsException::VectorsNumberIsNotEqualToVectorsDimension(numOfVectors, vectors[0].Dim());
 
 	Matrix gram(numOfVectors);
 
@@ -32,11 +28,13 @@ Matrix Gram(Vector* vectors, int numOfVectors)
 float BilinearForm(Matrix mat, Vector vec1, Vector vec2)
 {
 	if (!mat.IsInitialized())
-		throw MatrixException::NotInitialized();
-	if (!vec1.IsInitialized() || !vec2.IsInitialized())
-		throw VectorException::NotInitialized();
+		throw MatrixException::NotInitialized(mat.height, mat.width);
+	if (!vec1.IsInitialized())
+		throw VectorException::NotInitialized(vec1.height, vec1.width);
+	if (!vec2.IsInitialized())
+		throw VectorException::NotInitialized(vec2.height, vec2.width);
 	if (mat.height != vec1.Dim() || mat.width != vec2.Dim())
-		throw FunctionsException::IncorrectBilinearFormArguments();
+		throw FunctionsException::IncorrectBilinearFormArguments(mat.height, mat.width, vec1.Dim(), vec2.Dim());
 
 	float res = 0.0f;
 
@@ -44,13 +42,13 @@ float BilinearForm(Matrix mat, Vector vec1, Vector vec2)
 		for (int j = 0; j < mat.width; j++)
 			res += mat[i][j] * vec1[i] * vec2[j];
 
-	return res;
+	return Round(res);
 }
 
 Vector Column(Matrix mat, int colIndex)
 {
 	if (!mat.CorrectIndexes(0, colIndex))
-		throw MatrixException::IncorrectElementIndexes();
+		throw MatrixException::IncorrectElementIndexes(mat.height, mat.width, 0, colIndex);
 
 	Vector column(mat.height);
 

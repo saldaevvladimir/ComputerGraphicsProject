@@ -4,5 +4,5 @@
 
 float Round(float number) 
 {
-    return round(number * DEC) / DEC; 
+    return round(number * DEC) / DEC + 0.0f; 
 }

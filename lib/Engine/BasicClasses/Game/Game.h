@@ -28,8 +28,6 @@ namespace Engine
 		class Object : public Entity
 		{
 		public:
-			Point position;
-			Vector direction;
 
 			Object(Game& game);
 
@@ -50,9 +48,6 @@ namespace Engine
 		class Camera : public Object
 		{
 		public:
-			float hfov;
-			float vfov;
-			float drawDistance;
 
 			Camera(Game& game, float hfov, float drawDistance);
 
