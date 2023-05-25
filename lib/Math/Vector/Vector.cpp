@@ -205,6 +205,29 @@ Vector Vector::Normalize()
 	return normalized;
 }
 
+Matrix Gram(Vector* vectors, int numOfVectors)
+{
+	if (numOfVectors <= 0)
+		throw FunctionsException::IncorrectVectorsNumber(numOfVectors);
+	if (vectors == NULL)
+		throw FunctionsException::EmptyArray();
+
+	for (int i = 1; i < numOfVectors; i++)
+		if (!Vector::SameDim(vectors[i - 1], vectors[i]))
+			throw VectorException::DifferentDimensions(vectors[i - 1].Dim(), vectors[i].Dim());
+	
+	if (numOfVectors != vectors[0].Dim())
+		throw FunctionsException::VectorsNumberIsNotEqualToVectorsDimension(numOfVectors, vectors[0].Dim());
+
+	Matrix gram(numOfVectors);
+
+	for (int i = 0; i < numOfVectors; i++)
+		for (int j = 0; j < numOfVectors; j++)
+			gram[i][j] = Vector::ScalarProduct(vectors[i], vectors[j]);
+
+	return gram;
+}
+
 
 void Vector::operator = (Vector vec)
 {

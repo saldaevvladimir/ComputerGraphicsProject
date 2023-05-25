@@ -25,6 +25,7 @@ public:
 	static Vector VectorProduct(Vector vec1, Vector vec2);
 	float Length();
 	Vector Normalize();
+	static Matrix Gram(Vector* vectors, int numOfVectors);
 
 
 	void operator = (Vector vec);

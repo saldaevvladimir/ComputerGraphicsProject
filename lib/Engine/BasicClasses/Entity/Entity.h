@@ -27,6 +27,9 @@ namespace Engine
 
 		const PropertyType& GetProperty(const std::string& key);
 
+		template <typename T>
+		T GetProp(const std::map<std::string, std::variant<PropertyType>>& prop, const std::string& key);
+
 		void RemoveProperty(const std::string& key);
 
 		PropertyType& operator [] (const std::string& key);

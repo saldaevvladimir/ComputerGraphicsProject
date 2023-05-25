@@ -54,7 +54,7 @@ float VectorSpace::ScalarProduct(Vector vec1, Vector vec2)
 		throw VectorException::DifferentDimensions(vec1.Dim(), vec2.Dim());
 
 	Matrix gram;
-	gram = Gram(this->basis, this->dim);
+	gram = Vector::Gram(this->basis, this->dim);
 
 	Matrix prodMatrix = vec1.Transpose() * gram * vec2;
 

@@ -2,28 +2,28 @@
 #include "..\Accuracy\Accuracy.h"
 #include "..\..\Exceptions\MathExceptions\MathException.h"
 
-Matrix Gram(Vector* vectors, int numOfVectors)
-{
-	if (numOfVectors <= 0)
-		throw FunctionsException::IncorrectVectorsNumber(numOfVectors);
-	if (vectors == NULL)
-		throw FunctionsException::EmptyArray();
+// Matrix Gram(Vector* vectors, int numOfVectors)
+// {
+// 	if (numOfVectors <= 0)
+// 		throw FunctionsException::IncorrectVectorsNumber(numOfVectors);
+// 	if (vectors == NULL)
+// 		throw FunctionsException::EmptyArray();
 
-	for (int i = 1; i < numOfVectors; i++)
-		if (!Vector::SameDim(vectors[i - 1], vectors[i]))
-			throw VectorException::DifferentDimensions(vectors[i - 1].Dim(), vectors[i].Dim());
+// 	for (int i = 1; i < numOfVectors; i++)
+// 		if (!Vector::SameDim(vectors[i - 1], vectors[i]))
+// 			throw VectorException::DifferentDimensions(vectors[i - 1].Dim(), vectors[i].Dim());
 	
-	if (numOfVectors != vectors[0].Dim())
-		throw FunctionsException::VectorsNumberIsNotEqualToVectorsDimension(numOfVectors, vectors[0].Dim());
+// 	if (numOfVectors != vectors[0].Dim())
+// 		throw FunctionsException::VectorsNumberIsNotEqualToVectorsDimension(numOfVectors, vectors[0].Dim());
 
-	Matrix gram(numOfVectors);
+// 	Matrix gram(numOfVectors);
 
-	for (int i = 0; i < numOfVectors; i++)
-		for (int j = 0; j < numOfVectors; j++)
-			gram[i][j] = Vector::ScalarProduct(vectors[i], vectors[j]);
+// 	for (int i = 0; i < numOfVectors; i++)
+// 		for (int j = 0; j < numOfVectors; j++)
+// 			gram[i][j] = Vector::ScalarProduct(vectors[i], vectors[j]);
 
-	return gram;
-}
+// 	return gram;
+// }
 
 float BilinearForm(Matrix mat, Vector vec1, Vector vec2)
 {

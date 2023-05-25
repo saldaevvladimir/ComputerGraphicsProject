@@ -4,7 +4,7 @@
 #include "..\Vector\Vector.h"
 
 
-Matrix Gram(Vector* vectors, int numOfVectors);
+//Matrix Gram(Vector* vectors, int numOfVectors);
 
 float BilinearForm(Matrix mat, Vector vec1, Vector vec2);
 

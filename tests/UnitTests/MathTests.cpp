@@ -765,7 +765,7 @@ TEST(FunctionsTests, GramMatrixTest)
         {11.0, 25.0}
         });
 
-    Matrix testGram = Gram(vec, SIZE);
+    Matrix testGram = Vector::Gram(vec, SIZE);
 
     bool correctGramMatrix = (testGram == gram);
 
