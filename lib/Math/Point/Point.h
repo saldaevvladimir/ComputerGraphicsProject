@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\Vector\Vector.h"
+#include "../Vector/Vector.h"
 
 class Point : public Vector
 {

@@ -1,13 +1,20 @@
 # Change log
 
+# 2.1.7 ()
+
+
+
+## 2.1.6 (27.05.2023)
+
+changed properties implementation
+
+changed implementation of the following classes: Entity, Game, GameEntity, GameObject, GameCamera
+
+rebuilt GTest
+
 ## 2.1.5 (21.05.2023)
 
 changed exceptions (added arguments for methods)
-
-plan(
-    change properties realisation
-    change documentation
-)
 
 ## 2.1.4 (19.05.2023)
 
@@ -25,7 +32,7 @@ MSTest replaced by GTest
 
 ## 2.1.2 (01.05.2023)
 
-added realisation for Basic Engine classes
+added implementation of Basic Engine classes
 
 ## 2.1.1 (27.04.2023)
 
@@ -35,7 +42,7 @@ added Basic Engine classes
 
 code refactoring
 
-change assign realisation
+change assign implementation
 
 ## 2.0.2 (26.04.2023)
 

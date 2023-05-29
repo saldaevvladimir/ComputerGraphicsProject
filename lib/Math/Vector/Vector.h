@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\Matrix\Matrix.h"
+#include "../Matrix/Matrix.h"
 
 
 class Vector : public Matrix

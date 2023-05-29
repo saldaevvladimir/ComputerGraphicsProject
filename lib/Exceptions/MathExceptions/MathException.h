@@ -80,5 +80,6 @@ public:
 class CoordinateSystemException : public MathException
 {
 public:
+	static MathException NotInitialized();
 	static MathException DifferentDimension(int basisDim, int initialPointDim);
 };

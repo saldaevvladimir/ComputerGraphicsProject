@@ -1,8 +1,9 @@
-#include "..\Accuracy\Accuracy.h"
-#include "..\..\Exceptions\MathExceptions\MathException.h"
+#include "../Accuracy/Accuracy.h"
+#include "../../Exceptions/MathExceptions/MathException.h"
 #include "VectorSpace.h"
-#include "..\Functions\Functions.h"
+#include "../Functions/Functions.h"
 
+#include <cmath>
 
 
 VectorSpace::VectorSpace()
@@ -80,6 +81,39 @@ Vector VectorSpace::VectorProduct(Vector vec1, Vector vec2)
 		+ vs.basis[2] * (vec1[0] * vec2[1] - vec1[1] * vec2[0]);
 
 	return product;
+}
+
+float VectorSpace::Length(Vector vec)
+{
+	VectorSpace& vs = *this;
+
+	if (!vs.IsInitialized())
+		throw VectorSpaceException::NotInitialized(vs.Dim());
+	if (!vec.IsInitialized())
+		throw VectorException::NotInitialized(vec.height, vec.width);
+
+	return Round(sqrt(fabs(vs.ScalarProduct(vec, vec))));
+}
+
+Vector VectorSpace::Normalize(Vector vec)
+{
+	VectorSpace& vs = *this;
+
+	if (!vs.IsInitialized())
+		throw VectorSpaceException::NotInitialized(vs.Dim());
+	if (!vec.IsInitialized())
+		throw VectorException::NotInitialized(vec.height, vec.width);
+
+	float vecLength = vs.Length(vec);
+
+	Vector normalized = vec;
+
+	if (fabs(vecLength) < PRECISION)
+		return normalized;
+
+	normalized = vec / vecLength;
+
+	return normalized;
 }
 
 Vector VectorSpace::AsVector(Point p)

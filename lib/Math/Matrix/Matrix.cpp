@@ -1,5 +1,5 @@
-#include "..\Accuracy\Accuracy.h"
-#include "..\..\Exceptions\MathExceptions\MathException.h"
+#include "../Accuracy/Accuracy.h"
+#include "../../Exceptions/MathExceptions/MathException.h"
 #include "Matrix.h"
 #include <iostream>
 #include <cmath>

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "..\Ray\Ray.h"
-#include "..\EntitiesList\EntitiesList.h"
+#include "../Ray/Ray.h"
+#include "../EntitiesList/EntitiesList.h"
 
 
 namespace Engine
@@ -25,13 +25,22 @@ namespace Engine
 		Ray GetRayClass();
 
 
-		class Object : public Entity
+		class GameEntity : public Entity
+		{
+		public:
+			GameEntity();
+			GameEntity(Game& game);
+		};
+
+		class Object : public Game::GameEntity
 		{
 		public:
 
-			Object(Game& game);
+			Object();
 
-			Object(Game& game, Point position, Vector direction);
+			Object(GameEntity& GameEntity);
+
+			Object(GameEntity& gameEntity, Point position, Vector direction);
 
 			void Move(float distance);
 
@@ -45,17 +54,17 @@ namespace Engine
 		};
 
 
-		class Camera : public Object
+		class Camera : public Game::Object
 		{
 		public:
 
-			Camera(Game& game, float hfov, float drawDistance);
+			Camera(Game::Object& object, float hfov, float drawDistance);
 
-			Camera(Game& game, float hfov, float vfov, float drawDistance);
+			Camera(Game::Object& object, float hfov, float vfov, float drawDistance);
 
-			Camera(Game& game, float hfov, Point lookAt, float drawDistance);
+			Camera(Game::Object& object, float hfov, Point lookAt, float drawDistance);
 
-			Camera(Game& game, float hfov, float vfov, Point lookAt, float drawDistance);
+			Camera(Game::Object& object, float hfov, float vfov, Point lookAt, float drawDistance);
 		};
 
 

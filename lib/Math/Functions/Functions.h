@@ -1,7 +1,7 @@
 #pragma once
 
-#include "..\Matrix\Matrix.h"
-#include "..\Vector\Vector.h"
+#include "../Matrix/Matrix.h"
+#include "../Vector/Vector.h"
 
 
 //Matrix Gram(Vector* vectors, int numOfVectors);

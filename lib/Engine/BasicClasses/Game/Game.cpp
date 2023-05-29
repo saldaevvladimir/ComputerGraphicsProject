@@ -1,10 +1,14 @@
 #include "Game.h"
+#include "../../../Exceptions/MathExceptions/MathException.h"
 
 
 namespace Engine
 {
     Game::Game(CoordinateSystem cs, EntitiesList gameEntities)
 	{
+		if (!cs.IsInitialized())
+			throw CoordinateSystemException::NotInitialized();
+			
 		this->cs = cs;
 		this->gameEntities = gameEntities;
 	}
@@ -26,11 +30,11 @@ namespace Engine
 
 	Entity Game::GetEntityClass()
 	{
-		return Entity(this->cs);
+		return Engine::Entity(this->cs);
 	}
 
 	Ray Game::GetRayClass()
 	{
-		return Ray(this->cs);
+		return Engine::Ray(this->cs);
 	}
 }

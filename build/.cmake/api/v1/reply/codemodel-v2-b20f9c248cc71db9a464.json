@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GraphicsEngine",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ACCURACY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ACCURACY-Debug-b51dea65d99f8b12ab71.json",
+					"name" : "ACCURACY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_MATH::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_MATH-Debug-0328e1335cd3e007106c.json",
+					"name" : "ALL_MATH",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "COORDINATE_SYSTEM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-COORDINATE_SYSTEM-Debug-8e36088734e566429f85.json",
+					"name" : "COORDINATE_SYSTEM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENGINE_BASIC_CLASSES::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENGINE_BASIC_CLASSES-Debug-d932ae4435f5a6b2035a.json",
+					"name" : "ENGINE_BASIC_CLASSES",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENGINE_EXCEPTION::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENGINE_EXCEPTION-Debug-6000d84e6fa690195bce.json",
+					"name" : "ENGINE_EXCEPTION",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENTITIES_LIST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENTITIES_LIST-Debug-da9e875342058b22c947.json",
+					"name" : "ENTITIES_LIST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ENTITY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ENTITY-Debug-56e639d835503fa5c35c.json",
+					"name" : "ENTITY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EngineTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EngineTests-Debug-fdc7804a8e10ba71f123.json",
+					"name" : "EngineTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FUNCTIONS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FUNCTIONS-Debug-bdf84100a67eae15b663.json",
+					"name" : "FUNCTIONS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME-Debug-ab06493e92bbc4c149ce.json",
+					"name" : "GAME",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME_CAMERA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME_CAMERA-Debug-05ee4e8af86f9d4889fb.json",
+					"name" : "GAME_CAMERA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME_ENTITY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME_ENTITY-Debug-27c523f5847e13055579.json",
+					"name" : "GAME_ENTITY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GAME_OBJECT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GAME_OBJECT-Debug-9e8097b38f326916be13.json",
+					"name" : "GAME_OBJECT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GameTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GameTests-Debug-329e53181c2a21a9573e.json",
+					"name" : "GameTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GraphicsEngine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GraphicsEngine-Debug-74a5b3203d4b4d1e54f0.json",
+					"name" : "GraphicsEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IDENTIFIER::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IDENTIFIER-Debug-1bc79408b88b6189617f.json",
+					"name" : "IDENTIFIER",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MATH_EXCEPTION::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MATH_EXCEPTION-Debug-67ec0f3bda9965620c11.json",
+					"name" : "MATH_EXCEPTION",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MATRIX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MATRIX-Debug-714c722bda4cb39744db.json",
+					"name" : "MATRIX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MathTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MathTests-Debug-bc817a6b760d632f5bf8.json",
+					"name" : "MathTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "POINT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-POINT-Debug-ffad32b4044b51ffba97.json",
+					"name" : "POINT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RAY::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RAY-Debug-c36f615d9c21eca01849.json",
+					"name" : "RAY",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VECTOR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VECTOR-Debug-d7ad56e536190a1ff81a.json",
+					"name" : "VECTOR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VECTOR_SPACE::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VECTOR_SPACE-Debug-b68a79078c18bab36d0e.json",
+					"name" : "VECTOR_SPACE",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+		"source" : "/home/v_s2/Desktop/ComputerGraphicsProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

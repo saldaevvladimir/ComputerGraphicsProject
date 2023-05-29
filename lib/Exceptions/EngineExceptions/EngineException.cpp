@@ -17,4 +17,16 @@ const char* EngineException::what() const throw()
 EngineException::~EngineException() noexcept {};
 
 
+// EntityException
 
+EngineException EntityException::IncorrectPropertyKey(const std::string& key)
+{
+	return EngineException("Incorrect property key: " + key);
+}
+
+// EntitiesListException
+
+EngineException EntitiesListException::IdentifierDoesNotExist(const std::string& identifier)
+{
+	return EngineException("identifier does not exist (identifier: " + identifier + ")");
+}

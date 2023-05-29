@@ -213,6 +213,11 @@ MathException PointException::DifferentDimensions(int pointDim, int vecDim)
 
 // CoordinateSystemException
 
+MathException CoordinateSystemException::NotInitialized()
+{
+	return MathException("coordinate system is not initialized");
+}
+
 MathException CoordinateSystemException::DifferentDimension(int basisDim, int initialPointDim)
 {
 	return MathException("basis and initial point have different dimension (basis dimension: "

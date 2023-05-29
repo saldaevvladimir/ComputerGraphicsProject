@@ -1,5 +1,5 @@
-#include "..\Accuracy\Accuracy.h"
-#include "..\..\Exceptions\MathExceptions\MathException.h"
+#include "../Accuracy/Accuracy.h"
+#include "../../Exceptions/MathExceptions/MathException.h"
 #include "Vector.h"
 #include <cmath>
 #include <ostream>
@@ -205,7 +205,7 @@ Vector Vector::Normalize()
 	return normalized;
 }
 
-Matrix Gram(Vector* vectors, int numOfVectors)
+Matrix Vector::Gram(Vector* vectors, int numOfVectors)
 {
 	if (numOfVectors <= 0)
 		throw FunctionsException::IncorrectVectorsNumber(numOfVectors);

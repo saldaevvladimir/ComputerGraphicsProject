@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include "../../../Exceptions/EngineExceptions/EngineException.h"
 
 
 namespace Engine
@@ -18,21 +19,7 @@ namespace Engine
 		if (properties.find(key) != properties.end())
 			return properties.find(key)->second;
 			
-		// exception : incorrect property index
-	}
-
-	template <typename T>
-	T GetProp(const std::map<std::string, std::variant<PropertyType>>& prop, const std::string& key)
-	{
-		auto iter = prop.find(key);
-		if (iter != prop.end())
-		{
-			return std::get<T>(iter->second);
-		}
-		else
-		{
-			
-		}
+		throw EntityException::IncorrectPropertyKey(key);
 	}
 
 	void Entity::RemoveProperty(const std::string& key)

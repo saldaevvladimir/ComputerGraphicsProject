@@ -1,6 +1,6 @@
-#include "..\Accuracy\Accuracy.h"
-#include "..\..\Exceptions\MathExceptions\MathException.h"
-#include "..\CoordinateSystem\CoordinateSystem.h"
+#include "../Accuracy/Accuracy.h"
+#include "../../Exceptions/MathExceptions/MathException.h"
+#include "../CoordinateSystem/CoordinateSystem.h"
 
 
 CoordinateSystem::CoordinateSystem()
@@ -21,6 +21,11 @@ CoordinateSystem::CoordinateSystem(Point initial, VectorSpace basis)
 
 	this->initialPoint = initial;
 	this->space = basis;
+}
+
+bool CoordinateSystem::IsInitialized()
+{
+	return (this->initialPoint.IsInitialized() && this->space.IsInitialized());
 }
 
 

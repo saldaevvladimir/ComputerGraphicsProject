@@ -33,13 +33,13 @@ public:
 class EntityException : public EngineException
 {
 public:
-
+	static EngineException IncorrectPropertyKey(const std::string& key);
 };
 
 class EntitiesListException : public EngineException
 {
 public:
-
+	static EngineException IdentifierDoesNotExist(const std::string& identifier);
 };
 
 class GameException : public EngineException

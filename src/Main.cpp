@@ -4,30 +4,19 @@
 
 #include "../lib/Math/AllMath/AllMath.h"
 
-#include <map>
-#include <variant>
-
-
-
-// std::map <std::string, std::variant <int, float, bool, std::string, Matrix, Vector, Point, VectorSpace, CoordinateSystem>> props;
-
-
-
+#include "../lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.h"
 
 int main()
 {
 	using namespace std;
 
-	// int fov = 5;
+	Engine::Entity entity;
+   entity.SetProperty("num", 34);
+   entity.SetProperty("some_str", "something");
 
-   // Point initial({0, 0, 0});
-   // Vector dir({1, 0, 0});
-
-   // props["fov"] = fov;
-   // props["init"] = initial;
-   // props["dir"] = dir;
-
-   // cout << "all's ok" << endl;
+   cout << std::get<int>(entity["num"]) << std::endl;
+   entity["num"] = 54;
+   cout << std::get<int>(entity["num"]) << std::endl;
 
    return 0;
 }

@@ -1,4 +1,5 @@
 #include "EntitiesList.h"
+#include "../../../Exceptions/EngineExceptions/EngineException.h"
 
 
 namespace Engine
@@ -43,7 +44,7 @@ namespace Engine
 			if (entity.identifier.GetValue() == identifier.GetValue())
 				return entity;
 
-		// exception : identifier doesn't exist
+		throw EntitiesListException::IdentifierDoesNotExist(identifier.GetValue());
 	}
 
 	void EntitiesList::Execute()

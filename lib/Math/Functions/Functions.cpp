@@ -1,6 +1,6 @@
 #include "Functions.h"
-#include "..\Accuracy\Accuracy.h"
-#include "..\..\Exceptions\MathExceptions\MathException.h"
+#include "../Accuracy/Accuracy.h"
+#include "../../Exceptions/MathExceptions/MathException.h"
 
 // Matrix Gram(Vector* vectors, int numOfVectors)
 // {

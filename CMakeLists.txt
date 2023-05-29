@@ -8,14 +8,22 @@ set(CMAKE_CXX_STANDART_REQUIRED true)
 
 project(GraphicsEngine VERSION 3.0)
 
+
+
+# EXCEPTIONS
+
+add_library(MATH_EXCEPTION 
+    STATIC lib/Exceptions/MathExceptions/MathException.cpp
+)
+
+add_library(ENGINE_EXCEPTION
+    STATIC lib/Exceptions/EngineExceptions/EngineException.cpp
+)
+
 # MATH
 
 add_library(ACCURACY 
     STATIC lib/Math/Accuracy/Accuracy.cpp
-)
-
-add_library(MATH_EXCEPTION 
-    STATIC lib/Exceptions/MathExceptions/MathException.cpp
 )
 
 add_library(MATRIX
@@ -105,6 +113,10 @@ add_library(GAME
     STATIC ./lib/Engine/BasicClasses/Game/Game.cpp
 )
 
+add_library(GAME_ENTITY
+    STATIC ./lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp
+)
+
 add_library(GAME_OBJECT
     STATIC ./lib/Engine/BasicClasses/Game/Object/Object.cpp
 )
@@ -125,15 +137,22 @@ target_link_libraries(ENTITY
 
 target_link_libraries(ENTITIES_LIST
     PUBLIC ENTITY
+    PUBLIC ENGINE_EXCEPTION
 )
 
 target_link_libraries(GAME
     PUBLIC RAY
     PUBLIC ENTITIES_LIST
+    PUBLIC MATH_EXCEPTION
+)
+
+target_link_libraries(GAME_ENTITY
+    PUBLIC GAME
 )
 
 target_link_libraries(GAME_OBJECT
     PUBLIC GAME
+    PUBLIC GAME_ENTITY
 )
 
 target_link_libraries(GAME_CAMERA
@@ -150,6 +169,9 @@ target_link_libraries(ENGINE_BASIC_CLASSES
     PUBLIC IDENTIFIER
     PUBLIC ENTITY
     PUBLIC ENTITIES_LIST
+    PUBLIC GAME
+    PUBLIC GAME_ENTITY
+    PUBLIC GAME_OBJECT
     PUBLIC GAME_CAMERA
 )
 
@@ -157,16 +179,14 @@ target_link_libraries(ENGINE_BASIC_CLASSES
 
 
 
-# GoogleTests libs
-
-# local gtests
-# link_directories(C:/MinGW/lib)
-# include_directories(C:/Mingw/include)
-
-link_directories(./googletest/glib)
-include_directories(./googletest/include)
-
 # Tests
+
+enable_testing()
+
+link_directories(./googletest/lib)
+
+include_directories(./googletest/googletest/include)
+
 
 add_executable(MathTests 
     ./tests/UnitTests/MathTests.cpp
