@@ -1,157 +1,157 @@
 [
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp",
   "output": "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.cpp",
   "output": "CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp",
   "output": "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp",
   "output": "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp",
   "output": "CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Point/Point.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Point/Point.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Point/Point.cpp",
   "output": "CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp",
   "output": "CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/VectorSpace/VectorSpace.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/VectorSpace/VectorSpace.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/VectorSpace/VectorSpace.cpp",
   "output": "CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/CoordinateSystem/CoordinateSystem.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/CoordinateSystem/CoordinateSystem.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/CoordinateSystem/CoordinateSystem.cpp",
   "output": "CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp",
   "output": "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Ray/Ray.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Ray/Ray.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Ray/Ray.cpp",
   "output": "CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp",
   "output": "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Entity/Entity.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Entity/Entity.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Entity/Entity.cpp",
   "output": "CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp",
   "output": "CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp",
   "output": "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp",
   "output": "CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp",
   "output": "CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Camera/Camera.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Camera/Camera.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Camera/Camera.cpp",
   "output": "CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp",
   "output": "CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp",
   "output": "CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp",
   "output": "CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
   "output": "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/MathTests.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/MathTests.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/MathTests.cpp",
   "output": "CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp",
   "output": "CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp",
   "output": "CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/src/Main.cpp",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/src/Main.cpp",
   "file": "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/src/Main.cpp",
   "output": "CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o"
 }

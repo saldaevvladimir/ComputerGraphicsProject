@@ -517,7 +517,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/v_s2/Desktop/ComputerGraphicsProject -B/home/v_s2/Desktop/ComputerGraphicsProject/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject -B/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
   description = Re-running CMake...
   generator = 1
 

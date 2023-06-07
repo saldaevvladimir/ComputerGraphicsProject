@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/v_s2/Desktop/ComputerGraphicsProject/build/
+cmake_ninja_workdir = /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target MATH_EXCEPTION
 
@@ -49,12 +49,14 @@ cmake_ninja_workdir = /home/v_s2/Desktop/ComputerGraphicsProject/build/
 
 build cmake_object_order_depends_target_MATH_EXCEPTION: phony || CMakeFiles/MATH_EXCEPTION.dir
 
-build CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o: CXX_COMPILER__MATH_EXCEPTION_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp || cmake_object_order_depends_target_MATH_EXCEPTION
+build CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o: CXX_COMPILER__MATH_EXCEPTION_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp || cmake_object_order_depends_target_MATH_EXCEPTION
   DEP_FILE = CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/MATH_EXCEPTION.dir
   OBJECT_FILE_DIR = CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions
+  TARGET_COMPILE_PDB = CMakeFiles/MATH_EXCEPTION.dir/MATH_EXCEPTION.pdb
+  TARGET_PDB = libMATH_EXCEPTION.pdb
 
 
 # =============================================================================
@@ -69,8 +71,9 @@ build libMATH_EXCEPTION.a: CXX_STATIC_LIBRARY_LINKER__MATH_EXCEPTION_Debug CMake
   OBJECT_DIR = CMakeFiles/MATH_EXCEPTION.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/MATH_EXCEPTION.dir/MATH_EXCEPTION.pdb
   TARGET_FILE = libMATH_EXCEPTION.a
-  TARGET_PDB = MATH_EXCEPTION.a.dbg
+  TARGET_PDB = libMATH_EXCEPTION.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ENGINE_EXCEPTION
@@ -81,12 +84,14 @@ build libMATH_EXCEPTION.a: CXX_STATIC_LIBRARY_LINKER__MATH_EXCEPTION_Debug CMake
 
 build cmake_object_order_depends_target_ENGINE_EXCEPTION: phony || CMakeFiles/ENGINE_EXCEPTION.dir
 
-build CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o: CXX_COMPILER__ENGINE_EXCEPTION_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.cpp || cmake_object_order_depends_target_ENGINE_EXCEPTION
+build CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o: CXX_COMPILER__ENGINE_EXCEPTION_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.cpp || cmake_object_order_depends_target_ENGINE_EXCEPTION
   DEP_FILE = CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ENGINE_EXCEPTION.dir
   OBJECT_FILE_DIR = CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions
+  TARGET_COMPILE_PDB = CMakeFiles/ENGINE_EXCEPTION.dir/ENGINE_EXCEPTION.pdb
+  TARGET_PDB = libENGINE_EXCEPTION.pdb
 
 
 # =============================================================================
@@ -101,8 +106,9 @@ build libENGINE_EXCEPTION.a: CXX_STATIC_LIBRARY_LINKER__ENGINE_EXCEPTION_Debug C
   OBJECT_DIR = CMakeFiles/ENGINE_EXCEPTION.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ENGINE_EXCEPTION.dir/ENGINE_EXCEPTION.pdb
   TARGET_FILE = libENGINE_EXCEPTION.a
-  TARGET_PDB = ENGINE_EXCEPTION.a.dbg
+  TARGET_PDB = libENGINE_EXCEPTION.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ACCURACY
@@ -113,12 +119,14 @@ build libENGINE_EXCEPTION.a: CXX_STATIC_LIBRARY_LINKER__ENGINE_EXCEPTION_Debug C
 
 build cmake_object_order_depends_target_ACCURACY: phony || CMakeFiles/ACCURACY.dir
 
-build CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: CXX_COMPILER__ACCURACY_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp || cmake_object_order_depends_target_ACCURACY
+build CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: CXX_COMPILER__ACCURACY_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp || cmake_object_order_depends_target_ACCURACY
   DEP_FILE = CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ACCURACY.dir
   OBJECT_FILE_DIR = CMakeFiles/ACCURACY.dir/lib/Math/Accuracy
+  TARGET_COMPILE_PDB = CMakeFiles/ACCURACY.dir/ACCURACY.pdb
+  TARGET_PDB = libACCURACY.pdb
 
 
 # =============================================================================
@@ -133,8 +141,9 @@ build libACCURACY.a: CXX_STATIC_LIBRARY_LINKER__ACCURACY_Debug CMakeFiles/ACCURA
   OBJECT_DIR = CMakeFiles/ACCURACY.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ACCURACY.dir/ACCURACY.pdb
   TARGET_FILE = libACCURACY.a
-  TARGET_PDB = ACCURACY.a.dbg
+  TARGET_PDB = libACCURACY.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target MATRIX
@@ -145,12 +154,14 @@ build libACCURACY.a: CXX_STATIC_LIBRARY_LINKER__ACCURACY_Debug CMakeFiles/ACCURA
 
 build cmake_object_order_depends_target_MATRIX: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_MATH_EXCEPTION
 
-build CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o: CXX_COMPILER__MATRIX_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp || cmake_object_order_depends_target_MATRIX
+build CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o: CXX_COMPILER__MATRIX_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp || cmake_object_order_depends_target_MATRIX
   DEP_FILE = CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/MATRIX.dir
   OBJECT_FILE_DIR = CMakeFiles/MATRIX.dir/lib/Math/Matrix
+  TARGET_COMPILE_PDB = CMakeFiles/MATRIX.dir/MATRIX.pdb
+  TARGET_PDB = libMATRIX.pdb
 
 
 # =============================================================================
@@ -165,8 +176,9 @@ build libMATRIX.a: CXX_STATIC_LIBRARY_LINKER__MATRIX_Debug CMakeFiles/MATRIX.dir
   OBJECT_DIR = CMakeFiles/MATRIX.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/MATRIX.dir/MATRIX.pdb
   TARGET_FILE = libMATRIX.a
-  TARGET_PDB = MATRIX.a.dbg
+  TARGET_PDB = libMATRIX.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target VECTOR
@@ -177,12 +189,14 @@ build libMATRIX.a: CXX_STATIC_LIBRARY_LINKER__MATRIX_Debug CMakeFiles/MATRIX.dir
 
 build cmake_object_order_depends_target_VECTOR: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX
 
-build CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CXX_COMPILER__VECTOR_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp || cmake_object_order_depends_target_VECTOR
+build CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CXX_COMPILER__VECTOR_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp || cmake_object_order_depends_target_VECTOR
   DEP_FILE = CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/VECTOR.dir
   OBJECT_FILE_DIR = CMakeFiles/VECTOR.dir/lib/Math/Vector
+  TARGET_COMPILE_PDB = CMakeFiles/VECTOR.dir/VECTOR.pdb
+  TARGET_PDB = libVECTOR.pdb
 
 
 # =============================================================================
@@ -197,8 +211,9 @@ build libVECTOR.a: CXX_STATIC_LIBRARY_LINKER__VECTOR_Debug CMakeFiles/VECTOR.dir
   OBJECT_DIR = CMakeFiles/VECTOR.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/VECTOR.dir/VECTOR.pdb
   TARGET_FILE = libVECTOR.a
-  TARGET_PDB = VECTOR.a.dbg
+  TARGET_PDB = libVECTOR.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target POINT
@@ -209,12 +224,14 @@ build libVECTOR.a: CXX_STATIC_LIBRARY_LINKER__VECTOR_Debug CMakeFiles/VECTOR.dir
 
 build cmake_object_order_depends_target_POINT: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_VECTOR
 
-build CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o: CXX_COMPILER__POINT_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Point/Point.cpp || cmake_object_order_depends_target_POINT
+build CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o: CXX_COMPILER__POINT_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Point/Point.cpp || cmake_object_order_depends_target_POINT
   DEP_FILE = CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/POINT.dir
   OBJECT_FILE_DIR = CMakeFiles/POINT.dir/lib/Math/Point
+  TARGET_COMPILE_PDB = CMakeFiles/POINT.dir/POINT.pdb
+  TARGET_PDB = libPOINT.pdb
 
 
 # =============================================================================
@@ -229,8 +246,9 @@ build libPOINT.a: CXX_STATIC_LIBRARY_LINKER__POINT_Debug CMakeFiles/POINT.dir/li
   OBJECT_DIR = CMakeFiles/POINT.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/POINT.dir/POINT.pdb
   TARGET_FILE = libPOINT.a
-  TARGET_PDB = POINT.a.dbg
+  TARGET_PDB = libPOINT.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target FUNCTIONS
@@ -241,12 +259,14 @@ build libPOINT.a: CXX_STATIC_LIBRARY_LINKER__POINT_Debug CMakeFiles/POINT.dir/li
 
 build cmake_object_order_depends_target_FUNCTIONS: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_VECTOR
 
-build CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: CXX_COMPILER__FUNCTIONS_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp || cmake_object_order_depends_target_FUNCTIONS
+build CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: CXX_COMPILER__FUNCTIONS_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp || cmake_object_order_depends_target_FUNCTIONS
   DEP_FILE = CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/FUNCTIONS.dir
   OBJECT_FILE_DIR = CMakeFiles/FUNCTIONS.dir/lib/Math/Functions
+  TARGET_COMPILE_PDB = CMakeFiles/FUNCTIONS.dir/FUNCTIONS.pdb
+  TARGET_PDB = libFUNCTIONS.pdb
 
 
 # =============================================================================
@@ -261,8 +281,9 @@ build libFUNCTIONS.a: CXX_STATIC_LIBRARY_LINKER__FUNCTIONS_Debug CMakeFiles/FUNC
   OBJECT_DIR = CMakeFiles/FUNCTIONS.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/FUNCTIONS.dir/FUNCTIONS.pdb
   TARGET_FILE = libFUNCTIONS.a
-  TARGET_PDB = FUNCTIONS.a.dbg
+  TARGET_PDB = libFUNCTIONS.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target VECTOR_SPACE
@@ -273,12 +294,14 @@ build libFUNCTIONS.a: CXX_STATIC_LIBRARY_LINKER__FUNCTIONS_Debug CMakeFiles/FUNC
 
 build cmake_object_order_depends_target_VECTOR_SPACE: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_VECTOR
 
-build CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o: CXX_COMPILER__VECTOR_SPACE_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/VectorSpace/VectorSpace.cpp || cmake_object_order_depends_target_VECTOR_SPACE
+build CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o: CXX_COMPILER__VECTOR_SPACE_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/VectorSpace/VectorSpace.cpp || cmake_object_order_depends_target_VECTOR_SPACE
   DEP_FILE = CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/VECTOR_SPACE.dir
   OBJECT_FILE_DIR = CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace
+  TARGET_COMPILE_PDB = CMakeFiles/VECTOR_SPACE.dir/VECTOR_SPACE.pdb
+  TARGET_PDB = libVECTOR_SPACE.pdb
 
 
 # =============================================================================
@@ -293,8 +316,9 @@ build libVECTOR_SPACE.a: CXX_STATIC_LIBRARY_LINKER__VECTOR_SPACE_Debug CMakeFile
   OBJECT_DIR = CMakeFiles/VECTOR_SPACE.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/VECTOR_SPACE.dir/VECTOR_SPACE.pdb
   TARGET_FILE = libVECTOR_SPACE.a
-  TARGET_PDB = VECTOR_SPACE.a.dbg
+  TARGET_PDB = libVECTOR_SPACE.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target COORDINATE_SYSTEM
@@ -305,12 +329,14 @@ build libVECTOR_SPACE.a: CXX_STATIC_LIBRARY_LINKER__VECTOR_SPACE_Debug CMakeFile
 
 build cmake_object_order_depends_target_COORDINATE_SYSTEM: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o: CXX_COMPILER__COORDINATE_SYSTEM_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/CoordinateSystem/CoordinateSystem.cpp || cmake_object_order_depends_target_COORDINATE_SYSTEM
+build CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o: CXX_COMPILER__COORDINATE_SYSTEM_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/CoordinateSystem/CoordinateSystem.cpp || cmake_object_order_depends_target_COORDINATE_SYSTEM
   DEP_FILE = CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/COORDINATE_SYSTEM.dir
   OBJECT_FILE_DIR = CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem
+  TARGET_COMPILE_PDB = CMakeFiles/COORDINATE_SYSTEM.dir/COORDINATE_SYSTEM.pdb
+  TARGET_PDB = libCOORDINATE_SYSTEM.pdb
 
 
 # =============================================================================
@@ -325,8 +351,9 @@ build libCOORDINATE_SYSTEM.a: CXX_STATIC_LIBRARY_LINKER__COORDINATE_SYSTEM_Debug
   OBJECT_DIR = CMakeFiles/COORDINATE_SYSTEM.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/COORDINATE_SYSTEM.dir/COORDINATE_SYSTEM.pdb
   TARGET_FILE = libCOORDINATE_SYSTEM.a
-  TARGET_PDB = COORDINATE_SYSTEM.a.dbg
+  TARGET_PDB = libCOORDINATE_SYSTEM.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ALL_MATH
@@ -337,12 +364,14 @@ build libCOORDINATE_SYSTEM.a: CXX_STATIC_LIBRARY_LINKER__COORDINATE_SYSTEM_Debug
 
 build cmake_object_order_depends_target_ALL_MATH: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o: CXX_COMPILER__ALL_MATH_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp || cmake_object_order_depends_target_ALL_MATH
+build CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o: CXX_COMPILER__ALL_MATH_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp || cmake_object_order_depends_target_ALL_MATH
   DEP_FILE = CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ALL_MATH.dir
   OBJECT_FILE_DIR = CMakeFiles/ALL_MATH.dir/lib/Math/AllMath
+  TARGET_COMPILE_PDB = CMakeFiles/ALL_MATH.dir/ALL_MATH.pdb
+  TARGET_PDB = libALL_MATH.pdb
 
 
 # =============================================================================
@@ -357,8 +386,9 @@ build libALL_MATH.a: CXX_STATIC_LIBRARY_LINKER__ALL_MATH_Debug CMakeFiles/ALL_MA
   OBJECT_DIR = CMakeFiles/ALL_MATH.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ALL_MATH.dir/ALL_MATH.pdb
   TARGET_FILE = libALL_MATH.a
-  TARGET_PDB = ALL_MATH.a.dbg
+  TARGET_PDB = libALL_MATH.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target RAY
@@ -369,12 +399,14 @@ build libALL_MATH.a: CXX_STATIC_LIBRARY_LINKER__ALL_MATH_Debug CMakeFiles/ALL_MA
 
 build cmake_object_order_depends_target_RAY: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o: CXX_COMPILER__RAY_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Ray/Ray.cpp || cmake_object_order_depends_target_RAY
+build CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o: CXX_COMPILER__RAY_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Ray/Ray.cpp || cmake_object_order_depends_target_RAY
   DEP_FILE = CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/RAY.dir
   OBJECT_FILE_DIR = CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray
+  TARGET_COMPILE_PDB = CMakeFiles/RAY.dir/RAY.pdb
+  TARGET_PDB = libRAY.pdb
 
 
 # =============================================================================
@@ -389,8 +421,9 @@ build libRAY.a: CXX_STATIC_LIBRARY_LINKER__RAY_Debug CMakeFiles/RAY.dir/lib/Engi
   OBJECT_DIR = CMakeFiles/RAY.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/RAY.dir/RAY.pdb
   TARGET_FILE = libRAY.a
-  TARGET_PDB = RAY.a.dbg
+  TARGET_PDB = libRAY.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target IDENTIFIER
@@ -401,12 +434,14 @@ build libRAY.a: CXX_STATIC_LIBRARY_LINKER__RAY_Debug CMakeFiles/RAY.dir/lib/Engi
 
 build cmake_object_order_depends_target_IDENTIFIER: phony || CMakeFiles/IDENTIFIER.dir
 
-build CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o: CXX_COMPILER__IDENTIFIER_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp || cmake_object_order_depends_target_IDENTIFIER
+build CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o: CXX_COMPILER__IDENTIFIER_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp || cmake_object_order_depends_target_IDENTIFIER
   DEP_FILE = CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/IDENTIFIER.dir
   OBJECT_FILE_DIR = CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier
+  TARGET_COMPILE_PDB = CMakeFiles/IDENTIFIER.dir/IDENTIFIER.pdb
+  TARGET_PDB = libIDENTIFIER.pdb
 
 
 # =============================================================================
@@ -421,8 +456,9 @@ build libIDENTIFIER.a: CXX_STATIC_LIBRARY_LINKER__IDENTIFIER_Debug CMakeFiles/ID
   OBJECT_DIR = CMakeFiles/IDENTIFIER.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/IDENTIFIER.dir/IDENTIFIER.pdb
   TARGET_FILE = libIDENTIFIER.a
-  TARGET_PDB = IDENTIFIER.a.dbg
+  TARGET_PDB = libIDENTIFIER.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ENTITY
@@ -433,12 +469,14 @@ build libIDENTIFIER.a: CXX_STATIC_LIBRARY_LINKER__IDENTIFIER_Debug CMakeFiles/ID
 
 build cmake_object_order_depends_target_ENTITY: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o: CXX_COMPILER__ENTITY_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Entity/Entity.cpp || cmake_object_order_depends_target_ENTITY
+build CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o: CXX_COMPILER__ENTITY_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Entity/Entity.cpp || cmake_object_order_depends_target_ENTITY
   DEP_FILE = CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ENTITY.dir
   OBJECT_FILE_DIR = CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity
+  TARGET_COMPILE_PDB = CMakeFiles/ENTITY.dir/ENTITY.pdb
+  TARGET_PDB = libENTITY.pdb
 
 
 # =============================================================================
@@ -453,8 +491,9 @@ build libENTITY.a: CXX_STATIC_LIBRARY_LINKER__ENTITY_Debug CMakeFiles/ENTITY.dir
   OBJECT_DIR = CMakeFiles/ENTITY.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ENTITY.dir/ENTITY.pdb
   TARGET_FILE = libENTITY.a
-  TARGET_PDB = ENTITY.a.dbg
+  TARGET_PDB = libENTITY.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ENTITIES_LIST
@@ -465,12 +504,14 @@ build libENTITY.a: CXX_STATIC_LIBRARY_LINKER__ENTITY_Debug CMakeFiles/ENTITY.dir
 
 build cmake_object_order_depends_target_ENTITIES_LIST: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o: CXX_COMPILER__ENTITIES_LIST_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp || cmake_object_order_depends_target_ENTITIES_LIST
+build CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o: CXX_COMPILER__ENTITIES_LIST_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp || cmake_object_order_depends_target_ENTITIES_LIST
   DEP_FILE = CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ENTITIES_LIST.dir
   OBJECT_FILE_DIR = CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList
+  TARGET_COMPILE_PDB = CMakeFiles/ENTITIES_LIST.dir/ENTITIES_LIST.pdb
+  TARGET_PDB = libENTITIES_LIST.pdb
 
 
 # =============================================================================
@@ -485,8 +526,9 @@ build libENTITIES_LIST.a: CXX_STATIC_LIBRARY_LINKER__ENTITIES_LIST_Debug CMakeFi
   OBJECT_DIR = CMakeFiles/ENTITIES_LIST.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ENTITIES_LIST.dir/ENTITIES_LIST.pdb
   TARGET_FILE = libENTITIES_LIST.a
-  TARGET_PDB = ENTITIES_LIST.a.dbg
+  TARGET_PDB = libENTITIES_LIST.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target GAME
@@ -497,12 +539,14 @@ build libENTITIES_LIST.a: CXX_STATIC_LIBRARY_LINKER__ENTITIES_LIST_Debug CMakeFi
 
 build cmake_object_order_depends_target_GAME: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: CXX_COMPILER__GAME_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp || cmake_object_order_depends_target_GAME
+build CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: CXX_COMPILER__GAME_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp || cmake_object_order_depends_target_GAME
   DEP_FILE = CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GAME.dir
   OBJECT_FILE_DIR = CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game
+  TARGET_COMPILE_PDB = CMakeFiles/GAME.dir/GAME.pdb
+  TARGET_PDB = libGAME.pdb
 
 
 # =============================================================================
@@ -517,8 +561,9 @@ build libGAME.a: CXX_STATIC_LIBRARY_LINKER__GAME_Debug CMakeFiles/GAME.dir/lib/E
   OBJECT_DIR = CMakeFiles/GAME.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GAME.dir/GAME.pdb
   TARGET_FILE = libGAME.a
-  TARGET_PDB = GAME.a.dbg
+  TARGET_PDB = libGAME.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target GAME_ENTITY
@@ -529,12 +574,14 @@ build libGAME.a: CXX_STATIC_LIBRARY_LINKER__GAME_Debug CMakeFiles/GAME.dir/lib/E
 
 build cmake_object_order_depends_target_GAME_ENTITY: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o: CXX_COMPILER__GAME_ENTITY_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp || cmake_object_order_depends_target_GAME_ENTITY
+build CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o: CXX_COMPILER__GAME_ENTITY_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp || cmake_object_order_depends_target_GAME_ENTITY
   DEP_FILE = CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GAME_ENTITY.dir
   OBJECT_FILE_DIR = CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_ENTITY.dir/GAME_ENTITY.pdb
+  TARGET_PDB = libGAME_ENTITY.pdb
 
 
 # =============================================================================
@@ -549,8 +596,9 @@ build libGAME_ENTITY.a: CXX_STATIC_LIBRARY_LINKER__GAME_ENTITY_Debug CMakeFiles/
   OBJECT_DIR = CMakeFiles/GAME_ENTITY.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_ENTITY.dir/GAME_ENTITY.pdb
   TARGET_FILE = libGAME_ENTITY.a
-  TARGET_PDB = GAME_ENTITY.a.dbg
+  TARGET_PDB = libGAME_ENTITY.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target GAME_OBJECT
@@ -561,12 +609,14 @@ build libGAME_ENTITY.a: CXX_STATIC_LIBRARY_LINKER__GAME_ENTITY_Debug CMakeFiles/
 
 build cmake_object_order_depends_target_GAME_OBJECT: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o: CXX_COMPILER__GAME_OBJECT_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp || cmake_object_order_depends_target_GAME_OBJECT
+build CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o: CXX_COMPILER__GAME_OBJECT_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp || cmake_object_order_depends_target_GAME_OBJECT
   DEP_FILE = CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GAME_OBJECT.dir
   OBJECT_FILE_DIR = CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_OBJECT.dir/GAME_OBJECT.pdb
+  TARGET_PDB = libGAME_OBJECT.pdb
 
 
 # =============================================================================
@@ -581,8 +631,9 @@ build libGAME_OBJECT.a: CXX_STATIC_LIBRARY_LINKER__GAME_OBJECT_Debug CMakeFiles/
   OBJECT_DIR = CMakeFiles/GAME_OBJECT.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_OBJECT.dir/GAME_OBJECT.pdb
   TARGET_FILE = libGAME_OBJECT.a
-  TARGET_PDB = GAME_OBJECT.a.dbg
+  TARGET_PDB = libGAME_OBJECT.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target GAME_CAMERA
@@ -593,12 +644,14 @@ build libGAME_OBJECT.a: CXX_STATIC_LIBRARY_LINKER__GAME_OBJECT_Debug CMakeFiles/
 
 build cmake_object_order_depends_target_GAME_CAMERA: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_GAME_OBJECT cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: CXX_COMPILER__GAME_CAMERA_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Camera/Camera.cpp || cmake_object_order_depends_target_GAME_CAMERA
+build CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: CXX_COMPILER__GAME_CAMERA_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Camera/Camera.cpp || cmake_object_order_depends_target_GAME_CAMERA
   DEP_FILE = CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GAME_CAMERA.dir
   OBJECT_FILE_DIR = CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_CAMERA.dir/GAME_CAMERA.pdb
+  TARGET_PDB = libGAME_CAMERA.pdb
 
 
 # =============================================================================
@@ -613,8 +666,9 @@ build libGAME_CAMERA.a: CXX_STATIC_LIBRARY_LINKER__GAME_CAMERA_Debug CMakeFiles/
   OBJECT_DIR = CMakeFiles/GAME_CAMERA.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GAME_CAMERA.dir/GAME_CAMERA.pdb
   TARGET_FILE = libGAME_CAMERA.a
-  TARGET_PDB = GAME_CAMERA.a.dbg
+  TARGET_PDB = libGAME_CAMERA.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target CANVAS
@@ -625,12 +679,14 @@ build libGAME_CAMERA.a: CXX_STATIC_LIBRARY_LINKER__GAME_CAMERA_Debug CMakeFiles/
 
 build cmake_object_order_depends_target_CANVAS: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o: CXX_COMPILER__CANVAS_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp || cmake_object_order_depends_target_CANVAS
+build CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o: CXX_COMPILER__CANVAS_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp || cmake_object_order_depends_target_CANVAS
   DEP_FILE = CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/CANVAS.dir
   OBJECT_FILE_DIR = CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas
+  TARGET_COMPILE_PDB = CMakeFiles/CANVAS.dir/CANVAS.pdb
+  TARGET_PDB = libCANVAS.pdb
 
 
 # =============================================================================
@@ -645,8 +701,9 @@ build libCANVAS.a: CXX_STATIC_LIBRARY_LINKER__CANVAS_Debug CMakeFiles/CANVAS.dir
   OBJECT_DIR = CMakeFiles/CANVAS.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/CANVAS.dir/CANVAS.pdb
   TARGET_FILE = libCANVAS.a
-  TARGET_PDB = CANVAS.a.dbg
+  TARGET_PDB = libCANVAS.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target HYPER_PLANE
@@ -657,12 +714,14 @@ build libCANVAS.a: CXX_STATIC_LIBRARY_LINKER__CANVAS_Debug CMakeFiles/CANVAS.dir
 
 build cmake_object_order_depends_target_HYPER_PLANE: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o: CXX_COMPILER__HYPER_PLANE_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp || cmake_object_order_depends_target_HYPER_PLANE
+build CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o: CXX_COMPILER__HYPER_PLANE_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp || cmake_object_order_depends_target_HYPER_PLANE
   DEP_FILE = CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/HYPER_PLANE.dir
   OBJECT_FILE_DIR = CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane
+  TARGET_COMPILE_PDB = CMakeFiles/HYPER_PLANE.dir/HYPER_PLANE.pdb
+  TARGET_PDB = libHYPER_PLANE.pdb
 
 
 # =============================================================================
@@ -677,8 +736,9 @@ build libHYPER_PLANE.a: CXX_STATIC_LIBRARY_LINKER__HYPER_PLANE_Debug CMakeFiles/
   OBJECT_DIR = CMakeFiles/HYPER_PLANE.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/HYPER_PLANE.dir/HYPER_PLANE.pdb
   TARGET_FILE = libHYPER_PLANE.a
-  TARGET_PDB = HYPER_PLANE.a.dbg
+  TARGET_PDB = libHYPER_PLANE.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target HYPER_ELLIPSOID
@@ -689,12 +749,14 @@ build libHYPER_PLANE.a: CXX_STATIC_LIBRARY_LINKER__HYPER_PLANE_Debug CMakeFiles/
 
 build cmake_object_order_depends_target_HYPER_ELLIPSOID: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o: CXX_COMPILER__HYPER_ELLIPSOID_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp || cmake_object_order_depends_target_HYPER_ELLIPSOID
+build CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o: CXX_COMPILER__HYPER_ELLIPSOID_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp || cmake_object_order_depends_target_HYPER_ELLIPSOID
   DEP_FILE = CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/HYPER_ELLIPSOID.dir
   OBJECT_FILE_DIR = CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid
+  TARGET_COMPILE_PDB = CMakeFiles/HYPER_ELLIPSOID.dir/HYPER_ELLIPSOID.pdb
+  TARGET_PDB = libHYPER_ELLIPSOID.pdb
 
 
 # =============================================================================
@@ -709,8 +771,9 @@ build libHYPER_ELLIPSOID.a: CXX_STATIC_LIBRARY_LINKER__HYPER_ELLIPSOID_Debug CMa
   OBJECT_DIR = CMakeFiles/HYPER_ELLIPSOID.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/HYPER_ELLIPSOID.dir/HYPER_ELLIPSOID.pdb
   TARGET_FILE = libHYPER_ELLIPSOID.a
-  TARGET_PDB = HYPER_ELLIPSOID.a.dbg
+  TARGET_PDB = libHYPER_ELLIPSOID.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target ENGINE_BASIC_CLASSES
@@ -721,12 +784,14 @@ build libHYPER_ELLIPSOID.a: CXX_STATIC_LIBRARY_LINKER__HYPER_ELLIPSOID_Debug CMa
 
 build cmake_object_order_depends_target_ENGINE_BASIC_CLASSES: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_CANVAS cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_CAMERA cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_GAME_OBJECT cmake_object_order_depends_target_HYPER_ELLIPSOID cmake_object_order_depends_target_HYPER_PLANE cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o: CXX_COMPILER__ENGINE_BASIC_CLASSES_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp || cmake_object_order_depends_target_ENGINE_BASIC_CLASSES
+build CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o: CXX_COMPILER__ENGINE_BASIC_CLASSES_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp || cmake_object_order_depends_target_ENGINE_BASIC_CLASSES
   DEP_FILE = CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/ENGINE_BASIC_CLASSES.dir
   OBJECT_FILE_DIR = CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses
+  TARGET_COMPILE_PDB = CMakeFiles/ENGINE_BASIC_CLASSES.dir/ENGINE_BASIC_CLASSES.pdb
+  TARGET_PDB = libENGINE_BASIC_CLASSES.pdb
 
 
 # =============================================================================
@@ -741,8 +806,9 @@ build libENGINE_BASIC_CLASSES.a: CXX_STATIC_LIBRARY_LINKER__ENGINE_BASIC_CLASSES
   OBJECT_DIR = CMakeFiles/ENGINE_BASIC_CLASSES.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ENGINE_BASIC_CLASSES.dir/ENGINE_BASIC_CLASSES.pdb
   TARGET_FILE = libENGINE_BASIC_CLASSES.a
-  TARGET_PDB = ENGINE_BASIC_CLASSES.a.dbg
+  TARGET_PDB = libENGINE_BASIC_CLASSES.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target MathTests
@@ -753,12 +819,14 @@ build libENGINE_BASIC_CLASSES.a: CXX_STATIC_LIBRARY_LINKER__ENGINE_BASIC_CLASSES
 
 build cmake_object_order_depends_target_MathTests: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_ALL_MATH cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o: CXX_COMPILER__MathTests_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/MathTests.cpp || cmake_object_order_depends_target_MathTests
+build CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o: CXX_COMPILER__MathTests_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/MathTests.cpp || cmake_object_order_depends_target_MathTests
   DEP_FILE = CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/MathTests.dir
   OBJECT_FILE_DIR = CMakeFiles/MathTests.dir/tests/UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles/MathTests.dir/
+  TARGET_PDB = MathTests.pdb
 
 
 # =============================================================================
@@ -770,13 +838,14 @@ build CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o: CXX_COMPILER__Ma
 
 build MathTests: CXX_EXECUTABLE_LINKER__MathTests_Debug CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o | libALL_MATH.a libCOORDINATE_SYSTEM.a libVECTOR_SPACE.a libPOINT.a libFUNCTIONS.a libVECTOR.a libMATRIX.a libACCURACY.a libMATH_EXCEPTION.a || libACCURACY.a libALL_MATH.a libCOORDINATE_SYSTEM.a libFUNCTIONS.a libMATH_EXCEPTION.a libMATRIX.a libPOINT.a libVECTOR.a libVECTOR_SPACE.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libALL_MATH.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libMATH_EXCEPTION.a
-  LINK_PATH = -L/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib
+  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libALL_MATH.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libMATH_EXCEPTION.a
+  LINK_PATH = -L/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib
   OBJECT_DIR = CMakeFiles/MathTests.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/MathTests.dir/
   TARGET_FILE = MathTests
-  TARGET_PDB = MathTests.dbg
+  TARGET_PDB = MathTests.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target EngineTests
@@ -787,12 +856,14 @@ build MathTests: CXX_EXECUTABLE_LINKER__MathTests_Debug CMakeFiles/MathTests.dir
 
 build cmake_object_order_depends_target_EngineTests: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_CANVAS cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_BASIC_CLASSES cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_CAMERA cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_GAME_OBJECT cmake_object_order_depends_target_HYPER_ELLIPSOID cmake_object_order_depends_target_HYPER_PLANE cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: CXX_COMPILER__EngineTests_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp || cmake_object_order_depends_target_EngineTests
+build CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: CXX_COMPILER__EngineTests_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp || cmake_object_order_depends_target_EngineTests
   DEP_FILE = CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/EngineTests.dir
   OBJECT_FILE_DIR = CMakeFiles/EngineTests.dir/tests/UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles/EngineTests.dir/
+  TARGET_PDB = EngineTests.pdb
 
 
 # =============================================================================
@@ -804,13 +875,14 @@ build CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: CXX_COMPILER
 
 build EngineTests: CXX_EXECUTABLE_LINKER__EngineTests_Debug CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o | libENGINE_BASIC_CLASSES.a libGAME_CAMERA.a libGAME_OBJECT.a libGAME_ENTITY.a libCANVAS.a libHYPER_PLANE.a libHYPER_ELLIPSOID.a libGAME.a libENTITIES_LIST.a libENTITY.a libRAY.a libCOORDINATE_SYSTEM.a libVECTOR_SPACE.a libPOINT.a libFUNCTIONS.a libVECTOR.a libMATRIX.a libACCURACY.a libIDENTIFIER.a libENGINE_EXCEPTION.a libMATH_EXCEPTION.a || libACCURACY.a libCANVAS.a libCOORDINATE_SYSTEM.a libENGINE_BASIC_CLASSES.a libENGINE_EXCEPTION.a libENTITIES_LIST.a libENTITY.a libFUNCTIONS.a libGAME.a libGAME_CAMERA.a libGAME_ENTITY.a libGAME_OBJECT.a libHYPER_ELLIPSOID.a libHYPER_PLANE.a libIDENTIFIER.a libMATH_EXCEPTION.a libMATRIX.a libPOINT.a libRAY.a libVECTOR.a libVECTOR_SPACE.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a  libMATH_EXCEPTION.a
-  LINK_PATH = -L/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib
+  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a  libMATH_EXCEPTION.a
+  LINK_PATH = -L/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib
   OBJECT_DIR = CMakeFiles/EngineTests.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/EngineTests.dir/
   TARGET_FILE = EngineTests
-  TARGET_PDB = EngineTests.dbg
+  TARGET_PDB = EngineTests.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target GameTests
@@ -821,12 +893,14 @@ build EngineTests: CXX_EXECUTABLE_LINKER__EngineTests_Debug CMakeFiles/EngineTes
 
 build cmake_object_order_depends_target_GameTests: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_CANVAS cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_BASIC_CLASSES cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_CAMERA cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_GAME_OBJECT cmake_object_order_depends_target_HYPER_ELLIPSOID cmake_object_order_depends_target_HYPER_PLANE cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o: CXX_COMPILER__GameTests_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp || cmake_object_order_depends_target_GameTests
+build CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o: CXX_COMPILER__GameTests_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp || cmake_object_order_depends_target_GameTests
   DEP_FILE = CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GameTests.dir
   OBJECT_FILE_DIR = CMakeFiles/GameTests.dir/tests/UnitTests
+  TARGET_COMPILE_PDB = CMakeFiles/GameTests.dir/
+  TARGET_PDB = GameTests.pdb
 
 
 # =============================================================================
@@ -838,13 +912,14 @@ build CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o: CXX_COMPILER__Ga
 
 build GameTests: CXX_EXECUTABLE_LINKER__GameTests_Debug CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o | libENGINE_BASIC_CLASSES.a libGAME_CAMERA.a libGAME_OBJECT.a libGAME_ENTITY.a libCANVAS.a libHYPER_PLANE.a libHYPER_ELLIPSOID.a libGAME.a libENTITIES_LIST.a libENTITY.a libRAY.a libCOORDINATE_SYSTEM.a libVECTOR_SPACE.a libPOINT.a libFUNCTIONS.a libVECTOR.a libMATRIX.a libACCURACY.a libIDENTIFIER.a libENGINE_EXCEPTION.a libMATH_EXCEPTION.a || libACCURACY.a libCANVAS.a libCOORDINATE_SYSTEM.a libENGINE_BASIC_CLASSES.a libENGINE_EXCEPTION.a libENTITIES_LIST.a libENTITY.a libFUNCTIONS.a libGAME.a libGAME_CAMERA.a libGAME_ENTITY.a libGAME_OBJECT.a libHYPER_ELLIPSOID.a libHYPER_PLANE.a libIDENTIFIER.a libMATH_EXCEPTION.a libMATRIX.a libPOINT.a libRAY.a libVECTOR.a libVECTOR_SPACE.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a  libMATH_EXCEPTION.a
-  LINK_PATH = -L/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib
+  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib  -lgtest  -lgtest_main  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a  libMATH_EXCEPTION.a
+  LINK_PATH = -L/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib
   OBJECT_DIR = CMakeFiles/GameTests.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GameTests.dir/
   TARGET_FILE = GameTests
-  TARGET_PDB = GameTests.dbg
+  TARGET_PDB = GameTests.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target GraphicsEngine
@@ -855,12 +930,14 @@ build GameTests: CXX_EXECUTABLE_LINKER__GameTests_Debug CMakeFiles/GameTests.dir
 
 build cmake_object_order_depends_target_GraphicsEngine: phony || cmake_object_order_depends_target_ACCURACY cmake_object_order_depends_target_ALL_MATH cmake_object_order_depends_target_CANVAS cmake_object_order_depends_target_COORDINATE_SYSTEM cmake_object_order_depends_target_ENGINE_BASIC_CLASSES cmake_object_order_depends_target_ENGINE_EXCEPTION cmake_object_order_depends_target_ENTITIES_LIST cmake_object_order_depends_target_ENTITY cmake_object_order_depends_target_FUNCTIONS cmake_object_order_depends_target_GAME cmake_object_order_depends_target_GAME_CAMERA cmake_object_order_depends_target_GAME_ENTITY cmake_object_order_depends_target_GAME_OBJECT cmake_object_order_depends_target_HYPER_ELLIPSOID cmake_object_order_depends_target_HYPER_PLANE cmake_object_order_depends_target_IDENTIFIER cmake_object_order_depends_target_MATH_EXCEPTION cmake_object_order_depends_target_MATRIX cmake_object_order_depends_target_POINT cmake_object_order_depends_target_RAY cmake_object_order_depends_target_VECTOR cmake_object_order_depends_target_VECTOR_SPACE
 
-build CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: CXX_COMPILER__GraphicsEngine_unscanned_Debug /home/v_s2/Desktop/ComputerGraphicsProject/src/Main.cpp || cmake_object_order_depends_target_GraphicsEngine
+build CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: CXX_COMPILER__GraphicsEngine_unscanned_Debug /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/src/Main.cpp || cmake_object_order_depends_target_GraphicsEngine
   DEP_FILE = CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include
+  INCLUDES = -I/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/googletest/include
   OBJECT_DIR = CMakeFiles/GraphicsEngine.dir
   OBJECT_FILE_DIR = CMakeFiles/GraphicsEngine.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/GraphicsEngine.dir/
+  TARGET_PDB = GraphicsEngine.pdb
 
 
 # =============================================================================
@@ -872,20 +949,21 @@ build CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: CXX_COMPILER__GraphicsEngine
 
 build GraphicsEngine: CXX_EXECUTABLE_LINKER__GraphicsEngine_Debug CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o | libALL_MATH.a libENGINE_BASIC_CLASSES.a libGAME_CAMERA.a libGAME_OBJECT.a libGAME_ENTITY.a libCANVAS.a libHYPER_PLANE.a libHYPER_ELLIPSOID.a libGAME.a libENTITIES_LIST.a libENTITY.a libRAY.a libCOORDINATE_SYSTEM.a libVECTOR_SPACE.a libPOINT.a libFUNCTIONS.a libVECTOR.a libMATRIX.a libACCURACY.a libMATH_EXCEPTION.a libIDENTIFIER.a libENGINE_EXCEPTION.a || libACCURACY.a libALL_MATH.a libCANVAS.a libCOORDINATE_SYSTEM.a libENGINE_BASIC_CLASSES.a libENGINE_EXCEPTION.a libENTITIES_LIST.a libENTITY.a libFUNCTIONS.a libGAME.a libGAME_CAMERA.a libGAME_ENTITY.a libGAME_OBJECT.a libHYPER_ELLIPSOID.a libHYPER_PLANE.a libIDENTIFIER.a libMATH_EXCEPTION.a libMATRIX.a libPOINT.a libRAY.a libVECTOR.a libVECTOR_SPACE.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib  libALL_MATH.a  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libMATH_EXCEPTION.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a
-  LINK_PATH = -L/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/lib
+  LINK_LIBRARIES = -Wl,-rpath,/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib  libALL_MATH.a  libENGINE_BASIC_CLASSES.a  libGAME_CAMERA.a  libGAME_OBJECT.a  libGAME_ENTITY.a  libCANVAS.a  libHYPER_PLANE.a  libHYPER_ELLIPSOID.a  libGAME.a  libENTITIES_LIST.a  libENTITY.a  libRAY.a  libCOORDINATE_SYSTEM.a  libVECTOR_SPACE.a  libPOINT.a  libFUNCTIONS.a  libVECTOR.a  libMATRIX.a  libACCURACY.a  libMATH_EXCEPTION.a  libIDENTIFIER.a  libENGINE_EXCEPTION.a
+  LINK_PATH = -L/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/./googletest/lib
   OBJECT_DIR = CMakeFiles/GraphicsEngine.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/GraphicsEngine.dir/
   TARGET_FILE = GraphicsEngine
-  TARGET_PDB = GraphicsEngine.dbg
+  TARGET_PDB = GraphicsEngine.pdb
 
 
 #############################################
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/v_s2/Desktop/ComputerGraphicsProject/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -897,7 +975,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/v_s2/Desktop/ComputerGraphicsProject/build && /usr/bin/ccmake -S/home/v_s2/Desktop/ComputerGraphicsProject -B/home/v_s2/Desktop/ComputerGraphicsProject/build
+  COMMAND = cd /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build && /usr/bin/ccmake -S/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject -B/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -909,7 +987,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/v_s2/Desktop/ComputerGraphicsProject/build && /usr/bin/cmake --regenerate-during-build -S/home/v_s2/Desktop/ComputerGraphicsProject -B/home/v_s2/Desktop/ComputerGraphicsProject/build
+  COMMAND = cd /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build && /usr/bin/cmake --regenerate-during-build -S/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject -B/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -969,7 +1047,7 @@ build VECTOR_SPACE: phony libVECTOR_SPACE.a
 # =============================================================================
 
 #############################################
-# Folder: /home/v_s2/Desktop/ComputerGraphicsProject/build
+# Folder: /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
 
 build all: phony libMATH_EXCEPTION.a libENGINE_EXCEPTION.a libACCURACY.a libMATRIX.a libVECTOR.a libPOINT.a libFUNCTIONS.a libVECTOR_SPACE.a libCOORDINATE_SYSTEM.a libALL_MATH.a libRAY.a libIDENTIFIER.a libENTITY.a libENTITIES_LIST.a libGAME.a libGAME_ENTITY.a libGAME_OBJECT.a libGAME_CAMERA.a libCANVAS.a libHYPER_PLANE.a libHYPER_ELLIPSOID.a libENGINE_BASIC_CLASSES.a MathTests EngineTests GameTests GraphicsEngine
 
@@ -980,14 +1058,14 @@ build all: phony libMATH_EXCEPTION.a libENGINE_EXCEPTION.a libACCURACY.a libMATR
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/v_s2/Desktop/ComputerGraphicsProject/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.3/CMakeCCompiler.cmake CMakeFiles/3.26.3/CMakeCXXCompiler.cmake CMakeFiles/3.26.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.26/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.26/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.3/CMakeCCompiler.cmake CMakeFiles/3.26.3/CMakeCXXCompiler.cmake CMakeFiles/3.26.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/v_s2/Desktop/ComputerGraphicsProject/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.3/CMakeCCompiler.cmake CMakeFiles/3.26.3/CMakeCXXCompiler.cmake CMakeFiles/3.26.3/CMakeSystem.cmake: phony
+build /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.26/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.26/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.3/CMakeCCompiler.cmake CMakeFiles/3.26.3/CMakeCXXCompiler.cmake CMakeFiles/3.26.3/CMakeSystem.cmake: phony
 
 
 #############################################
