@@ -15,6 +15,13 @@ namespace Engine
         direction = direction.Normalize();
 
         this->properties["direction"] = direction;
+
+        this->properties["type"] = "HyperPlane";
+    }
+
+    HyperPlane::HyperPlane(Entity entity)
+    {
+        *this = entity;
     }
 
     void HyperPlane::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
@@ -63,5 +70,21 @@ namespace Engine
             else
                 return (rayDir * tmp).Length();
         }
+    }
+
+    void HyperPlane::operator = (Entity entity)
+    {
+        if (entity.HasProperty("type"))
+        {
+            if (std::get<std::string>(entity["type"]) == "HyperPlane")
+            {
+                this->cs = entity.cs;
+                this->properties = entity.properties;
+
+                return;
+            }
+        }
+
+        // exception: entity is not a HyperPlane
     }
 }
