@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp" "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj" "gcc" "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj.d"
+  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp" "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o" "gcc" "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

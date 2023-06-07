@@ -16,7 +16,9 @@ namespace Engine
 
 	const PropertyType& Entity::GetProperty(const std::string& key)
 	{
-		if (properties.find(key) != properties.end())
+		Engine::Entity& self = *this;
+
+		if (self.HasProperty(key))
 			return properties.find(key)->second;
 			
 		throw EntityException::IncorrectPropertyKey(key);
@@ -27,9 +29,21 @@ namespace Engine
 		properties.erase(key);
 	}
 
+	bool Entity::HasProperty(const std::string& key)
+	{
+		return (properties.find(key) != properties.end());
+	}
+
+	float Entity::IntersectionDistance(Ray ray)
+	{
+		return -100.0f;
+	}
+
 	PropertyType& Entity::operator [] (const std::string& key)
 	{
-		if (properties.find(key) == properties.end())
+		Engine::Entity& self = *this;
+
+		if (!self.HasProperty(key))
 			properties[key] = "";
 
 		return properties.find(key)->second;

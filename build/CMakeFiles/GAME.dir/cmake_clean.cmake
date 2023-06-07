@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.obj"
-  "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.obj.d"
+  "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o"
+  "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o.d"
   "libGAME.a"
   "libGAME.pdb"
 )

@@ -10,6 +10,8 @@ public:
 	Point(Vector vec);
 	Point(std::initializer_list<float>);
 
+	Vector GetDirectionToPoint(Point lookAt);
+
 	int Dim();
 	void operator = (Point p);
 	Point operator + (Vector vec);

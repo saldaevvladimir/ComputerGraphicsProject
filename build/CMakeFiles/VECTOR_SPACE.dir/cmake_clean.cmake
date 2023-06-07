@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.obj"
-  "CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.obj.d"
+  "CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o"
+  "CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o.d"
   "libVECTOR_SPACE.a"
   "libVECTOR_SPACE.pdb"
 )

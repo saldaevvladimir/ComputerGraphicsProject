@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp" "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj" "gcc" "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj.d"
+  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp" "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o" "gcc" "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

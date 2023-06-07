@@ -19,8 +19,11 @@ public:
 	static bool SameDim(Vector vec1, Vector vec2);
 
 	Vector Transpose();
+
 	Vector Rotate(int axisIndex1, int axisIndex2, float angle);
 	Vector Rotate3D(float angle1, float angle2, float angle3);
+	Vector Rotate(Matrix rotationMatrix);
+
 	static float ScalarProduct(Vector vec1, Vector vec2);
 	static Vector VectorProduct(Vector vec1, Vector vec2);
 	float Length();

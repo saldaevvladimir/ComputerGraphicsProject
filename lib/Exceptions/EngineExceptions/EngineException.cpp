@@ -30,3 +30,19 @@ EngineException EntitiesListException::IdentifierDoesNotExist(const std::string&
 {
 	return EngineException("identifier does not exist (identifier: " + identifier + ")");
 }
+
+
+// GameObjectException
+
+EngineException GameObjectException::DoesNotHaveProperty(const std::string& propertyKey)
+{
+	return EngineException("object has no property with the following key: " + propertyKey);
+}
+
+// CanvasException
+
+EngineException CanvasException::IncorrectSizes(int height, int width)
+{
+	return EngineException("incorrect canvas sizes (height: " + 
+		std::to_string(height) + " width: " + std::to_string(width) + ")");
+}

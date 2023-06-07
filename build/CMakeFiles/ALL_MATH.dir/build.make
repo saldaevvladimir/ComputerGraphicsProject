@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ALL_MATH.dir/depend.make
@@ -69,32 +69,31 @@ include CMakeFiles/ALL_MATH.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ALL_MATH.dir/flags.make
 
-CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj: CMakeFiles/ALL_MATH.dir/flags.make
-CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj: CMakeFiles/ALL_MATH.dir/includes_CXX.rsp
-CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp
-CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj: CMakeFiles/ALL_MATH.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj -MF CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj.d -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp
+CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o: CMakeFiles/ALL_MATH.dir/flags.make
+CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp
+CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o: CMakeFiles/ALL_MATH.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o -MF CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o.d -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp
 
 CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp > CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp > CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.i
 
 CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp -o CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.s
 
 # Object files for target ALL_MATH
 ALL_MATH_OBJECTS = \
-"CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj"
+"CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o"
 
 # External object files for target ALL_MATH
 ALL_MATH_EXTERNAL_OBJECTS =
 
-libALL_MATH.a: CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj
+libALL_MATH.a: CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o
 libALL_MATH.a: CMakeFiles/ALL_MATH.dir/build.make
 libALL_MATH.a: CMakeFiles/ALL_MATH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libALL_MATH.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libALL_MATH.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ALL_MATH.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ALL_MATH.dir/link.txt --verbose=$(VERBOSE)
 
@@ -107,6 +106,6 @@ CMakeFiles/ALL_MATH.dir/clean:
 .PHONY : CMakeFiles/ALL_MATH.dir/clean
 
 CMakeFiles/ALL_MATH.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/ALL_MATH.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/ALL_MATH.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ALL_MATH.dir/depend
 

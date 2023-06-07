@@ -5,3 +5,6 @@
 #include "../Entity/Entity.h"
 #include "../EntitiesList/EntitiesList.h"
 #include "../Game/Game.h"
+#include "../Canvas/Canvas.h"
+#include "../Game/HyperPlane/HyperPlane.h"
+#include "../Game/HyperEllipsoid/HyperEllipsoid.h"

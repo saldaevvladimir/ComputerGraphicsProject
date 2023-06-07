@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj"
-  "CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj.d"
+  "CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o"
+  "CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o.d"
   "libCOORDINATE_SYSTEM.a"
   "libCOORDINATE_SYSTEM.pdb"
 )

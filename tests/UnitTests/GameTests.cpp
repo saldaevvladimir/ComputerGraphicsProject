@@ -2,7 +2,7 @@
 //#include <gtest/gtest.h>
 
 
-TEST(GameTests, SomeTest1)
+TEST(GameTests, Test1)
 {
     ASSERT_TRUE(true);
 }

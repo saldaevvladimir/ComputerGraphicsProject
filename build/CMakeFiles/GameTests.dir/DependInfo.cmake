@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Vs2/Desktop/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp" "CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.obj" "gcc" "CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.obj.d"
+  "/home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/GameTests.cpp" "CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o" "gcc" "CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

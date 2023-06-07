@@ -109,6 +109,24 @@
 },
 {
   "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp",
+  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.cpp",
+  "output": "CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o"
+},
+{
+  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp",
+  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp",
+  "output": "CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o"
+},
+{
+  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+  "command": "/usr/bin/g++ -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp",
+  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp",
+  "output": "CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o"
+},
+{
+  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
   "command": "/usr/bin/g++ -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
   "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
   "output": "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o"

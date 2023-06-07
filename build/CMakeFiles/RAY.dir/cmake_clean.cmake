@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.obj"
-  "CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.obj.d"
+  "CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o"
+  "CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o.d"
   "libRAY.a"
   "libRAY.pdb"
 )

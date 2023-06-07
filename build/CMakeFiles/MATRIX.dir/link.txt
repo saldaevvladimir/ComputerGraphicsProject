@@ -1,2 +1,2 @@
-C:/MinGW/bin/ar.exe qc libMATRIX.a CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.obj
-C:/MinGW/bin/ranlib.exe libMATRIX.a
+/usr/bin/ar qc libMATRIX.a CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o
+/usr/bin/ranlib libMATRIX.a

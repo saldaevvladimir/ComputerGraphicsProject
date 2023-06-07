@@ -9,7 +9,8 @@ namespace Engine
 		std::list<Entity> entities = {};
 	}
 
-	void EntitiesList::Append(Entity entity)
+	template <typename T>
+	void EntitiesList::Append(T entity)
 	{
 		bool entityFound = false;
 

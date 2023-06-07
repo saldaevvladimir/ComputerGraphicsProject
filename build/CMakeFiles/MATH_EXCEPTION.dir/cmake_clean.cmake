@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj"
-  "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj.d"
+  "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o"
+  "CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o.d"
   "libMATH_EXCEPTION.a"
   "libMATH_EXCEPTION.pdb"
 )

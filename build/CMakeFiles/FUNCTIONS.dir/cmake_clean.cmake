@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.obj"
-  "CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.obj.d"
+  "CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o"
+  "CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o.d"
   "libFUNCTIONS.a"
   "libFUNCTIONS.pdb"
 )

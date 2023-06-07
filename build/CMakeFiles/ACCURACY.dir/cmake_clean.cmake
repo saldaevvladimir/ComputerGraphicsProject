@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj"
-  "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj.d"
+  "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o"
+  "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o.d"
   "libACCURACY.a"
   "libACCURACY.pdb"
 )

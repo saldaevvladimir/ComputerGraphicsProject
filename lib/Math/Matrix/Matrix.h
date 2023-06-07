@@ -1,6 +1,10 @@
 #pragma once
 #define _USE_MATH_DEFINES
 
+#define RxAxis 1,2
+#define RyAxis 0,2
+#define RzAxis 0,1
+
 #include <vector>
 #include <iostream>
 
@@ -32,8 +36,13 @@ public:
 	Matrix Transpose();
 	float Norm();
 	Matrix Inverse();
+
+	static float ConvertToRadian(float angle);
 	static Matrix RotationMatrix(int size, int axisIndex1, int axisIndex2, float angle);
 	static Matrix TaitBryanMatrix(float angle1, float angle2, float angle3);
+	static Matrix RotationYZ(float angle);
+	static Matrix RotationXZ(float angle);
+	static Matrix RotationXY(float angle);
 
 	void Assign(Matrix mat);
 	static Matrix Addition(Matrix mat1, Matrix mat2);

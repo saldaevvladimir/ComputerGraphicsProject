@@ -1,2 +1,2 @@
-C:/MinGW/bin/ar.exe qc libGAME.a CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.obj
-C:/MinGW/bin/ranlib.exe libGAME.a
+/usr/bin/ar qc libGAME.a CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o
+/usr/bin/ranlib libGAME.a

@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GraphicsEngine.dir/src/Main.cpp.obj"
-  "CMakeFiles/GraphicsEngine.dir/src/Main.cpp.obj.d"
-  "GraphicsEngine.exe"
-  "GraphicsEngine.exe.manifest"
+  "CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o"
+  "CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o.d"
+  "GraphicsEngine"
   "GraphicsEngine.pdb"
-  "libGraphicsEngine.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

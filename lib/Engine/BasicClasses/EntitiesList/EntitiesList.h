@@ -14,7 +14,8 @@ namespace Engine
 
 		EntitiesList();
 
-		void Append(Entity entity);
+		template <typename T>
+		void Append(T entity);
 
 		void Remove(Identifier identifier);
 

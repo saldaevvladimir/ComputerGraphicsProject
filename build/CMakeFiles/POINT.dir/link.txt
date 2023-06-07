@@ -1,2 +1,2 @@
-C:/MinGW/bin/ar.exe qc libPOINT.a CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.obj
-C:/MinGW/bin/ranlib.exe libPOINT.a
+/usr/bin/ar qc libPOINT.a CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o
+/usr/bin/ranlib libPOINT.a

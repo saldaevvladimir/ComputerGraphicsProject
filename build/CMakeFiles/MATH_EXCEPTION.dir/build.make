@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MATH_EXCEPTION.dir/depend.make
@@ -69,32 +69,31 @@ include CMakeFiles/MATH_EXCEPTION.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MATH_EXCEPTION.dir/flags.make
 
-CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj: CMakeFiles/MATH_EXCEPTION.dir/flags.make
-CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj: CMakeFiles/MATH_EXCEPTION.dir/includes_CXX.rsp
-CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp
-CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj: CMakeFiles/MATH_EXCEPTION.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj -MF CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj.d -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp
+CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o: CMakeFiles/MATH_EXCEPTION.dir/flags.make
+CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp
+CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o: CMakeFiles/MATH_EXCEPTION.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o -MF CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o.d -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp
 
 CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp > CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp > CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.i
 
 CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.cpp -o CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.s
 
 # Object files for target MATH_EXCEPTION
 MATH_EXCEPTION_OBJECTS = \
-"CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj"
+"CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o"
 
 # External object files for target MATH_EXCEPTION
 MATH_EXCEPTION_EXTERNAL_OBJECTS =
 
-libMATH_EXCEPTION.a: CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj
+libMATH_EXCEPTION.a: CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o
 libMATH_EXCEPTION.a: CMakeFiles/MATH_EXCEPTION.dir/build.make
 libMATH_EXCEPTION.a: CMakeFiles/MATH_EXCEPTION.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMATH_EXCEPTION.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMATH_EXCEPTION.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/MATH_EXCEPTION.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MATH_EXCEPTION.dir/link.txt --verbose=$(VERBOSE)
 
@@ -107,6 +106,6 @@ CMakeFiles/MATH_EXCEPTION.dir/clean:
 .PHONY : CMakeFiles/MATH_EXCEPTION.dir/clean
 
 CMakeFiles/MATH_EXCEPTION.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/MATH_EXCEPTION.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/MATH_EXCEPTION.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MATH_EXCEPTION.dir/depend
 

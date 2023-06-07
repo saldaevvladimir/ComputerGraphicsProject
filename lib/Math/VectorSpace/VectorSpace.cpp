@@ -151,5 +151,9 @@ void VectorSpace::operator = (VectorSpace vs)
 		for (int i = 0; i < self.Dim(); i++)
 			self.basis[i] = vs.basis[i];
 	}
+	else
+	{
+		self.basis = NULL;
+	}
 }
 

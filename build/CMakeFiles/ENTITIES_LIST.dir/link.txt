@@ -1,2 +1,2 @@
-C:/MinGW/bin/ar.exe qc libENTITIES_LIST.a CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj
-C:/MinGW/bin/ranlib.exe libENTITIES_LIST.a
+/usr/bin/ar qc libENTITIES_LIST.a CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
+/usr/bin/ranlib libENTITIES_LIST.a

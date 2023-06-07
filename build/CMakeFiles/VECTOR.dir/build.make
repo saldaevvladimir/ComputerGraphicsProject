@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VECTOR.dir/depend.make
@@ -69,32 +69,31 @@ include CMakeFiles/VECTOR.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/VECTOR.dir/flags.make
 
-CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj: CMakeFiles/VECTOR.dir/flags.make
-CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj: CMakeFiles/VECTOR.dir/includes_CXX.rsp
-CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
-CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj: CMakeFiles/VECTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj -MF CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj.d -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
+CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CMakeFiles/VECTOR.dir/flags.make
+CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
+CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CMakeFiles/VECTOR.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -MF CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o.d -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
 
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp > CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp > CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i
 
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s
 
 # Object files for target VECTOR
 VECTOR_OBJECTS = \
-"CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj"
+"CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o"
 
 # External object files for target VECTOR
 VECTOR_EXTERNAL_OBJECTS =
 
-libVECTOR.a: CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj
+libVECTOR.a: CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o
 libVECTOR.a: CMakeFiles/VECTOR.dir/build.make
 libVECTOR.a: CMakeFiles/VECTOR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libVECTOR.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libVECTOR.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/VECTOR.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VECTOR.dir/link.txt --verbose=$(VERBOSE)
 
@@ -107,6 +106,6 @@ CMakeFiles/VECTOR.dir/clean:
 .PHONY : CMakeFiles/VECTOR.dir/clean
 
 CMakeFiles/VECTOR.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/VECTOR.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/VECTOR.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VECTOR.dir/depend
 

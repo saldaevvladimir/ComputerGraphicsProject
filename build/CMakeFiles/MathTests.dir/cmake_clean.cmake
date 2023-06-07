@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.obj"
-  "CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.obj.d"
-  "MathTests.exe"
-  "MathTests.exe.manifest"
+  "CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o"
+  "CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o.d"
+  "MathTests"
   "MathTests.pdb"
-  "libMathTests.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

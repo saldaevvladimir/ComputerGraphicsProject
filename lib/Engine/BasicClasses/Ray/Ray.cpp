@@ -4,6 +4,11 @@
 
 namespace Engine
 {
+	Ray::Ray()
+	{
+		
+	}
+
 	Ray::Ray(CoordinateSystem cs)
 	{
 		if (!cs.IsInitialized())
@@ -27,5 +32,12 @@ namespace Engine
 	void Ray::Normalize()
 	{
 		this->direction = this->direction.Normalize();
+	}
+
+	void Ray::operator = (Ray ray)
+	{
+		this->cs = ray.cs;
+		this->initialPoint = ray.initialPoint;
+		this->direction = ray.direction;
 	}
 }

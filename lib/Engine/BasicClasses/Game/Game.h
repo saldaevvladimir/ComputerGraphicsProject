@@ -12,7 +12,11 @@ namespace Engine
 		EntitiesList gameEntities;
 		CoordinateSystem cs;
 
+		Game();
+
 		Game(CoordinateSystem cs, EntitiesList gameEntities);
+
+		void operator = (Game game);
 
 		void Run();
 
@@ -35,10 +39,9 @@ namespace Engine
 		class Object : public Game::GameEntity
 		{
 		public:
-
 			Object();
 
-			Object(GameEntity& GameEntity);
+			Object(GameEntity& gameEntity);
 
 			Object(GameEntity& gameEntity, Point position, Vector direction);
 
@@ -65,7 +68,11 @@ namespace Engine
 			Camera(Game::Object& object, float hfov, Point lookAt, float drawDistance);
 
 			Camera(Game::Object& object, float hfov, float vfov, Point lookAt, float drawDistance);
+		
+			std::vector<std::vector<Ray>> GetRaysMatrix(int height, int width);
+
 		};
+
 
 
 	};

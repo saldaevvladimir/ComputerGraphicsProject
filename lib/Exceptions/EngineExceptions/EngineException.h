@@ -48,3 +48,14 @@ public:
 
 };
 
+class GameObjectException : public EngineException
+{
+public:
+	static EngineException DoesNotHaveProperty(const std::string& propertyKey);
+};
+
+class CanvasException : public EngineException
+{
+public:
+	static EngineException IncorrectSizes(int height, int width);
+};

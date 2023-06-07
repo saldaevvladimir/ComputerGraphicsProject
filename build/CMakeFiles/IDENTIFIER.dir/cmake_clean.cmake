@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj"
-  "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj.d"
+  "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o"
+  "CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o.d"
   "libIDENTIFIER.a"
   "libIDENTIFIER.pdb"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj"
-  "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj.d"
+  "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o"
+  "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o.d"
   "libENGINE_BASIC_CLASSES.a"
   "libENGINE_BASIC_CLASSES.pdb"
 )

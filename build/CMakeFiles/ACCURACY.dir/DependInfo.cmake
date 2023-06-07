@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp" "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj" "gcc" "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj.d"
+  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp" "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o" "gcc" "CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

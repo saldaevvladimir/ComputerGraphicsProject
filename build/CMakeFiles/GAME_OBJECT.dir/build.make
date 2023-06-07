@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GAME_OBJECT.dir/depend.make
@@ -69,32 +69,31 @@ include CMakeFiles/GAME_OBJECT.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GAME_OBJECT.dir/flags.make
 
-CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj: CMakeFiles/GAME_OBJECT.dir/flags.make
-CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj: CMakeFiles/GAME_OBJECT.dir/includes_CXX.rsp
-CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp
-CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj: CMakeFiles/GAME_OBJECT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj -MF CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj.d -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp
+CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o: CMakeFiles/GAME_OBJECT.dir/flags.make
+CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp
+CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o: CMakeFiles/GAME_OBJECT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o -MF CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o.d -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp
 
 CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp > CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp > CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.i
 
 CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Object/Object.cpp -o CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.s
 
 # Object files for target GAME_OBJECT
 GAME_OBJECT_OBJECTS = \
-"CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj"
+"CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o"
 
 # External object files for target GAME_OBJECT
 GAME_OBJECT_EXTERNAL_OBJECTS =
 
-libGAME_OBJECT.a: CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj
+libGAME_OBJECT.a: CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o
 libGAME_OBJECT.a: CMakeFiles/GAME_OBJECT.dir/build.make
 libGAME_OBJECT.a: CMakeFiles/GAME_OBJECT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGAME_OBJECT.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGAME_OBJECT.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GAME_OBJECT.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GAME_OBJECT.dir/link.txt --verbose=$(VERBOSE)
 
@@ -107,6 +106,6 @@ CMakeFiles/GAME_OBJECT.dir/clean:
 .PHONY : CMakeFiles/GAME_OBJECT.dir/clean
 
 CMakeFiles/GAME_OBJECT.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME_OBJECT.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME_OBJECT.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GAME_OBJECT.dir/depend
 

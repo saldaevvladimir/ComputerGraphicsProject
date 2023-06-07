@@ -16,6 +16,9 @@
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME_ENTITY.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME_OBJECT.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME_CAMERA.dir
+/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/CANVAS.dir
+/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/HYPER_PLANE.dir
+/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/HYPER_ELLIPSOID.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/ENGINE_BASIC_CLASSES.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/MathTests.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/EngineTests.dir

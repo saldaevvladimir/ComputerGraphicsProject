@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IDENTIFIER.dir/depend.make
@@ -69,32 +69,31 @@ include CMakeFiles/IDENTIFIER.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/IDENTIFIER.dir/flags.make
 
-CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj: CMakeFiles/IDENTIFIER.dir/flags.make
-CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj: CMakeFiles/IDENTIFIER.dir/includes_CXX.rsp
-CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp
-CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj: CMakeFiles/IDENTIFIER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj -MF CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj.d -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp
+CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o: CMakeFiles/IDENTIFIER.dir/flags.make
+CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp
+CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o: CMakeFiles/IDENTIFIER.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o -MF CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o.d -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp
 
 CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp > CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp > CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.i
 
 CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Identifier/Identifier.cpp -o CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.s
 
 # Object files for target IDENTIFIER
 IDENTIFIER_OBJECTS = \
-"CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj"
+"CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o"
 
 # External object files for target IDENTIFIER
 IDENTIFIER_EXTERNAL_OBJECTS =
 
-libIDENTIFIER.a: CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj
+libIDENTIFIER.a: CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o
 libIDENTIFIER.a: CMakeFiles/IDENTIFIER.dir/build.make
 libIDENTIFIER.a: CMakeFiles/IDENTIFIER.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libIDENTIFIER.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libIDENTIFIER.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/IDENTIFIER.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IDENTIFIER.dir/link.txt --verbose=$(VERBOSE)
 
@@ -107,6 +106,6 @@ CMakeFiles/IDENTIFIER.dir/clean:
 .PHONY : CMakeFiles/IDENTIFIER.dir/clean
 
 CMakeFiles/IDENTIFIER.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/IDENTIFIER.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/IDENTIFIER.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/IDENTIFIER.dir/depend
 

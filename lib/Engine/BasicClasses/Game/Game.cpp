@@ -4,6 +4,13 @@
 
 namespace Engine
 {
+
+	Game::Game()
+	{
+		this->cs = CoordinateSystem();
+		this->gameEntities = EntitiesList();
+	}
+
     Game::Game(CoordinateSystem cs, EntitiesList gameEntities)
 	{
 		if (!cs.IsInitialized())
@@ -11,6 +18,19 @@ namespace Engine
 			
 		this->cs = cs;
 		this->gameEntities = gameEntities;
+	}
+
+	void Game::operator = (Game game)
+	{
+		Game& self = *this;
+
+		if (!game.cs.IsInitialized())
+		{
+			
+		}
+
+		self.cs = game.cs;
+		self.gameEntities = game.gameEntities;
 	}
 
 	void Game::Run()

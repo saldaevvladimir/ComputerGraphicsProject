@@ -48,27 +48,37 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles C:/Users/Vs2/Desktop/ComputerGraphicsProject/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles /home/v_s2/Desktop/ComputerGraphicsProject/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,19 +127,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ACCURACY
-
-# Build rule for target.
-ACCURACY: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ACCURACY
-.PHONY : ACCURACY
-
-# fast build rule for target.
-ACCURACY/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/build
-.PHONY : ACCURACY/fast
-
-#=============================================================================
 # Target rules for targets named MATH_EXCEPTION
 
 # Build rule for target.
@@ -141,6 +138,32 @@ MATH_EXCEPTION: cmake_check_build_system
 MATH_EXCEPTION/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/build
 .PHONY : MATH_EXCEPTION/fast
+
+#=============================================================================
+# Target rules for targets named ENGINE_EXCEPTION
+
+# Build rule for target.
+ENGINE_EXCEPTION: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ENGINE_EXCEPTION
+.PHONY : ENGINE_EXCEPTION
+
+# fast build rule for target.
+ENGINE_EXCEPTION/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/build
+.PHONY : ENGINE_EXCEPTION/fast
+
+#=============================================================================
+# Target rules for targets named ACCURACY
+
+# Build rule for target.
+ACCURACY: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ACCURACY
+.PHONY : ACCURACY
+
+# fast build rule for target.
+ACCURACY/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/build
+.PHONY : ACCURACY/fast
 
 #=============================================================================
 # Target rules for targets named MATRIX
@@ -299,6 +322,19 @@ GAME/fast:
 .PHONY : GAME/fast
 
 #=============================================================================
+# Target rules for targets named GAME_ENTITY
+
+# Build rule for target.
+GAME_ENTITY: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GAME_ENTITY
+.PHONY : GAME_ENTITY
+
+# fast build rule for target.
+GAME_ENTITY/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/build
+.PHONY : GAME_ENTITY/fast
+
+#=============================================================================
 # Target rules for targets named GAME_OBJECT
 
 # Build rule for target.
@@ -389,13 +425,13 @@ GraphicsEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/build
 .PHONY : GraphicsEngine/fast
 
-lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.obj: lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj
-.PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.obj
+lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.o: lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
+.PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.o
 
 # target to build an object file
-lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj
-.PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.obj
+lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
+.PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
 
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i: lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i
@@ -413,13 +449,13 @@ lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
 
-lib/Engine/BasicClasses/EntitiesList/EntitiesList.obj: lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj
-.PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.obj
+lib/Engine/BasicClasses/EntitiesList/EntitiesList.o: lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
+.PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.o
 
 # target to build an object file
-lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITIES_LIST.dir/build.make CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj
-.PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj
+lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITIES_LIST.dir/build.make CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
+.PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
 
 lib/Engine/BasicClasses/EntitiesList/EntitiesList.i: lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.i
 .PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.i
@@ -437,13 +473,13 @@ lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITIES_LIST.dir/build.make CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.s
 .PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.s
 
-lib/Engine/BasicClasses/Entity/Entity.obj: lib/Engine/BasicClasses/Entity/Entity.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Entity/Entity.obj
+lib/Engine/BasicClasses/Entity/Entity.o: lib/Engine/BasicClasses/Entity/Entity.cpp.o
+.PHONY : lib/Engine/BasicClasses/Entity/Entity.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Entity/Entity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Entity/Entity.cpp.obj
+lib/Engine/BasicClasses/Entity/Entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.o
+.PHONY : lib/Engine/BasicClasses/Entity/Entity.cpp.o
 
 lib/Engine/BasicClasses/Entity/Entity.i: lib/Engine/BasicClasses/Entity/Entity.cpp.i
 .PHONY : lib/Engine/BasicClasses/Entity/Entity.i
@@ -461,13 +497,13 @@ lib/Engine/BasicClasses/Entity/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.s
 .PHONY : lib/Engine/BasicClasses/Entity/Entity.cpp.s
 
-lib/Engine/BasicClasses/Game/Camera/Camera.obj: lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.obj
+lib/Engine/BasicClasses/Game/Camera/Camera.o: lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj
+lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o
 
 lib/Engine/BasicClasses/Game/Camera/Camera.i: lib/Engine/BasicClasses/Game/Camera/Camera.cpp.i
 .PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.i
@@ -485,13 +521,13 @@ lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s
 .PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s
 
-lib/Engine/BasicClasses/Game/Game.obj: lib/Engine/BasicClasses/Game/Game.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Game.obj
+lib/Engine/BasicClasses/Game/Game.o: lib/Engine/BasicClasses/Game/Game.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Game.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Game/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Game.cpp.obj
+lib/Engine/BasicClasses/Game/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Game.cpp.o
 
 lib/Engine/BasicClasses/Game/Game.i: lib/Engine/BasicClasses/Game/Game.cpp.i
 .PHONY : lib/Engine/BasicClasses/Game/Game.i
@@ -509,13 +545,37 @@ lib/Engine/BasicClasses/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.s
 .PHONY : lib/Engine/BasicClasses/Game/Game.cpp.s
 
-lib/Engine/BasicClasses/Game/Object/Object.obj: lib/Engine/BasicClasses/Game/Object/Object.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Object/Object.obj
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.o: lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Game/Object/Object.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Game/Object/Object.cpp.obj
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.o
+
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.i: lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.i
+
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.s: lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s
+
+lib/Engine/BasicClasses/Game/Object/Object.o: lib/Engine/BasicClasses/Game/Object/Object.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Object/Object.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Game/Object/Object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Object/Object.cpp.o
 
 lib/Engine/BasicClasses/Game/Object/Object.i: lib/Engine/BasicClasses/Game/Object/Object.cpp.i
 .PHONY : lib/Engine/BasicClasses/Game/Object/Object.i
@@ -533,13 +593,13 @@ lib/Engine/BasicClasses/Game/Object/Object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/lib/Engine/BasicClasses/Game/Object/Object.cpp.s
 .PHONY : lib/Engine/BasicClasses/Game/Object/Object.cpp.s
 
-lib/Engine/BasicClasses/Identifier/Identifier.obj: lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Identifier/Identifier.obj
+lib/Engine/BasicClasses/Identifier/Identifier.o: lib/Engine/BasicClasses/Identifier/Identifier.cpp.o
+.PHONY : lib/Engine/BasicClasses/Identifier/Identifier.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/IDENTIFIER.dir/build.make CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Identifier/Identifier.cpp.obj
+lib/Engine/BasicClasses/Identifier/Identifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IDENTIFIER.dir/build.make CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.o
+.PHONY : lib/Engine/BasicClasses/Identifier/Identifier.cpp.o
 
 lib/Engine/BasicClasses/Identifier/Identifier.i: lib/Engine/BasicClasses/Identifier/Identifier.cpp.i
 .PHONY : lib/Engine/BasicClasses/Identifier/Identifier.i
@@ -557,13 +617,13 @@ lib/Engine/BasicClasses/Identifier/Identifier.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IDENTIFIER.dir/build.make CMakeFiles/IDENTIFIER.dir/lib/Engine/BasicClasses/Identifier/Identifier.cpp.s
 .PHONY : lib/Engine/BasicClasses/Identifier/Identifier.cpp.s
 
-lib/Engine/BasicClasses/Ray/Ray.obj: lib/Engine/BasicClasses/Ray/Ray.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Ray/Ray.obj
+lib/Engine/BasicClasses/Ray/Ray.o: lib/Engine/BasicClasses/Ray/Ray.cpp.o
+.PHONY : lib/Engine/BasicClasses/Ray/Ray.o
 
 # target to build an object file
-lib/Engine/BasicClasses/Ray/Ray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RAY.dir/build.make CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.obj
-.PHONY : lib/Engine/BasicClasses/Ray/Ray.cpp.obj
+lib/Engine/BasicClasses/Ray/Ray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RAY.dir/build.make CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.o
+.PHONY : lib/Engine/BasicClasses/Ray/Ray.cpp.o
 
 lib/Engine/BasicClasses/Ray/Ray.i: lib/Engine/BasicClasses/Ray/Ray.cpp.i
 .PHONY : lib/Engine/BasicClasses/Ray/Ray.i
@@ -581,13 +641,37 @@ lib/Engine/BasicClasses/Ray/Ray.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RAY.dir/build.make CMakeFiles/RAY.dir/lib/Engine/BasicClasses/Ray/Ray.cpp.s
 .PHONY : lib/Engine/BasicClasses/Ray/Ray.cpp.s
 
-lib/Exceptions/MathExceptions/MathException.obj: lib/Exceptions/MathExceptions/MathException.cpp.obj
-.PHONY : lib/Exceptions/MathExceptions/MathException.obj
+lib/Exceptions/EngineExceptions/EngineException.o: lib/Exceptions/EngineExceptions/EngineException.cpp.o
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.o
 
 # target to build an object file
-lib/Exceptions/MathExceptions/MathException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.obj
-.PHONY : lib/Exceptions/MathExceptions/MathException.cpp.obj
+lib/Exceptions/EngineExceptions/EngineException.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.o
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.cpp.o
+
+lib/Exceptions/EngineExceptions/EngineException.i: lib/Exceptions/EngineExceptions/EngineException.cpp.i
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.i
+
+# target to preprocess a source file
+lib/Exceptions/EngineExceptions/EngineException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.i
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.cpp.i
+
+lib/Exceptions/EngineExceptions/EngineException.s: lib/Exceptions/EngineExceptions/EngineException.cpp.s
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.s
+
+# target to generate assembly for a file
+lib/Exceptions/EngineExceptions/EngineException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/lib/Exceptions/EngineExceptions/EngineException.cpp.s
+.PHONY : lib/Exceptions/EngineExceptions/EngineException.cpp.s
+
+lib/Exceptions/MathExceptions/MathException.o: lib/Exceptions/MathExceptions/MathException.cpp.o
+.PHONY : lib/Exceptions/MathExceptions/MathException.o
+
+# target to build an object file
+lib/Exceptions/MathExceptions/MathException.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.o
+.PHONY : lib/Exceptions/MathExceptions/MathException.cpp.o
 
 lib/Exceptions/MathExceptions/MathException.i: lib/Exceptions/MathExceptions/MathException.cpp.i
 .PHONY : lib/Exceptions/MathExceptions/MathException.i
@@ -605,13 +689,13 @@ lib/Exceptions/MathExceptions/MathException.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/lib/Exceptions/MathExceptions/MathException.cpp.s
 .PHONY : lib/Exceptions/MathExceptions/MathException.cpp.s
 
-lib/Math/Accuracy/Accuracy.obj: lib/Math/Accuracy/Accuracy.cpp.obj
-.PHONY : lib/Math/Accuracy/Accuracy.obj
+lib/Math/Accuracy/Accuracy.o: lib/Math/Accuracy/Accuracy.cpp.o
+.PHONY : lib/Math/Accuracy/Accuracy.o
 
 # target to build an object file
-lib/Math/Accuracy/Accuracy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.obj
-.PHONY : lib/Math/Accuracy/Accuracy.cpp.obj
+lib/Math/Accuracy/Accuracy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o
+.PHONY : lib/Math/Accuracy/Accuracy.cpp.o
 
 lib/Math/Accuracy/Accuracy.i: lib/Math/Accuracy/Accuracy.cpp.i
 .PHONY : lib/Math/Accuracy/Accuracy.i
@@ -629,13 +713,13 @@ lib/Math/Accuracy/Accuracy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.s
 .PHONY : lib/Math/Accuracy/Accuracy.cpp.s
 
-lib/Math/AllMath/AllMath.obj: lib/Math/AllMath/AllMath.cpp.obj
-.PHONY : lib/Math/AllMath/AllMath.obj
+lib/Math/AllMath/AllMath.o: lib/Math/AllMath/AllMath.cpp.o
+.PHONY : lib/Math/AllMath/AllMath.o
 
 # target to build an object file
-lib/Math/AllMath/AllMath.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALL_MATH.dir/build.make CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj
-.PHONY : lib/Math/AllMath/AllMath.cpp.obj
+lib/Math/AllMath/AllMath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALL_MATH.dir/build.make CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o
+.PHONY : lib/Math/AllMath/AllMath.cpp.o
 
 lib/Math/AllMath/AllMath.i: lib/Math/AllMath/AllMath.cpp.i
 .PHONY : lib/Math/AllMath/AllMath.i
@@ -653,13 +737,13 @@ lib/Math/AllMath/AllMath.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALL_MATH.dir/build.make CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.s
 .PHONY : lib/Math/AllMath/AllMath.cpp.s
 
-lib/Math/CoordinateSystem/CoordinateSystem.obj: lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj
-.PHONY : lib/Math/CoordinateSystem/CoordinateSystem.obj
+lib/Math/CoordinateSystem/CoordinateSystem.o: lib/Math/CoordinateSystem/CoordinateSystem.cpp.o
+.PHONY : lib/Math/CoordinateSystem/CoordinateSystem.o
 
 # target to build an object file
-lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/COORDINATE_SYSTEM.dir/build.make CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj
-.PHONY : lib/Math/CoordinateSystem/CoordinateSystem.cpp.obj
+lib/Math/CoordinateSystem/CoordinateSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COORDINATE_SYSTEM.dir/build.make CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.o
+.PHONY : lib/Math/CoordinateSystem/CoordinateSystem.cpp.o
 
 lib/Math/CoordinateSystem/CoordinateSystem.i: lib/Math/CoordinateSystem/CoordinateSystem.cpp.i
 .PHONY : lib/Math/CoordinateSystem/CoordinateSystem.i
@@ -677,13 +761,13 @@ lib/Math/CoordinateSystem/CoordinateSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COORDINATE_SYSTEM.dir/build.make CMakeFiles/COORDINATE_SYSTEM.dir/lib/Math/CoordinateSystem/CoordinateSystem.cpp.s
 .PHONY : lib/Math/CoordinateSystem/CoordinateSystem.cpp.s
 
-lib/Math/Functions/Functions.obj: lib/Math/Functions/Functions.cpp.obj
-.PHONY : lib/Math/Functions/Functions.obj
+lib/Math/Functions/Functions.o: lib/Math/Functions/Functions.cpp.o
+.PHONY : lib/Math/Functions/Functions.o
 
 # target to build an object file
-lib/Math/Functions/Functions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.obj
-.PHONY : lib/Math/Functions/Functions.cpp.obj
+lib/Math/Functions/Functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o
+.PHONY : lib/Math/Functions/Functions.cpp.o
 
 lib/Math/Functions/Functions.i: lib/Math/Functions/Functions.cpp.i
 .PHONY : lib/Math/Functions/Functions.i
@@ -701,13 +785,13 @@ lib/Math/Functions/Functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.s
 .PHONY : lib/Math/Functions/Functions.cpp.s
 
-lib/Math/Matrix/Matrix.obj: lib/Math/Matrix/Matrix.cpp.obj
-.PHONY : lib/Math/Matrix/Matrix.obj
+lib/Math/Matrix/Matrix.o: lib/Math/Matrix/Matrix.cpp.o
+.PHONY : lib/Math/Matrix/Matrix.o
 
 # target to build an object file
-lib/Math/Matrix/Matrix.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.obj
-.PHONY : lib/Math/Matrix/Matrix.cpp.obj
+lib/Math/Matrix/Matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o
+.PHONY : lib/Math/Matrix/Matrix.cpp.o
 
 lib/Math/Matrix/Matrix.i: lib/Math/Matrix/Matrix.cpp.i
 .PHONY : lib/Math/Matrix/Matrix.i
@@ -725,13 +809,13 @@ lib/Math/Matrix/Matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.s
 .PHONY : lib/Math/Matrix/Matrix.cpp.s
 
-lib/Math/Point/Point.obj: lib/Math/Point/Point.cpp.obj
-.PHONY : lib/Math/Point/Point.obj
+lib/Math/Point/Point.o: lib/Math/Point/Point.cpp.o
+.PHONY : lib/Math/Point/Point.o
 
 # target to build an object file
-lib/Math/Point/Point.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.obj
-.PHONY : lib/Math/Point/Point.cpp.obj
+lib/Math/Point/Point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o
+.PHONY : lib/Math/Point/Point.cpp.o
 
 lib/Math/Point/Point.i: lib/Math/Point/Point.cpp.i
 .PHONY : lib/Math/Point/Point.i
@@ -749,13 +833,13 @@ lib/Math/Point/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.s
 .PHONY : lib/Math/Point/Point.cpp.s
 
-lib/Math/Vector/Vector.obj: lib/Math/Vector/Vector.cpp.obj
-.PHONY : lib/Math/Vector/Vector.obj
+lib/Math/Vector/Vector.o: lib/Math/Vector/Vector.cpp.o
+.PHONY : lib/Math/Vector/Vector.o
 
 # target to build an object file
-lib/Math/Vector/Vector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.obj
-.PHONY : lib/Math/Vector/Vector.cpp.obj
+lib/Math/Vector/Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o
+.PHONY : lib/Math/Vector/Vector.cpp.o
 
 lib/Math/Vector/Vector.i: lib/Math/Vector/Vector.cpp.i
 .PHONY : lib/Math/Vector/Vector.i
@@ -773,13 +857,13 @@ lib/Math/Vector/Vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s
 .PHONY : lib/Math/Vector/Vector.cpp.s
 
-lib/Math/VectorSpace/VectorSpace.obj: lib/Math/VectorSpace/VectorSpace.cpp.obj
-.PHONY : lib/Math/VectorSpace/VectorSpace.obj
+lib/Math/VectorSpace/VectorSpace.o: lib/Math/VectorSpace/VectorSpace.cpp.o
+.PHONY : lib/Math/VectorSpace/VectorSpace.o
 
 # target to build an object file
-lib/Math/VectorSpace/VectorSpace.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR_SPACE.dir/build.make CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.obj
-.PHONY : lib/Math/VectorSpace/VectorSpace.cpp.obj
+lib/Math/VectorSpace/VectorSpace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR_SPACE.dir/build.make CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.o
+.PHONY : lib/Math/VectorSpace/VectorSpace.cpp.o
 
 lib/Math/VectorSpace/VectorSpace.i: lib/Math/VectorSpace/VectorSpace.cpp.i
 .PHONY : lib/Math/VectorSpace/VectorSpace.i
@@ -797,13 +881,13 @@ lib/Math/VectorSpace/VectorSpace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR_SPACE.dir/build.make CMakeFiles/VECTOR_SPACE.dir/lib/Math/VectorSpace/VectorSpace.cpp.s
 .PHONY : lib/Math/VectorSpace/VectorSpace.cpp.s
 
-src/Main.obj: src/Main.cpp.obj
-.PHONY : src/Main.obj
+src/Main.o: src/Main.cpp.o
+.PHONY : src/Main.o
 
 # target to build an object file
-src/Main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/src/Main.cpp.obj
-.PHONY : src/Main.cpp.obj
+src/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
 
 src/Main.i: src/Main.cpp.i
 .PHONY : src/Main.i
@@ -821,13 +905,13 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-tests/UnitTests/EngineTests.obj: tests/UnitTests/EngineTests.cpp.obj
-.PHONY : tests/UnitTests/EngineTests.obj
+tests/UnitTests/EngineTests.o: tests/UnitTests/EngineTests.cpp.o
+.PHONY : tests/UnitTests/EngineTests.o
 
 # target to build an object file
-tests/UnitTests/EngineTests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj
-.PHONY : tests/UnitTests/EngineTests.cpp.obj
+tests/UnitTests/EngineTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o
+.PHONY : tests/UnitTests/EngineTests.cpp.o
 
 tests/UnitTests/EngineTests.i: tests/UnitTests/EngineTests.cpp.i
 .PHONY : tests/UnitTests/EngineTests.i
@@ -845,13 +929,13 @@ tests/UnitTests/EngineTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.s
 .PHONY : tests/UnitTests/EngineTests.cpp.s
 
-tests/UnitTests/GameTests.obj: tests/UnitTests/GameTests.cpp.obj
-.PHONY : tests/UnitTests/GameTests.obj
+tests/UnitTests/GameTests.o: tests/UnitTests/GameTests.cpp.o
+.PHONY : tests/UnitTests/GameTests.o
 
 # target to build an object file
-tests/UnitTests/GameTests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.obj
-.PHONY : tests/UnitTests/GameTests.cpp.obj
+tests/UnitTests/GameTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o
+.PHONY : tests/UnitTests/GameTests.cpp.o
 
 tests/UnitTests/GameTests.i: tests/UnitTests/GameTests.cpp.i
 .PHONY : tests/UnitTests/GameTests.i
@@ -869,13 +953,13 @@ tests/UnitTests/GameTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.s
 .PHONY : tests/UnitTests/GameTests.cpp.s
 
-tests/UnitTests/MathTests.obj: tests/UnitTests/MathTests.cpp.obj
-.PHONY : tests/UnitTests/MathTests.obj
+tests/UnitTests/MathTests.o: tests/UnitTests/MathTests.cpp.o
+.PHONY : tests/UnitTests/MathTests.o
 
 # target to build an object file
-tests/UnitTests/MathTests.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathTests.dir/build.make CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.obj
-.PHONY : tests/UnitTests/MathTests.cpp.obj
+tests/UnitTests/MathTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathTests.dir/build.make CMakeFiles/MathTests.dir/tests/UnitTests/MathTests.cpp.o
+.PHONY : tests/UnitTests/MathTests.cpp.o
 
 tests/UnitTests/MathTests.i: tests/UnitTests/MathTests.cpp.i
 .PHONY : tests/UnitTests/MathTests.i
@@ -901,16 +985,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... ACCURACY"
 	@echo "... ALL_MATH"
 	@echo "... COORDINATE_SYSTEM"
 	@echo "... ENGINE_BASIC_CLASSES"
+	@echo "... ENGINE_EXCEPTION"
 	@echo "... ENTITIES_LIST"
 	@echo "... ENTITY"
 	@echo "... EngineTests"
 	@echo "... FUNCTIONS"
 	@echo "... GAME"
 	@echo "... GAME_CAMERA"
+	@echo "... GAME_ENTITY"
 	@echo "... GAME_OBJECT"
 	@echo "... GameTests"
 	@echo "... GraphicsEngine"
@@ -922,67 +1009,73 @@ help:
 	@echo "... RAY"
 	@echo "... VECTOR"
 	@echo "... VECTOR_SPACE"
-	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.obj"
+	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.o"
 	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i"
 	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.s"
-	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.obj"
+	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.o"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.i"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.s"
-	@echo "... lib/Engine/BasicClasses/Entity/Entity.obj"
+	@echo "... lib/Engine/BasicClasses/Entity/Entity.o"
 	@echo "... lib/Engine/BasicClasses/Entity/Entity.i"
 	@echo "... lib/Engine/BasicClasses/Entity/Entity.s"
-	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.obj"
+	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.o"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.i"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.s"
-	@echo "... lib/Engine/BasicClasses/Game/Game.obj"
+	@echo "... lib/Engine/BasicClasses/Game/Game.o"
 	@echo "... lib/Engine/BasicClasses/Game/Game.i"
 	@echo "... lib/Engine/BasicClasses/Game/Game.s"
-	@echo "... lib/Engine/BasicClasses/Game/Object/Object.obj"
+	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.o"
+	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.i"
+	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.s"
+	@echo "... lib/Engine/BasicClasses/Game/Object/Object.o"
 	@echo "... lib/Engine/BasicClasses/Game/Object/Object.i"
 	@echo "... lib/Engine/BasicClasses/Game/Object/Object.s"
-	@echo "... lib/Engine/BasicClasses/Identifier/Identifier.obj"
+	@echo "... lib/Engine/BasicClasses/Identifier/Identifier.o"
 	@echo "... lib/Engine/BasicClasses/Identifier/Identifier.i"
 	@echo "... lib/Engine/BasicClasses/Identifier/Identifier.s"
-	@echo "... lib/Engine/BasicClasses/Ray/Ray.obj"
+	@echo "... lib/Engine/BasicClasses/Ray/Ray.o"
 	@echo "... lib/Engine/BasicClasses/Ray/Ray.i"
 	@echo "... lib/Engine/BasicClasses/Ray/Ray.s"
-	@echo "... lib/Exceptions/MathExceptions/MathException.obj"
+	@echo "... lib/Exceptions/EngineExceptions/EngineException.o"
+	@echo "... lib/Exceptions/EngineExceptions/EngineException.i"
+	@echo "... lib/Exceptions/EngineExceptions/EngineException.s"
+	@echo "... lib/Exceptions/MathExceptions/MathException.o"
 	@echo "... lib/Exceptions/MathExceptions/MathException.i"
 	@echo "... lib/Exceptions/MathExceptions/MathException.s"
-	@echo "... lib/Math/Accuracy/Accuracy.obj"
+	@echo "... lib/Math/Accuracy/Accuracy.o"
 	@echo "... lib/Math/Accuracy/Accuracy.i"
 	@echo "... lib/Math/Accuracy/Accuracy.s"
-	@echo "... lib/Math/AllMath/AllMath.obj"
+	@echo "... lib/Math/AllMath/AllMath.o"
 	@echo "... lib/Math/AllMath/AllMath.i"
 	@echo "... lib/Math/AllMath/AllMath.s"
-	@echo "... lib/Math/CoordinateSystem/CoordinateSystem.obj"
+	@echo "... lib/Math/CoordinateSystem/CoordinateSystem.o"
 	@echo "... lib/Math/CoordinateSystem/CoordinateSystem.i"
 	@echo "... lib/Math/CoordinateSystem/CoordinateSystem.s"
-	@echo "... lib/Math/Functions/Functions.obj"
+	@echo "... lib/Math/Functions/Functions.o"
 	@echo "... lib/Math/Functions/Functions.i"
 	@echo "... lib/Math/Functions/Functions.s"
-	@echo "... lib/Math/Matrix/Matrix.obj"
+	@echo "... lib/Math/Matrix/Matrix.o"
 	@echo "... lib/Math/Matrix/Matrix.i"
 	@echo "... lib/Math/Matrix/Matrix.s"
-	@echo "... lib/Math/Point/Point.obj"
+	@echo "... lib/Math/Point/Point.o"
 	@echo "... lib/Math/Point/Point.i"
 	@echo "... lib/Math/Point/Point.s"
-	@echo "... lib/Math/Vector/Vector.obj"
+	@echo "... lib/Math/Vector/Vector.o"
 	@echo "... lib/Math/Vector/Vector.i"
 	@echo "... lib/Math/Vector/Vector.s"
-	@echo "... lib/Math/VectorSpace/VectorSpace.obj"
+	@echo "... lib/Math/VectorSpace/VectorSpace.o"
 	@echo "... lib/Math/VectorSpace/VectorSpace.i"
 	@echo "... lib/Math/VectorSpace/VectorSpace.s"
-	@echo "... src/Main.obj"
+	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
-	@echo "... tests/UnitTests/EngineTests.obj"
+	@echo "... tests/UnitTests/EngineTests.o"
 	@echo "... tests/UnitTests/EngineTests.i"
 	@echo "... tests/UnitTests/EngineTests.s"
-	@echo "... tests/UnitTests/GameTests.obj"
+	@echo "... tests/UnitTests/GameTests.o"
 	@echo "... tests/UnitTests/GameTests.i"
 	@echo "... tests/UnitTests/GameTests.s"
-	@echo "... tests/UnitTests/MathTests.obj"
+	@echo "... tests/UnitTests/MathTests.o"
 	@echo "... tests/UnitTests/MathTests.i"
 	@echo "... tests/UnitTests/MathTests.s"
 .PHONY : help

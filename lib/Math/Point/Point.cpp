@@ -57,7 +57,23 @@ Point::Point(std::initializer_list<float> coords)
 		this->elements[i] = new float[this->width];
 		this->elements[i++][0] = Round(el);
 	}
-}\
+}
+
+Vector Point::GetDirectionToPoint(Point lookAt)
+{
+	Point& position = *this;
+
+	if (!position.IsInitialized()) 
+		throw PointException::NotInitialized(position.Dim());
+	if (!lookAt.IsInitialized())
+		throw PointException::NotInitialized(lookAt.Dim());
+
+	Vector direction;
+	
+	direction = lookAt - position;
+
+	return direction;
+}
 
 int Point::Dim()
 {
@@ -68,6 +84,7 @@ int Point::Dim()
 
 	return (self.Vector::Dim());
 }
+
 
 
 void Point::operator = (Point p)

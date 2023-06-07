@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/Vs2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/EngineTests.dir/depend.make
@@ -69,55 +69,53 @@ include CMakeFiles/EngineTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EngineTests.dir/flags.make
 
-CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj: CMakeFiles/EngineTests.dir/flags.make
-CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj: CMakeFiles/EngineTests.dir/includes_CXX.rsp
-CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj: C:/Users/Vs2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp
-CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj: CMakeFiles/EngineTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj -MF CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj.d -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj -c C:/Users/Vs2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp
+CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: CMakeFiles/EngineTests.dir/flags.make
+CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp
+CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: CMakeFiles/EngineTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o -MF CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o.d -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp
 
 CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.i"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/Vs2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp > CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp > CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.i
 
 CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.s"
-	C:/MinGW/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/Vs2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/tests/UnitTests/EngineTests.cpp -o CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.s
 
 # Object files for target EngineTests
 EngineTests_OBJECTS = \
-"CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj"
+"CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o"
 
 # External object files for target EngineTests
 EngineTests_EXTERNAL_OBJECTS =
 
-EngineTests.exe: CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.obj
-EngineTests.exe: CMakeFiles/EngineTests.dir/build.make
-EngineTests.exe: libENGINE_BASIC_CLASSES.a
-EngineTests.exe: libGAME_CAMERA.a
-EngineTests.exe: libGAME_OBJECT.a
-EngineTests.exe: libGAME.a
-EngineTests.exe: libRAY.a
-EngineTests.exe: libENTITIES_LIST.a
-EngineTests.exe: libENTITY.a
-EngineTests.exe: libIDENTIFIER.a
-EngineTests.exe: libCOORDINATE_SYSTEM.a
-EngineTests.exe: libVECTOR_SPACE.a
-EngineTests.exe: libPOINT.a
-EngineTests.exe: libFUNCTIONS.a
-EngineTests.exe: libVECTOR.a
-EngineTests.exe: libMATRIX.a
-EngineTests.exe: libMATH_EXCEPTION.a
-EngineTests.exe: libACCURACY.a
-EngineTests.exe: CMakeFiles/EngineTests.dir/linkLibs.rsp
-EngineTests.exe: CMakeFiles/EngineTests.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EngineTests.exe"
-	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/EngineTests.dir/objects.a
-	C:/MinGW/bin/ar.exe qc CMakeFiles/EngineTests.dir/objects.a @CMakeFiles/EngineTests.dir/objects1.rsp
-	C:/MinGW/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/EngineTests.dir/objects.a -Wl,--no-whole-archive -o EngineTests.exe -Wl,--out-implib,libEngineTests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/EngineTests.dir/linkLibs.rsp
+EngineTests: CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o
+EngineTests: CMakeFiles/EngineTests.dir/build.make
+EngineTests: libENGINE_BASIC_CLASSES.a
+EngineTests: libGAME_CAMERA.a
+EngineTests: libGAME_OBJECT.a
+EngineTests: libGAME_ENTITY.a
+EngineTests: libGAME.a
+EngineTests: libRAY.a
+EngineTests: libENTITIES_LIST.a
+EngineTests: libENTITY.a
+EngineTests: libIDENTIFIER.a
+EngineTests: libCOORDINATE_SYSTEM.a
+EngineTests: libVECTOR_SPACE.a
+EngineTests: libPOINT.a
+EngineTests: libFUNCTIONS.a
+EngineTests: libVECTOR.a
+EngineTests: libMATRIX.a
+EngineTests: libACCURACY.a
+EngineTests: libENGINE_EXCEPTION.a
+EngineTests: libMATH_EXCEPTION.a
+EngineTests: CMakeFiles/EngineTests.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EngineTests"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EngineTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/EngineTests.dir/build: EngineTests.exe
+CMakeFiles/EngineTests.dir/build: EngineTests
 .PHONY : CMakeFiles/EngineTests.dir/build
 
 CMakeFiles/EngineTests.dir/clean:
@@ -125,6 +123,6 @@ CMakeFiles/EngineTests.dir/clean:
 .PHONY : CMakeFiles/EngineTests.dir/clean
 
 CMakeFiles/EngineTests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build C:/Users/Vs2/Desktop/ComputerGraphicsProject/build/CMakeFiles/EngineTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/EngineTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EngineTests.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.obj"
-  "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.obj.d"
+  "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o"
+  "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o.d"
   "libMATRIX.a"
   "libMATRIX.pdb"
 )

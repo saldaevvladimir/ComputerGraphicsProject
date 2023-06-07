@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj"
-  "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.obj.d"
+  "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o"
+  "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o.d"
   "libALL_MATH.a"
   "libALL_MATH.pdb"
 )

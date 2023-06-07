@@ -273,6 +273,11 @@ Matrix Matrix::Inverse()
 	return inverse;
 }
 
+float Matrix::ConvertToRadian(float angle)
+{
+	return Round(angle *  M_PI / 180.0f);
+}
+
 Matrix Matrix::RotationMatrix(int size, int axisIndex1, int axisIndex2, float angle)
 {
 	if (!CorrectSizes(size, size))
@@ -304,6 +309,22 @@ Matrix Matrix::TaitBryanMatrix(float angle1, float angle2, float angle3)
 
 	return TaitBryanMatrix;
 }
+
+Matrix Matrix::RotationYZ(float angle)
+{
+	return RotationMatrix(3, RxAxis, angle);
+}
+
+Matrix Matrix::RotationXZ(float angle)
+{
+	return RotationMatrix(3, RyAxis, angle);
+}
+
+Matrix Matrix::RotationXY(float angle)
+{
+	return RotationMatrix(3, RzAxis, angle);
+}
+
 
 void Matrix::Assign(Matrix mat)
 {

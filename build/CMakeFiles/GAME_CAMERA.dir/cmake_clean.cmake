@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj"
-  "CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.obj.d"
+  "CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o"
+  "CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o.d"
   "libGAME_CAMERA.a"
   "libGAME_CAMERA.pdb"
 )

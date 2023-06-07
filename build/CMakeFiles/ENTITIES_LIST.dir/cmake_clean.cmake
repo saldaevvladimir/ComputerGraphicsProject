@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj"
-  "CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.obj.d"
+  "CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o"
+  "CMakeFiles/ENTITIES_LIST.dir/lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o.d"
   "libENTITIES_LIST.a"
   "libENTITIES_LIST.pdb"
 )

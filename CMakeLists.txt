@@ -2,7 +2,7 @@
 
 cmake_minimum_required(VERSION 3.8)
 
-set(CMAKE_CXX_STANDART 14)
+set(CMAKE_CXX_STANDART 17)
 set(CMAKE_CXX_STANDART_REQUIRED true)
 
 
@@ -125,6 +125,18 @@ add_library(GAME_CAMERA
     STATIC ./lib/Engine/BasicClasses/Game/Camera/Camera.cpp
 )
 
+add_library(CANVAS
+    STATIC ./lib/Engine/BasicClasses/Canvas/Canvas.cpp
+)
+
+add_library(HYPER_PLANE
+    STATIC ./lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp
+)
+
+add_library(HYPER_ELLIPSOID
+    STATIC ./lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp
+)
+
 
 target_link_libraries(RAY
     PUBLIC COORDINATE_SYSTEM
@@ -132,7 +144,7 @@ target_link_libraries(RAY
 
 target_link_libraries(ENTITY
     PUBLIC IDENTIFIER
-    PUBLIC COORDINATE_SYSTEM
+    PUBLIC RAY
 )
 
 target_link_libraries(ENTITIES_LIST
@@ -159,6 +171,19 @@ target_link_libraries(GAME_CAMERA
     PUBLIC GAME_OBJECT
 )
 
+target_link_libraries(CANVAS
+    PUBLIC MATRIX
+    PUBLIC GAME
+)
+
+target_link_libraries(HYPER_PLANE
+    PUBLIC GAME
+)
+
+target_link_libraries(HYPER_ELLIPSOID
+    PUBLIC GAME
+)
+
 
 add_library(ENGINE_BASIC_CLASSES
     STATIC lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp
@@ -173,6 +198,9 @@ target_link_libraries(ENGINE_BASIC_CLASSES
     PUBLIC GAME_ENTITY
     PUBLIC GAME_OBJECT
     PUBLIC GAME_CAMERA
+    PUBLIC CANVAS
+    PUBLIC HYPER_PLANE
+    PUBLIC HYPER_ELLIPSOID
 )
 
 # ENGINE_VISUALIZATION
@@ -244,3 +272,12 @@ target_link_libraries(GraphicsEngine
     PUBLIC ENGINE_BASIC_CLASSES
 )
 
+# copying binary files frome /build/ to /bin/
+
+file(GLOB EXECUTABLES
+    "${CMAKE_CURRENT_SOURCE_DIR}/build/*.exe"
+)
+
+file(COPY ${EXECUTABLES} DESTINATION
+    ${CMAKE_CURRENT_SOURCE_DIR}/bin/
+)

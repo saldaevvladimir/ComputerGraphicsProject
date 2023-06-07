@@ -1,4 +1,5 @@
 #include "../Game.h"
+#include "../../../../Exceptions/EngineExceptions/EngineException.h"
 
 
 namespace Engine
@@ -8,22 +9,19 @@ namespace Engine
 		this->cs = CoordinateSystem();
 	}
 
+	Game::Object::Object(GameEntity& gameEntity)
+	{
+		this->cs = gameEntity.cs;
+		this->properties = gameEntity.properties;
+	}
+
     Game::Object::Object(GameEntity& gameEntity, Point position, Vector direction)
 	{
 		this->cs = gameEntity.cs;
 		this->properties = gameEntity.properties;
 
 		properties["position"] = position;
-		properties["direction"] = this->cs.space.Normalize(direction);
-	}
-
-	Game::Object::Object(GameEntity& gameEntity)
-	{
-		this->cs = gameEntity.cs;
-		this->properties = gameEntity.properties;
-
-		properties["position"] = this->cs.initialPoint;
-		properties["direction"] = this->cs.space.basis[0];
+		properties["direction"] = direction;
 	}
 
 	void Game::Object::Move(float distance)
@@ -32,8 +30,10 @@ namespace Engine
 		
 		Point position = std::get<Point>(object.GetProperty("position"));
 		Vector direction = this->cs.space.Normalize(std::get<Vector>(object.GetProperty("direction")));
+
+		position = position + direction * distance;
 		
-		object.SetPosition(position + direction * distance);
+		object.SetPosition(position);
 	}
 
 	void Game::Object::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
@@ -58,13 +58,13 @@ namespace Engine
 	{
 		Game::Object& object = *this;
 
-		object.SetProperty("direction", position);	
+		object.SetProperty("position", position);	
 	}
 
 	void Game::Object::SetDirection(Vector direction)
 	{
 		Game::Object& object = *this;
 
-		object.SetProperty("direction", this->cs.space.Normalize(direction));
+		object.SetProperty("direction", direction);
 	}
 }

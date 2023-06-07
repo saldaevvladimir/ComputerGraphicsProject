@@ -1,9 +1,10 @@
 #pragma once
 
-#define PropertyType std::variant <int, float, bool, std::string, Matrix, Vector, Point, VectorSpace, CoordinateSystem>
+#define PropertyType std::variant <int, float, bool, std::string, Matrix, Vector, Point, VectorSpace, CoordinateSystem, std::vector<float>>
 
 #include "../Identifier/Identifier.h"
 #include "../../../Math/CoordinateSystem/CoordinateSystem.h"
+#include "../../../Engine/BasicClasses/Ray/Ray.h"
 
 #include <map>
 #include <variant>
@@ -29,6 +30,10 @@ namespace Engine
 		const PropertyType& GetProperty(const std::string& key);
 
 		void RemoveProperty(const std::string& key);
+
+		bool HasProperty(const std::string& key);
+		
+		virtual float IntersectionDistance(Ray ray);
 
 		PropertyType& operator [] (const std::string& key);
 
