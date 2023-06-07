@@ -50,7 +50,7 @@ int main()
 
     Engine::EntitiesList lst;
 
-    lst.Append<Engine::HyperPlane>(plane);
+    lst.Append(plane);
 
     for (auto& entity : lst.entities)
     {
@@ -59,3 +59,5 @@ int main()
 
     return 0;
 }
+
+

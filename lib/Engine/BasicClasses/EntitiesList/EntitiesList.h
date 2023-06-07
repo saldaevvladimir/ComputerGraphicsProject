@@ -14,14 +14,13 @@ namespace Engine
 
 		EntitiesList();
 
-		template <typename T>
-		void Append(T entity);
+		void Append(Entity entity);
 
 		void Remove(Identifier identifier);
 
 		Entity Get(Identifier identifier);
 
-		void Execute(); 
+		void Execute(const std::string& methodName); 
 
 		Entity operator [] (Identifier identifier);
 	};

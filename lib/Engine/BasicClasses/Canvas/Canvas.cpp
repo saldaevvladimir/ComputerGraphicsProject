@@ -6,6 +6,8 @@
 #include "../../../Math/Matrix/Matrix.h"
 #include "../../../Exceptions/EngineExceptions/EngineException.h"
 #include "../../../Exceptions/MathExceptions/MathException.h"
+#include "../../../Engine/BasicClasses/Game/HyperPlane/HyperPlane.h"
+#include "../../../Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h"
 
 #include <vector>
 #include <cmath>
@@ -20,6 +22,34 @@ namespace Engine
         this->height = height;
         this->width = width;
         this->game = game;
+    }
+
+    float Canvas::GetIntersectionDistance(Entity entity, Ray ray)
+    {
+        if (entity.HasProperty("type"))
+        {
+            std::string type = std::get<std::string>(entity["type"]);
+
+            if (type == "HyperPlane")
+            {
+                HyperPlane plane(entity);
+                return plane.Engine::HyperPlane::IntersectionDistance(ray);
+            }
+            else if (type == "HyperEllipsoid")
+            {
+                HyperEllipsoid ellipsoid(entity);
+                return ellipsoid.Engine::HyperEllipsoid::IntersectionDistance(ray);
+            }
+            else
+            {
+                // there are only 2 types now
+                return -1.0f;
+            }
+        }
+        else
+        {
+            return entity.Entity::IntersectionDistance(ray);
+        }
     }
 
     void Canvas::Update(Game::Camera camera)
@@ -37,17 +67,13 @@ namespace Engine
             {
                 float distance = INF;
                 
-                for (auto obj : self.game.gameEntities.entities)
+                for (auto entity : self.game.gameEntities.entities)
                 {
-                    float dist = 10.0f;
-                    // float dist = obj.IntersectionDistance(rayMatrix[r][c]);
+                    float dist = GetIntersectionDistance(entity, rayMatrix[r][c]);
                     distance = std::min(distance, dist);
                 }
                 
-                if (fabs(distance - INF) < PRECISION)
-                    self.distances[r][c] = -1.0f;
-                else
-                    self.distances[r][c] = distance;
+                self.distances[r][c] = distance;
             }
         }
     }

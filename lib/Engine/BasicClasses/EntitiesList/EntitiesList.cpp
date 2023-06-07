@@ -9,17 +9,18 @@ namespace Engine
 		std::list<Entity> entities = {};
 	}
 
-	template <typename T>
-	void EntitiesList::Append(T entity)
+	void EntitiesList::Append(Entity entity)
 	{
 		bool entityFound = false;
 
 		for (const auto& en : this->entities)
+		{
 			if (en.identifier.GetValue() == entity.identifier.GetValue())
 			{
 				entityFound = true;
 				break;
 			}
+		}
 
 		if (!entityFound)
 			this->entities.push_back(entity);
@@ -30,11 +31,13 @@ namespace Engine
 		std::list<Entity>::iterator it = this->entities.begin();
 
 		while (it++ != this->entities.end())
+		{
 			if ((*it).identifier.GetValue() == identifier.GetValue())
 			{
 				this->entities.erase(it);
 				break;
 			}
+		}
 	}
 
 	Entity EntitiesList::Get(Identifier identifier)
@@ -45,12 +48,13 @@ namespace Engine
 			if (entity.identifier.GetValue() == identifier.GetValue())
 				return entity;
 
-		throw EntitiesListException::IdentifierDoesNotExist(identifier.GetValue());
+		if (!entityFound)
+			throw EntitiesListException::IdentifierDoesNotExist(identifier.GetValue());
 	}
 
-	void EntitiesList::Execute()
+	void EntitiesList::Execute(const std::string& method)
 	{
-		
+		// c++ doesn't store names of class methods at runtime
 	}
 
 	Entity EntitiesList::operator [] (Identifier identifier)

@@ -13,6 +13,13 @@ namespace Engine
         this->properties["position"] = position;
         this->properties["direction"] = direction.Normalize();
         this->properties["semiAxes"] = semiAxes;
+
+        this->properties["type"] = "HyperEllipsoid";
+    }
+
+    HyperEllipsoid::HyperEllipsoid(Entity entity)
+    {
+        *this = entity;
     }
 
     void HyperEllipsoid::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
@@ -81,5 +88,21 @@ namespace Engine
             else
                 return -1.0f;
         }
+    }
+
+    void HyperEllipsoid::operator = (Entity entity)
+    {
+        if (entity.HasProperty("type"))
+        {
+            if (std::get<std::string>(entity["type"]) == "HyperEllipsoid")
+            {
+                this->cs = entity.cs;
+                this->properties = entity.properties;
+
+                return;
+            }
+        }
+
+        // exception: entity is not a HyperEllipsoid
     }
 }

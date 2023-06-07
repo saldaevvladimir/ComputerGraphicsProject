@@ -18,6 +18,8 @@ namespace Engine
 
             void Draw();
 
+            float GetIntersectionDistance(Entity entity, Ray ray);
+
             void Update(Game::Camera camera);
 
         };
