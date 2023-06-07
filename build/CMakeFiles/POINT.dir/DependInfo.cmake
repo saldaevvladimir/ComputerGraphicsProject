@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Point/Point.cpp" "CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o" "gcc" "CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o.d"
+  "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Point/Point.cpp" "CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o" "gcc" "CMakeFiles/POINT.dir/lib/Math/Point/Point.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

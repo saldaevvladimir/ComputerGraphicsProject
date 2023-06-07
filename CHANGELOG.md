@@ -1,6 +1,9 @@
 # Change log
 
-## 2.1.8 ()
+## 2.1.8 (06.06.2023)
+
+added implementation of the following classes: HyperPlane, HyperEllipsoid
+
 
 
 ---

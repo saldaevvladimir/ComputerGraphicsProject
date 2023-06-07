@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles /home/v_s2/Desktop/ComputerGraphicsProject/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/CMakeFiles /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -361,6 +361,45 @@ GAME_CAMERA/fast:
 .PHONY : GAME_CAMERA/fast
 
 #=============================================================================
+# Target rules for targets named CANVAS
+
+# Build rule for target.
+CANVAS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CANVAS
+.PHONY : CANVAS
+
+# fast build rule for target.
+CANVAS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/build
+.PHONY : CANVAS/fast
+
+#=============================================================================
+# Target rules for targets named HYPER_PLANE
+
+# Build rule for target.
+HYPER_PLANE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HYPER_PLANE
+.PHONY : HYPER_PLANE
+
+# fast build rule for target.
+HYPER_PLANE/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/build
+.PHONY : HYPER_PLANE/fast
+
+#=============================================================================
+# Target rules for targets named HYPER_ELLIPSOID
+
+# Build rule for target.
+HYPER_ELLIPSOID: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HYPER_ELLIPSOID
+.PHONY : HYPER_ELLIPSOID
+
+# fast build rule for target.
+HYPER_ELLIPSOID/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/build
+.PHONY : HYPER_ELLIPSOID/fast
+
+#=============================================================================
 # Target rules for targets named ENGINE_BASIC_CLASSES
 
 # Build rule for target.
@@ -448,6 +487,30 @@ lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.s: lib/Engine/BasicClass
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
+
+lib/Engine/BasicClasses/Canvas/Canvas.o: lib/Engine/BasicClasses/Canvas/Canvas.cpp.o
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Canvas/Canvas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.o
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.cpp.o
+
+lib/Engine/BasicClasses/Canvas/Canvas.i: lib/Engine/BasicClasses/Canvas/Canvas.cpp.i
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Canvas/Canvas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.i
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.cpp.i
+
+lib/Engine/BasicClasses/Canvas/Canvas.s: lib/Engine/BasicClasses/Canvas/Canvas.cpp.s
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Canvas/Canvas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.s
+.PHONY : lib/Engine/BasicClasses/Canvas/Canvas.cpp.s
 
 lib/Engine/BasicClasses/EntitiesList/EntitiesList.o: lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
 .PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.o
@@ -568,6 +631,54 @@ lib/Engine/BasicClasses/Game/GameEntity/GameEntity.s: lib/Engine/BasicClasses/Ga
 lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s
 .PHONY : lib/Engine/BasicClasses/Game/GameEntity/GameEntity.cpp.s
+
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.o: lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.o
+
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.i: lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.i
+
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.s: lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp.s
+
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.o: lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.o
+
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.i: lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.i
+
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.s: lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.cpp.s
 
 lib/Engine/BasicClasses/Game/Object/Object.o: lib/Engine/BasicClasses/Game/Object/Object.cpp.o
 .PHONY : lib/Engine/BasicClasses/Game/Object/Object.o
@@ -988,6 +1099,7 @@ help:
 	@echo "... test"
 	@echo "... ACCURACY"
 	@echo "... ALL_MATH"
+	@echo "... CANVAS"
 	@echo "... COORDINATE_SYSTEM"
 	@echo "... ENGINE_BASIC_CLASSES"
 	@echo "... ENGINE_EXCEPTION"
@@ -1001,6 +1113,8 @@ help:
 	@echo "... GAME_OBJECT"
 	@echo "... GameTests"
 	@echo "... GraphicsEngine"
+	@echo "... HYPER_ELLIPSOID"
+	@echo "... HYPER_PLANE"
 	@echo "... IDENTIFIER"
 	@echo "... MATH_EXCEPTION"
 	@echo "... MATRIX"
@@ -1012,6 +1126,9 @@ help:
 	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.o"
 	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i"
 	@echo "... lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.s"
+	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.o"
+	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.i"
+	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.s"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.o"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.i"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.s"
@@ -1027,6 +1144,12 @@ help:
 	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.o"
 	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.i"
 	@echo "... lib/Engine/BasicClasses/Game/GameEntity/GameEntity.s"
+	@echo "... lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.o"
+	@echo "... lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.i"
+	@echo "... lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.s"
+	@echo "... lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.o"
+	@echo "... lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.i"
+	@echo "... lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.s"
 	@echo "... lib/Engine/BasicClasses/Game/Object/Object.o"
 	@echo "... lib/Engine/BasicClasses/Game/Object/Object.i"
 	@echo "... lib/Engine/BasicClasses/Game/Object/Object.s"

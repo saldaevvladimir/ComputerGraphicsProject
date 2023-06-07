@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VECTOR.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/VECTOR.dir/progress.make
 include CMakeFiles/VECTOR.dir/flags.make
 
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CMakeFiles/VECTOR.dir/flags.make
-CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
+CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o: CMakeFiles/VECTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -MF CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o.d -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -MF CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o.d -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o -c /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp
 
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp > CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp > CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.i
 
 CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Vector/Vector.cpp -o CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.s
 
 # Object files for target VECTOR
 VECTOR_OBJECTS = \
@@ -93,7 +93,7 @@ VECTOR_EXTERNAL_OBJECTS =
 libVECTOR.a: CMakeFiles/VECTOR.dir/lib/Math/Vector/Vector.cpp.o
 libVECTOR.a: CMakeFiles/VECTOR.dir/build.make
 libVECTOR.a: CMakeFiles/VECTOR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libVECTOR.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libVECTOR.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/VECTOR.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VECTOR.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/VECTOR.dir/clean:
 .PHONY : CMakeFiles/VECTOR.dir/clean
 
 CMakeFiles/VECTOR.dir/depend:
-	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/VECTOR.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/build/CMakeFiles/VECTOR.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VECTOR.dir/depend
 
