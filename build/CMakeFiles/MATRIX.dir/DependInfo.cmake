@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/v_s2/Desktop/test_branch/2/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp" "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o" "gcc" "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o.d"
+  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Matrix/Matrix.cpp" "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o" "gcc" "CMakeFiles/MATRIX.dir/lib/Math/Matrix/Matrix.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

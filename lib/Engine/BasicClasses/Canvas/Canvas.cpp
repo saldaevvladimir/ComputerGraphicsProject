@@ -1,7 +1,5 @@
 #include "Canvas.h"
 
-#define INF 9999999.0f
-
 #include "../../../Math/Accuracy/Accuracy.h"
 #include "../../../Math/Matrix/Matrix.h"
 #include "../../../Exceptions/EngineExceptions/EngineException.h"

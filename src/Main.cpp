@@ -24,7 +24,6 @@ int main()
 
     CoordinateSystem cs(init, vs);
 
-    
     Engine::Game game(cs, Engine::EntitiesList());
 
     Engine::Game::GameEntity gameEntity(game);
@@ -34,28 +33,24 @@ int main()
 
     Engine::Game::Object obj(gameEntity, objPos, objDir);
 
-    Vector normal({0, 0, 1});
-    Point planePos({0, 0, 3});
+    Point elPos({0, 0, 4});
+    Vector elDir({0, 0, 0});
+    Vector semiAxes({1, 1, 1});
 
-    Engine::HyperPlane plane(obj, planePos, normal);
+    Engine::HyperEllipsoid ellipsoid(obj, elPos, elDir, semiAxes);
 
     Point rayPos({0, 0, 0});
     Vector rayDir({0, 0, 1});
 
     Engine::Ray ray(cs, rayPos, rayDir);
 
-    float dist1 = plane.IntersectionDistance(ray); // it should be equal to 3.0
+    float dist2 = ellipsoid.HyperEllipsoid::IntersectionDistance(ray); // it should be equal to 2.0
 
-    cout << dist1 << endl;
+    Vector par;
+    par = ellipsoid.FindParams(ray);
+    cout << par << endl;
+    cout << dist2 << endl;
 
-    Engine::EntitiesList lst;
-
-    lst.Append(plane);
-
-    for (auto& entity : lst.entities)
-    {
-        std::cout << "Distance: " << entity.IntersectionDistance(ray) << std::endl;
-    }
 
     return 0;
 }

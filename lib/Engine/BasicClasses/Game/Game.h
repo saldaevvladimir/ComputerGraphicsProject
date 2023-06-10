@@ -1,7 +1,11 @@
 #pragma once
 
+#define ConfigType std::variant<int, float, bool, std::string, std::vector<int>, std::vector<float>>
+
 #include "../Ray/Ray.h"
 #include "../EntitiesList/EntitiesList.h"
+
+#include <variant>
 
 
 namespace Engine
@@ -74,6 +78,21 @@ namespace Engine
 		};
 
 
+		class Configuration
+		{
+		public:
+			std::string filepath = ""; // default config file
+			std::map<std::string, ConfigType> configuration;
+
+			Configuration();
+
+			Configuration(std::string filepath);
+
+
+
+
+
+		};
 
 	};
 }

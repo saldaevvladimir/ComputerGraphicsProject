@@ -1,4 +1,6 @@
 #include "HyperPlane.h"
+#include "../../../../Math/Accuracy/Accuracy.h"
+#include "../../../../Exceptions/EngineExceptions/EngineException.h"
 
 
 namespace Engine
@@ -52,21 +54,21 @@ namespace Engine
         Vector rayDir = ray.direction;
 
         Point planePoint = std::get<Point>(self["position"]);
-        Vector planeDir = std::get<Vector>(self["direction"]);
+        Vector normal = std::get<Vector>(self["normal"]);
 
-        if (planeDir % rayDir == 0.0f)
+        if (normal % rayDir == 0.0f)
         {
-            if ((planeDir % (rayPoint - planePoint)) != 0.0f)
+            if ((normal % (rayPoint - planePoint)) != 0.0f)
                 throw std::exception();
             else
                 return 0.0f;
         }
         else
         {
-            float tmp = - (planeDir % (rayPoint - planePoint)) / (planeDir % rayDir);
+            float tmp = - (normal % (rayPoint - planePoint)) / (normal % rayDir);
 
             if (tmp < 0.0f)
-                return -1.0f;
+                return INF;
             else
                 return (rayDir * tmp).Length();
         }
@@ -76,15 +78,19 @@ namespace Engine
     {
         if (entity.HasProperty("type"))
         {
-            if (std::get<std::string>(entity["type"]) == "HyperPlane")
+            if (std::get<std::string>(entity["type"]) != "HyperPlane")
+            {
+                throw EngineException::IncorrectArgumentType("HyperPlane", std::get<std::string>(entity["type"]));
+            }
+            else
             {
                 this->cs = entity.cs;
                 this->properties = entity.properties;
-
-                return;
             }
         }
-
-        // exception: entity is not a HyperPlane
+        else
+        {
+            throw EngineException::IncorrectArgumentType("HyperPlane", "type_not_specified");
+        }
     }
 }

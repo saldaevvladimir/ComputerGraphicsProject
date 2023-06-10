@@ -16,6 +16,11 @@ const char* EngineException::what() const throw()
 
 EngineException::~EngineException() noexcept {};
 
+EngineException EngineException::IncorrectArgumentType(std::string expectedType, std::string givenType)
+{
+	return EngineException("incorrect type (expected: " + expectedType + " given type: " + givenType + ")");
+}
+
 
 // EntityException
 
@@ -37,6 +42,17 @@ EngineException EntitiesListException::IdentifierDoesNotExist(const std::string&
 EngineException GameObjectException::DoesNotHaveProperty(const std::string& propertyKey)
 {
 	return EngineException("object has no property with the following key: " + propertyKey);
+}
+
+
+// HyperEllipsoidException
+
+EngineException HyperEllipsoidException::IncorrectDimensions(int pointDim, int dirDim, int semiAxesDim)
+{
+	return EngineException("incorrect arguments dimensions (point: " + 
+		std::to_string(pointDim) + 
+		" vector: " + std::to_string(dirDim) + 
+		"semiAxes: " + std::to_string(semiAxesDim) + ")");
 }
 
 // CanvasException

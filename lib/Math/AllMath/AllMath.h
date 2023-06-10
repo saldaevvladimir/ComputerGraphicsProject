@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../Exceptions/MathExceptions/MathException.h"
+#include "../Accuracy/Accuracy.h"
 #include "../Matrix/Matrix.h"
 #include "../Vector/Vector.h"
 #include "../Point/Point.h"

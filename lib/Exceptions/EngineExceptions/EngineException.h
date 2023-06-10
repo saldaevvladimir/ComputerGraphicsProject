@@ -12,6 +12,8 @@ public:
 	virtual const char* what() const throw();
 	virtual ~EngineException() noexcept;
 
+	static EngineException IncorrectArgumentType(std::string exceptedType, std::string givenType);
+
 private:
 	std::string m_message = "...";
 };
@@ -52,6 +54,12 @@ class GameObjectException : public EngineException
 {
 public:
 	static EngineException DoesNotHaveProperty(const std::string& propertyKey);
+};
+
+class HyperEllipsoidException : public EngineException
+{
+public:
+	static EngineException IncorrectDimensions(int pointDim, int rayDim, int semiAxesDim);
 };
 
 class CanvasException : public EngineException

@@ -1,5 +1,6 @@
 #include "Entity.h"
 #include "../../../Exceptions/EngineExceptions/EngineException.h"
+#include "../../../Math/Accuracy/Accuracy.h"
 
 
 namespace Engine
@@ -36,7 +37,7 @@ namespace Engine
 
 	float Entity::IntersectionDistance(Ray ray)
 	{
-		return -100.0f;
+		return INF;
 	}
 
 	PropertyType& Entity::operator [] (const std::string& key)

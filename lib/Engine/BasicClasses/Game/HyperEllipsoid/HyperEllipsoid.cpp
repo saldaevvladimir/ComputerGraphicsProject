@@ -1,11 +1,13 @@
 #include "HyperEllipsoid.h"
+#include "../../../../Math/Accuracy/Accuracy.h"
+#include "../../../../Exceptions/EngineExceptions/EngineException.h"
 
 #include <cmath>
 
 
 namespace Engine
 {
-    HyperEllipsoid::HyperEllipsoid(Game::Object object, Point position, Vector direction, std::vector<float> semiAxes)
+    HyperEllipsoid::HyperEllipsoid(Game::Object object, Point position, Vector direction, Vector semiAxes)
     {
         this->cs = object.cs;
         this->properties = object.properties;
@@ -48,61 +50,104 @@ namespace Engine
     {
         HyperEllipsoid& self = *this;
 
-        Point rayPoint = ray.initialPoint;
+        Vector params;
+        params = self.FindParams(ray);
+
+        if (params[2] < PRECISION)
+            return INF;
+
         Vector rayDir = ray.direction;
 
-        Vector ellipsoidDir = std::get<Vector>(self["direction"]);
+        float dist1 = 0.0f;
+        float dist2 = 0.0f;
 
-        float alpha = (std::pow(rayDir[0], 2)) / (std::pow(ellipsoidDir[0], 2)) + 
-            (std::pow(rayDir[1], 2)) / (std::pow(ellipsoidDir[1], 2)) + 
-            (std::pow(rayDir[2], 2)) / (std::pow(ellipsoidDir[2], 2));
-
-        float betta = 2 * ((rayDir[0] * rayPoint[0]) / (std::pow(ellipsoidDir[0], 2)) + 
-            (rayDir[1] * rayPoint[1]) / (std::pow(ellipsoidDir[1], 2)) + 
-            (rayDir[2] * rayPoint[2]) / (std::pow(ellipsoidDir[2], 2)));
-
-        float gamma = (std::pow(rayPoint[0], 2)) / (std::pow(ellipsoidDir[0], 2)) + 
-            (std::pow(rayPoint[1], 2)) / (std::pow(ellipsoidDir[1], 2)) + 
-            (std::pow(rayPoint[2], 2)) / (std::pow(ellipsoidDir[2], 2));
-
-        float disc = std::pow(betta, 2) - 4.0f * alpha * gamma;
-
-        if (disc < 0.0f)
+        for (int i = 0; i < rayDir.Dim(); i++)
         {
-            return -1.0f;
+            dist1 += params[0] * rayDir[i];
+            dist2 += params[1] * rayDir[i];
+        }
+
+        return (std::min(fabs(dist1), fabs(dist2)));
+    }
+
+    Vector HyperEllipsoid::FindParams(Ray ray)
+    {
+        HyperEllipsoid& self = *this;
+
+        float a = 0.0f;
+        float b = 0.0f;
+        float c = 0.0f;
+
+        float freeCoef = 0.0f;
+        Vector result({0, 0, 0});
+
+        Point initPoint = ray.initialPoint;
+        Vector dir = ray.direction;
+        Vector semiAxes = std::get<Vector>(self["semiAxes"]);
+
+        int dim = initPoint.Dim();
+
+        if (dir.Dim() != dim || semiAxes.Dim() != dim)
+            throw HyperEllipsoidException::IncorrectDimensions(initPoint.Dim(), dir.Dim(), semiAxes.Dim());
+
+        for (int i = 0; i < dim; i++)
+        {
+            float coef = 1.0f;
+
+            for (int j = 0; j < dim; j++)
+            {
+                if (i == j)
+                    continue;
+
+                coef *= std::pow(semiAxes[j], 2);
+            }
+
+            a += coef * std::pow(dir[i], 2);
+            b += coef * initPoint[i];
+            c += coef * std::pow(initPoint[i], 2);
+
+            freeCoef *= std::pow(semiAxes[i], 2);
+        }
+
+        c -= freeCoef;
+        b *= 2;
+        float Dis = std::pow(b, 2) - 4 * a * c;
+
+        if (Dis < 0)
+        {
+            result[2] = 0.0f; // flag
         }
         else
         {
-            float t1 = (-betta + std::sqrt(disc)) / (2 * alpha);
-            float t2 = (-betta - std::sqrt(disc)) / (2 * alpha);
+            float sln1 = (-b + (float)std::sqrt(Dis)) / (2 * a);
+            float sln2 = (-b - (float)std::sqrt(Dis)) / (2 * a);
+            std::cout << a << " " << b << " " << Dis << std::endl;
 
-            Vector vec1 = rayDir * t1;
-            Vector vec2 = rayDir * t2;
-
-            if (t1 > 0 && t2 > 0)
-                return std::min(vec1.Length(), vec2.Length());
-            else if  (t1 > 0 && t2 <= 0)
-                return vec1.Length();
-            else if (t1 <= 0 && t2 < 0)
-                return vec2.Length();
-            else
-                return -1.0f;
+            result[0] = sln1;
+            result[1] = sln2;
+            result[2] = 1.0f; // flag
         }
+        
+        return result;
     }
 
     void HyperEllipsoid::operator = (Entity entity)
     {
         if (entity.HasProperty("type"))
         {
-            if (std::get<std::string>(entity["type"]) == "HyperEllipsoid")
+            if (std::get<std::string>(entity["type"]) != "HyperEllipsoid")
+            {
+                throw EngineException::IncorrectArgumentType("HyperEllipsoid", std::get<std::string>(entity["type"]));
+            }
+            else
             {
                 this->cs = entity.cs;
                 this->properties = entity.properties;
-
-                return;
             }
         }
-
-        // exception: entity is not a HyperEllipsoid
+        else
+        {
+            throw EngineException::IncorrectArgumentType("HyperEllipsoid", "type_not_specified");
+        }
     }
 }

@@ -1,10 +1,16 @@
 # Change log
 
+# 2.1.9 (10.06.2023)
+
+added implementation of the EventSystem class
+
 ## 2.1.8 (06.06.2023)
 
 added implementation of the following classes: HyperPlane, HyperEllipsoid
 
+added tests for IntersectionDistance method (HyperPlane, HyperEllipsoid)
 
+added tests for Object.Move(), Object.PlanarRotate(), Object.Rotate3D() methods
 
 ---
 

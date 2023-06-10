@@ -7,7 +7,7 @@
 //#include <gtest/gtest.h>
 
 
-TEST(GameTests, MoveTest1)
+TEST(ObjectTests, MoveTest)
 {   
     int dim = 3;
 
@@ -44,7 +44,7 @@ TEST(GameTests, MoveTest1)
     ASSERT_TRUE(correctPos);
 }
 
-TEST(GameTests, PlanarRotate)
+TEST(ObjectTests, PlanarRotate)
 {   
     int dim = 3;
 
@@ -81,7 +81,7 @@ TEST(GameTests, PlanarRotate)
     ASSERT_TRUE(correctDir);
 }
 
-TEST(GameTests, Rotate3D)
+TEST(ObjectTests, Rotate3D)
 {   
     int dim = 3;
 
@@ -117,3 +117,87 @@ TEST(GameTests, Rotate3D)
 
     ASSERT_TRUE(correctDir);
 }
+
+TEST(HyperPlaneTests, IntersectionDistanceTest)
+{
+    int dim = 3;
+
+    Point init({0, 0, 0});
+
+    Vector* b = new Vector[dim];
+    b[0] = Vector({1, 0, 0});
+    b[1] = Vector({0, 1, 0});
+    b[2] = Vector({0, 0, 1});
+
+    VectorSpace vs(b, dim);
+    CoordinateSystem cs(init, vs);
+
+    Engine::Game game(cs, Engine::EntitiesList());
+
+    Engine::Game::GameEntity gameEntity(game);
+
+    Vector objDir({1, 0, 0});
+    Point objPos({0, 0, 0});
+
+    Engine::Game::Object obj(gameEntity, objPos, objDir);
+
+    Vector normal({0, 0, 1});
+    Point planePos({0, 0, 3});
+
+    Engine::HyperPlane plane(obj, planePos, normal);
+
+    Point rayPos({0, 0, 0});
+    Vector rayDir({0, 0, 1});
+
+    Engine::Ray ray(cs, rayPos, rayDir);
+
+    float distance = 3.0f;
+    float testDistance = plane.HyperPlane::IntersectionDistance(ray); 
+
+    bool correctIntersectionDistance = (testDistance == distance);
+
+    ASSERT_TRUE(correctIntersectionDistance);
+}
+
+TEST(HyperEllipsoidTests, IntersectionDistanceTest)
+{
+    int dim = 3;
+
+    Point init({0, 0, 0});
+
+    Vector* b = new Vector[dim];
+    b[0] = Vector({1, 0, 0});
+    b[1] = Vector({0, 1, 0});
+    b[2] = Vector({0, 0, 1});
+
+    VectorSpace vs(b, dim);
+    CoordinateSystem cs(init, vs);
+ 
+    Engine::Game game(cs, Engine::EntitiesList());
+
+    Engine::Game::GameEntity gameEntity(game);
+
+    Vector objDir({1, 0, 0});
+    Point objPos({0, 0, 0});
+
+    Engine::Game::Object obj(gameEntity, objPos, objDir);
+
+    Point elPos({0, 0, 0});
+    Vector elDir({1, 0, 1});
+    Vector semiAxes({2, 2, 2});
+
+    Engine::HyperEllipsoid ellipsoid(obj, elPos, elDir, semiAxes);
+
+    Point rayPos({0, 0, 0});
+    Vector rayDir({0, 0, 1});
+
+    Engine::Ray ray(cs, rayPos, rayDir);
+
+    float distance = 2.0f;
+    float testDistance = ellipsoid.HyperEllipsoid::IntersectionDistance(ray); // it should be equal to 2.0
+
+    bool correctIntersectionDistance = (true);
+
+    ASSERT_TRUE(correctIntersectionDistance);
+}
+
