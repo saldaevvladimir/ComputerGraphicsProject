@@ -21,6 +21,7 @@
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/HYPER_ELLIPSOID.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/EVENT_SYSTEM.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/CONFIGURATION.dir
+/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/CONSOLE.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/ENGINE_BASIC_CLASSES.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/MathTests.dir
 /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/EngineTests.dir

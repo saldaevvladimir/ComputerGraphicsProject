@@ -7,20 +7,20 @@
 namespace Engine
 {
     class Canvas
-        {
-        public:
-            int height;
-            int width;
-            Matrix distances;
-            Game game;
+    {
+    public:
+        int height;
+        int width;
+        Matrix distances;
+        Game game;
 
-            Canvas(int height, int width, Game game);
+        Canvas(int height, int width, Game game);
 
-            void Draw();
+        void Draw();
 
-            float GetIntersectionDistance(Entity entity, Ray ray);
+        float GetIntersectionDistance(Entity entity, Ray ray);
 
-            void Update(Game::Camera camera);
+        void Update(Game::Camera camera);
 
-        };
+    };
 }

@@ -4,6 +4,7 @@
 #include "../Ray/Ray.h"
 #include "../EntitiesList/EntitiesList.h"
 #include "../Configuration/Configuration.h"
+#include "../EventSystem/EventSystem.h"
 
 #include <variant>
 #include <string>
@@ -17,10 +18,15 @@ namespace Engine
 	public:
 		EntitiesList gameEntities;
 		CoordinateSystem cs;
+		EventSystem es;
 
 		Game();
 
-		Game(CoordinateSystem cs, EntitiesList gameEntities);
+		Game(CoordinateSystem cs, EntitiesList gameEntities, EventSystem es);
+
+		EventSystem GetEventSystem();
+
+		void ApplyConfiguration(Configuration config);
 
 		void operator = (Game game);
 
@@ -39,6 +45,7 @@ namespace Engine
 		{
 		public:
 			GameEntity();
+
 			GameEntity(Game& game);
 		};
 
@@ -78,5 +85,6 @@ namespace Engine
 			std::vector<std::vector<Ray>> GetRaysMatrix(int height, int width);
 
 		};
+
 	};
 }

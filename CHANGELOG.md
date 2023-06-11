@@ -1,5 +1,11 @@
 # Change log
 
+# 2.2.0 (11.06.2023)
+
+added implementatino of the Configuration class
+
+added Configuration and EventSystem to Game class
+
 # 2.1.9 (10.06.2023)
 
 added implementation of the EventSystem class

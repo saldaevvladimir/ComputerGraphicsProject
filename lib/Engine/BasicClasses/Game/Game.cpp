@@ -9,25 +9,37 @@ namespace Engine
 	{
 		this->cs = CoordinateSystem();
 		this->gameEntities = EntitiesList();
+		this->es = EventSystem();
 	}
 
-    Game::Game(CoordinateSystem cs, EntitiesList gameEntities)
+    Game::Game(CoordinateSystem cs, EntitiesList gameEntities, EventSystem es)
 	{
 		if (!cs.IsInitialized())
 			throw CoordinateSystemException::NotInitialized();
 			
 		this->cs = cs;
 		this->gameEntities = gameEntities;
+		this->es = es;
+	}
+
+	EventSystem Game::GetEventSystem()
+	{
+		return this->es;
+	}
+
+	void Game::ApplyConfiguration(Configuration config)
+	{
+		Game& self = *this;
+
+		for (const auto& [key, val] : config.configuration)
+		{
+			//self[key] = val;
+		}
 	}
 
 	void Game::operator = (Game game)
 	{
 		Game& self = *this;
-
-		if (!game.cs.IsInitialized())
-		{
-			
-		}
 
 		self.cs = game.cs;
 		self.gameEntities = game.gameEntities;

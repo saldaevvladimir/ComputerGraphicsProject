@@ -70,5 +70,10 @@ namespace Engine
         return EventSystem::CompareFunctions(func1, func2);
     }
 
+    void EventSystem::operator = (EventSystem es)
+    {
+        this->events = es.events;
+    }
+
 } 
 

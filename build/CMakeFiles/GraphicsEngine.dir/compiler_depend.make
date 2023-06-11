@@ -272,9 +272,6 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h \
   /usr/include/c++/13.1.1/any \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.h \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h \
   /usr/include/c++/13.1.1/functional \
   /usr/include/c++/13.1.1/bits/std_function.h \
@@ -286,8 +283,15 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
   /usr/include/c++/13.1.1/bits/algorithmfwd.h \
   /usr/include/c++/13.1.1/bits/stl_heap.h \
   /usr/include/c++/13.1.1/bits/uniform_int_dist.h \
-  /usr/include/c++/13.1.1/bits/stl_tempbuf.h
+  /usr/include/c++/13.1.1/bits/stl_tempbuf.h \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.h \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h
 
+
+/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h:
+
+/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h:
 
 /usr/include/c++/13.1.1/bits/uniform_int_dist.h:
 
@@ -300,10 +304,6 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/c++/13.1.1/bits/std_function.h:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h:
-
-/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h:
-
-/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.h:
 

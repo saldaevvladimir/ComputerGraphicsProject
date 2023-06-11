@@ -152,6 +152,10 @@ add_library(CONFIGURATION
     STATIC ./lib/Engine/BasicClasses/Configuration/Configuration.cpp
 )
 
+add_library(CONSOLE
+    STATIC ./lib/Engine/BasicClasses/Game/Console/Console.cpp
+)
+
 
 target_link_libraries(RAY
     PUBLIC COORDINATE_SYSTEM
@@ -177,6 +181,7 @@ target_link_libraries(GAME
     PUBLIC ENTITIES_LIST
     PUBLIC MATH_EXCEPTION
     PUBLIC CONFIGURATION
+    PUBLIC EVENT_SYSTEM
 )
 
 target_link_libraries(GAME_ENTITY
@@ -205,6 +210,9 @@ target_link_libraries(HYPER_ELLIPSOID
     PUBLIC GAME
 )
 
+target_link_libraries(CONSOLE
+    PUBLIC MATRIX
+)
 
 add_library(ENGINE_BASIC_CLASSES
     STATIC lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp
@@ -224,7 +232,7 @@ target_link_libraries(ENGINE_BASIC_CLASSES
     PUBLIC HYPER_ELLIPSOID
     PUBLIC EVENT_SYSTEM
     PUBLIC CONFIGURATION
-
+    PUBLIC CONSOLE
 )
 
 # ENGINE_VISUALIZATION

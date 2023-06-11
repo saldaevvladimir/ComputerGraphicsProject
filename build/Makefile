@@ -426,6 +426,19 @@ CONFIGURATION/fast:
 .PHONY : CONFIGURATION/fast
 
 #=============================================================================
+# Target rules for targets named CONSOLE
+
+# Build rule for target.
+CONSOLE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CONSOLE
+.PHONY : CONSOLE
+
+# fast build rule for target.
+CONSOLE/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/build
+.PHONY : CONSOLE/fast
+
+#=============================================================================
 # Target rules for targets named ENGINE_BASIC_CLASSES
 
 # Build rule for target.
@@ -657,6 +670,30 @@ lib/Engine/BasicClasses/Game/Camera/Camera.s: lib/Engine/BasicClasses/Game/Camer
 lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s
 .PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.cpp.s
+
+lib/Engine/BasicClasses/Game/Console/Console.o: lib/Engine/BasicClasses/Game/Console/Console.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Game/Console/Console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/lib/Engine/BasicClasses/Game/Console/Console.cpp.o
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.cpp.o
+
+lib/Engine/BasicClasses/Game/Console/Console.i: lib/Engine/BasicClasses/Game/Console/Console.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Game/Console/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/lib/Engine/BasicClasses/Game/Console/Console.cpp.i
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.cpp.i
+
+lib/Engine/BasicClasses/Game/Console/Console.s: lib/Engine/BasicClasses/Game/Console/Console.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Game/Console/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/lib/Engine/BasicClasses/Game/Console/Console.cpp.s
+.PHONY : lib/Engine/BasicClasses/Game/Console/Console.cpp.s
 
 lib/Engine/BasicClasses/Game/Game.o: lib/Engine/BasicClasses/Game/Game.cpp.o
 .PHONY : lib/Engine/BasicClasses/Game/Game.o
@@ -1175,6 +1212,7 @@ help:
 	@echo "... ALL_MATH"
 	@echo "... CANVAS"
 	@echo "... CONFIGURATION"
+	@echo "... CONSOLE"
 	@echo "... COORDINATE_SYSTEM"
 	@echo "... ENGINE_BASIC_CLASSES"
 	@echo "... ENGINE_EXCEPTION"
@@ -1220,6 +1258,9 @@ help:
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.o"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.i"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.s"
+	@echo "... lib/Engine/BasicClasses/Game/Console/Console.o"
+	@echo "... lib/Engine/BasicClasses/Game/Console/Console.i"
+	@echo "... lib/Engine/BasicClasses/Game/Console/Console.s"
 	@echo "... lib/Engine/BasicClasses/Game/Game.o"
 	@echo "... lib/Engine/BasicClasses/Game/Game.i"
 	@echo "... lib/Engine/BasicClasses/Game/Game.s"

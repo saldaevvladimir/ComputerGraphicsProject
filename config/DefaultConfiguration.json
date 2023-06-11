@@ -1,4 +1,5 @@
 {
     "precision": "some_precision",
-    "drawDistance": 100
+    "drawDistance": 5.0,
+    "charmap": ".:;><+r*zsvfwqkP694VOGbUAKXH8RD#$B0MNWQ%&@"
 }

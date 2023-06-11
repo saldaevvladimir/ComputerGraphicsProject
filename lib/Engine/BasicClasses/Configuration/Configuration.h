@@ -6,8 +6,6 @@
 #include <map>
 #include <string>
 
-// TYPES[] = {int, float, bool, std::string, std::vector, std::map, };
-
 
 namespace Engine
 {
