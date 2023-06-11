@@ -6,6 +6,8 @@ added implementatino of the Configuration class
 
 added Configuration and EventSystem to Game class
 
+added Console class
+
 # 2.1.9 (10.06.2023)
 
 added implementation of the EventSystem class
