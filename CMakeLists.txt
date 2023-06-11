@@ -8,7 +8,14 @@ set(CMAKE_CXX_STANDART_REQUIRED true)
 
 project(GraphicsEngine VERSION 3.0)
 
+# JSONCPP
 
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(JSONCPP jsoncpp)
+
+include_directories(${JSONCPP_INCLUDE_DIRS})
+link_directories(${JSONCPP_LIBRARY_DIRS})
 
 # EXCEPTIONS
 
@@ -137,6 +144,14 @@ add_library(HYPER_ELLIPSOID
     STATIC ./lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.cpp
 )
 
+add_library(EVENT_SYSTEM
+    STATIC ./lib/Engine/BasicClasses/EventSystem/EventSystem.cpp
+)
+
+add_library(CONFIGURATION
+    STATIC ./lib/Engine/BasicClasses/Configuration/Configuration.cpp
+)
+
 
 target_link_libraries(RAY
     PUBLIC COORDINATE_SYSTEM
@@ -152,10 +167,16 @@ target_link_libraries(ENTITIES_LIST
     PUBLIC ENGINE_EXCEPTION
 )
 
+target_link_libraries(CONFIGURATION
+    PUBLIC ENGINE_EXCEPTION
+    PUBLIC ${JSONCPP_LIBRARIES}
+)
+
 target_link_libraries(GAME
     PUBLIC RAY
     PUBLIC ENTITIES_LIST
     PUBLIC MATH_EXCEPTION
+    PUBLIC CONFIGURATION
 )
 
 target_link_libraries(GAME_ENTITY
@@ -201,6 +222,9 @@ target_link_libraries(ENGINE_BASIC_CLASSES
     PUBLIC CANVAS
     PUBLIC HYPER_PLANE
     PUBLIC HYPER_ELLIPSOID
+    PUBLIC EVENT_SYSTEM
+    PUBLIC CONFIGURATION
+
 )
 
 # ENGINE_VISUALIZATION

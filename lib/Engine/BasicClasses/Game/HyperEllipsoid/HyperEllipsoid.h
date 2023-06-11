@@ -18,8 +18,6 @@ namespace Engine
 
         float IntersectionDistance(Ray ray) override;
 
-        Vector FindParams(Ray ray);
-
         void operator = (Entity entity);
         
     };

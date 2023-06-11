@@ -1,11 +1,13 @@
 #pragma once
 
-#define ConfigType std::variant<int, float, bool, std::string, std::vector<int>, std::vector<float>>
 
 #include "../Ray/Ray.h"
 #include "../EntitiesList/EntitiesList.h"
+#include "../Configuration/Configuration.h"
 
 #include <variant>
+#include <string>
+#include <any>
 
 
 namespace Engine
@@ -76,23 +78,5 @@ namespace Engine
 			std::vector<std::vector<Ray>> GetRaysMatrix(int height, int width);
 
 		};
-
-
-		class Configuration
-		{
-		public:
-			std::string filepath = ""; // default config file
-			std::map<std::string, ConfigType> configuration;
-
-			Configuration();
-
-			Configuration(std::string filepath);
-
-
-
-
-
-		};
-
 	};
 }

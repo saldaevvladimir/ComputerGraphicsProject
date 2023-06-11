@@ -111,8 +111,10 @@ EngineTests: libVECTOR.a
 EngineTests: libMATRIX.a
 EngineTests: libACCURACY.a
 EngineTests: libIDENTIFIER.a
-EngineTests: libENGINE_EXCEPTION.a
 EngineTests: libMATH_EXCEPTION.a
+EngineTests: libEVENT_SYSTEM.a
+EngineTests: libCONFIGURATION.a
+EngineTests: libENGINE_EXCEPTION.a
 EngineTests: CMakeFiles/EngineTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EngineTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EngineTests.dir/link.txt --verbose=$(VERBOSE)

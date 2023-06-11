@@ -18,13 +18,13 @@ namespace Engine
         events.erase(name);
     }
 
-    void Handle(std::string name, std::function<void(std::vector<std::any>)> func)
+    void EventSystem::Handle(std::string name, std::function<void(std::vector<std::any>)> func)
     {
         if (events.find(name) != events.end())
             events[name].push_back(func);
     }
 
-    void RemoveHandled(std::string name, std::function<void(std::vector<std::any>)> func)
+    void EventSystem::RemoveHandled(std::string name, std::function<void(std::vector<std::any>)> func)
     {
         if (events.find(name) != events.end())
         {
@@ -43,10 +43,10 @@ namespace Engine
     {
         if (events.find(name) != events.end())
             for (auto& func : events[name])
-                func(arg);
+                func(args);
     }
 
-    std::vector<std::function<void(std::vector<std::any>)>> GetHandled(std::string name)
+    std::vector<std::function<void(std::vector<std::any>)>> EventSystem::GetHandled(std::string name)
     {
         if (events.find(name) != events.end())
             return events[name];
@@ -54,9 +54,21 @@ namespace Engine
         return {};
     }
 
-    std::vector<std::function<void(std::vector<std::any>)>> operator [] (std::string name)
+    std::vector<std::function<void(std::vector<std::any>)>> EventSystem::operator [] (std::string name)
     {
         return GetHandled(name);
     }
+
+    bool EventSystem::CompareFunctions(const std::function<void(std::vector<std::any>)>& f1, const std::function<void(std::vector<std::any>)>& f2) 
+    {
+        return (f1.target_type() == f2.target_type() && 
+            f1.template target<void(std::vector<std::any>)>() == f2.template target<void(std::vector<std::any>)>());    
+    }
+
+    bool operator == (const std::function<void(std::vector<std::any>)>& func1, const std::function<void(std::vector<std::any>)>& func2)
+    {
+        return EventSystem::CompareFunctions(func1, func2);
+    }
+
 } 
 

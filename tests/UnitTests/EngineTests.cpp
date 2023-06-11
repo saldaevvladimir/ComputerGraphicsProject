@@ -182,9 +182,9 @@ TEST(HyperEllipsoidTests, IntersectionDistanceTest)
 
     Engine::Game::Object obj(gameEntity, objPos, objDir);
 
-    Point elPos({0, 0, 0});
-    Vector elDir({1, 0, 1});
-    Vector semiAxes({2, 2, 2});
+    Point elPos({0, 0, 4});
+    Vector elDir({0, 0, 1});
+    Vector semiAxes({1, 1, 1});
 
     Engine::HyperEllipsoid ellipsoid(obj, elPos, elDir, semiAxes);
 
@@ -193,8 +193,8 @@ TEST(HyperEllipsoidTests, IntersectionDistanceTest)
 
     Engine::Ray ray(cs, rayPos, rayDir);
 
-    float distance = 2.0f;
-    float testDistance = ellipsoid.HyperEllipsoid::IntersectionDistance(ray); // it should be equal to 2.0
+    float distance = 3.0f;
+    float testDistance = ellipsoid.HyperEllipsoid::IntersectionDistance(ray);
 
     bool correctIntersectionDistance = (true);
 

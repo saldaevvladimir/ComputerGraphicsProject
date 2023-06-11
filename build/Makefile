@@ -400,6 +400,32 @@ HYPER_ELLIPSOID/fast:
 .PHONY : HYPER_ELLIPSOID/fast
 
 #=============================================================================
+# Target rules for targets named EVENT_SYSTEM
+
+# Build rule for target.
+EVENT_SYSTEM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EVENT_SYSTEM
+.PHONY : EVENT_SYSTEM
+
+# fast build rule for target.
+EVENT_SYSTEM/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/build
+.PHONY : EVENT_SYSTEM/fast
+
+#=============================================================================
+# Target rules for targets named CONFIGURATION
+
+# Build rule for target.
+CONFIGURATION: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CONFIGURATION
+.PHONY : CONFIGURATION
+
+# fast build rule for target.
+CONFIGURATION/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/build
+.PHONY : CONFIGURATION/fast
+
+#=============================================================================
 # Target rules for targets named ENGINE_BASIC_CLASSES
 
 # Build rule for target.
@@ -512,6 +538,30 @@ lib/Engine/BasicClasses/Canvas/Canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/lib/Engine/BasicClasses/Canvas/Canvas.cpp.s
 .PHONY : lib/Engine/BasicClasses/Canvas/Canvas.cpp.s
 
+lib/Engine/BasicClasses/Configuration/Configuration.o: lib/Engine/BasicClasses/Configuration/Configuration.cpp.o
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.o
+
+# target to build an object file
+lib/Engine/BasicClasses/Configuration/Configuration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.o
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.cpp.o
+
+lib/Engine/BasicClasses/Configuration/Configuration.i: lib/Engine/BasicClasses/Configuration/Configuration.cpp.i
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/Configuration/Configuration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.i
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.cpp.i
+
+lib/Engine/BasicClasses/Configuration/Configuration.s: lib/Engine/BasicClasses/Configuration/Configuration.cpp.s
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/Configuration/Configuration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.s
+.PHONY : lib/Engine/BasicClasses/Configuration/Configuration.cpp.s
+
 lib/Engine/BasicClasses/EntitiesList/EntitiesList.o: lib/Engine/BasicClasses/EntitiesList/EntitiesList.cpp.o
 .PHONY : lib/Engine/BasicClasses/EntitiesList/EntitiesList.o
 
@@ -559,6 +609,30 @@ lib/Engine/BasicClasses/Entity/Entity.s: lib/Engine/BasicClasses/Entity/Entity.c
 lib/Engine/BasicClasses/Entity/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/lib/Engine/BasicClasses/Entity/Entity.cpp.s
 .PHONY : lib/Engine/BasicClasses/Entity/Entity.cpp.s
+
+lib/Engine/BasicClasses/EventSystem/EventSystem.o: lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.o
+
+# target to build an object file
+lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o
+
+lib/Engine/BasicClasses/EventSystem/EventSystem.i: lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.i
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.i
+
+# target to preprocess a source file
+lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.i
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.i
+
+lib/Engine/BasicClasses/EventSystem/EventSystem.s: lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.s
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.s
+
+# target to generate assembly for a file
+lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.s
+.PHONY : lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.s
 
 lib/Engine/BasicClasses/Game/Camera/Camera.o: lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o
 .PHONY : lib/Engine/BasicClasses/Game/Camera/Camera.o
@@ -1100,11 +1174,13 @@ help:
 	@echo "... ACCURACY"
 	@echo "... ALL_MATH"
 	@echo "... CANVAS"
+	@echo "... CONFIGURATION"
 	@echo "... COORDINATE_SYSTEM"
 	@echo "... ENGINE_BASIC_CLASSES"
 	@echo "... ENGINE_EXCEPTION"
 	@echo "... ENTITIES_LIST"
 	@echo "... ENTITY"
+	@echo "... EVENT_SYSTEM"
 	@echo "... EngineTests"
 	@echo "... FUNCTIONS"
 	@echo "... GAME"
@@ -1129,12 +1205,18 @@ help:
 	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.o"
 	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.i"
 	@echo "... lib/Engine/BasicClasses/Canvas/Canvas.s"
+	@echo "... lib/Engine/BasicClasses/Configuration/Configuration.o"
+	@echo "... lib/Engine/BasicClasses/Configuration/Configuration.i"
+	@echo "... lib/Engine/BasicClasses/Configuration/Configuration.s"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.o"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.i"
 	@echo "... lib/Engine/BasicClasses/EntitiesList/EntitiesList.s"
 	@echo "... lib/Engine/BasicClasses/Entity/Entity.o"
 	@echo "... lib/Engine/BasicClasses/Entity/Entity.i"
 	@echo "... lib/Engine/BasicClasses/Entity/Entity.s"
+	@echo "... lib/Engine/BasicClasses/EventSystem/EventSystem.o"
+	@echo "... lib/Engine/BasicClasses/EventSystem/EventSystem.i"
+	@echo "... lib/Engine/BasicClasses/EventSystem/EventSystem.s"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.o"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.i"
 	@echo "... lib/Engine/BasicClasses/Game/Camera/Camera.s"

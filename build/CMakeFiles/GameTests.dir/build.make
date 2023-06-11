@@ -111,8 +111,10 @@ GameTests: libVECTOR.a
 GameTests: libMATRIX.a
 GameTests: libACCURACY.a
 GameTests: libIDENTIFIER.a
-GameTests: libENGINE_EXCEPTION.a
 GameTests: libMATH_EXCEPTION.a
+GameTests: libEVENT_SYSTEM.a
+GameTests: libCONFIGURATION.a
+GameTests: libENGINE_EXCEPTION.a
 GameTests: CMakeFiles/GameTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GameTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameTests.dir/link.txt --verbose=$(VERBOSE)

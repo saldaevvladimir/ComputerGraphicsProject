@@ -241,6 +241,8 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
   /usr/include/c++/13.1.1/bits/stl_list.h \
   /usr/include/c++/13.1.1/bits/allocated_ptr.h \
   /usr/include/c++/13.1.1/bits/list.tcc \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h \
+  /usr/include/c++/13.1.1/any \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/EngineExceptions/EngineException.h \
   /usr/include/c++/13.1.1/cmath \
@@ -279,6 +281,10 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 
 /usr/include/c++/13.1.1/tr1/beta_function.tcc:
 
+/usr/include/c++/13.1.1/tr1/bessel_function.tcc:
+
+/usr/include/c++/13.1.1/tr1/special_function_util.h:
+
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/struct_rwlock.h:
@@ -288,8 +294,6 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 /usr/include/c++/13.1.1/limits:
 
 /usr/include/bits/timex.h:
-
-/usr/include/bits/errno.h:
 
 /usr/include/bits/time.h:
 
@@ -416,8 +420,6 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/c++/13.1.1/bits/cxxabi_forced.h:
-
-/usr/include/c++/13.1.1/tr1/bessel_function.tcc:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -599,8 +601,6 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 
 /usr/include/c++/13.1.1/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/13.1.1/tr1/special_function_util.h:
-
 /usr/include/c++/13.1.1/bits/stl_function.h:
 
 /usr/include/c++/13.1.1/bits/ptr_traits.h:
@@ -632,6 +632,8 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 /usr/include/c++/13.1.1/bits/string_view.tcc:
 
 /usr/include/bits/types/clockid_t.h:
+
+/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -678,6 +680,10 @@ CMakeFiles/GAME_CAMERA.dir/lib/Engine/BasicClasses/Game/Camera/Camera.cpp.o: /ho
 /usr/include/c++/13.1.1/sstream:
 
 /usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/c++/13.1.1/any:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 

@@ -113,6 +113,8 @@ GraphicsEngine: libMATRIX.a
 GraphicsEngine: libACCURACY.a
 GraphicsEngine: libMATH_EXCEPTION.a
 GraphicsEngine: libIDENTIFIER.a
+GraphicsEngine: libEVENT_SYSTEM.a
+GraphicsEngine: libCONFIGURATION.a
 GraphicsEngine: libENGINE_EXCEPTION.a
 GraphicsEngine: CMakeFiles/GraphicsEngine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GraphicsEngine"

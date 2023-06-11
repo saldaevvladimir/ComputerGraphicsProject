@@ -270,11 +270,34 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
   /usr/include/c++/13.1.1/bits/allocated_ptr.h \
   /usr/include/c++/13.1.1/bits/list.tcc \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.h \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h \
+  /usr/include/c++/13.1.1/any \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h \
+  /usr/include/c++/13.1.1/functional \
+  /usr/include/c++/13.1.1/bits/std_function.h \
+  /usr/include/c++/13.1.1/unordered_map \
+  /usr/include/c++/13.1.1/bits/unordered_map.h \
+  /usr/include/c++/13.1.1/array \
+  /usr/include/c++/13.1.1/compare \
+  /usr/include/c++/13.1.1/bits/stl_algo.h \
+  /usr/include/c++/13.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/13.1.1/bits/stl_heap.h \
+  /usr/include/c++/13.1.1/bits/uniform_int_dist.h \
+  /usr/include/c++/13.1.1/bits/stl_tempbuf.h
 
+
+/usr/include/c++/13.1.1/bits/uniform_int_dist.h:
+
+/usr/include/c++/13.1.1/bits/stl_heap.h:
+
+/usr/include/c++/13.1.1/array:
+
+/usr/include/c++/13.1.1/unordered_map:
+
+/usr/include/c++/13.1.1/bits/std_function.h:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h:
 
@@ -293,6 +316,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/c++/13.1.1/variant:
 
 /usr/include/c++/13.1.1/bits/stl_multimap.h:
+
+/usr/include/c++/13.1.1/bits/stl_tempbuf.h:
 
 /usr/include/c++/13.1.1/bits/stl_construct.h:
 
@@ -327,6 +352,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/c++/13.1.1/bits/ptr_traits.h:
 
 /usr/include/bits/iscanonical.h:
+
+/usr/include/c++/13.1.1/compare:
 
 /usr/include/c++/13.1.1/bits/stl_iterator_base_types.h:
 
@@ -386,6 +413,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 
 /usr/include/bits/timex.h:
 
+/usr/include/c++/13.1.1/any:
+
 /usr/include/bits/errno.h:
 
 /usr/include/bits/time.h:
@@ -423,6 +452,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/bits/floatn-common.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h:
+
+/usr/include/c++/13.1.1/bits/stl_algo.h:
 
 /usr/include/c++/13.1.1/bits/refwrap.h:
 
@@ -556,6 +587,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 
 /usr/include/c++/13.1.1/exception:
 
+/usr/include/c++/13.1.1/functional:
+
 /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /usr/include/c++/13.1.1/bits/basic_ios.tcc:
@@ -601,6 +634,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/c++/13.1.1/bits/functional_hash.h:
 
 /usr/include/c++/13.1.1/bits/string_view.tcc:
+
+/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h:
 
 /usr/include/bits/types/clockid_t.h:
 
@@ -674,6 +709,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 
 /usr/include/c++/13.1.1/bits/uses_allocator_args.h:
 
+/usr/include/c++/13.1.1/bits/algorithmfwd.h:
+
 /usr/include/c++/13.1.1/tuple:
 
 /usr/include/bits/mathcalls-helper-functions.h:
@@ -733,6 +770,8 @@ CMakeFiles/GraphicsEngine.dir/src/Main.cpp.o: /home/v_s2/Desktop/ComputerGraphic
 /usr/include/c++/13.1.1/bits/allocated_ptr.h:
 
 /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/messages_members.h:
+
+/usr/include/c++/13.1.1/bits/unordered_map.h:
 
 /usr/include/bits/endianness.h:
 

@@ -241,6 +241,8 @@ CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: /home/v_s2/Desktop/
   /usr/include/c++/13.1.1/bits/stl_list.h \
   /usr/include/c++/13.1.1/bits/allocated_ptr.h \
   /usr/include/c++/13.1.1/bits/list.tcc \
+  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h \
+  /usr/include/c++/13.1.1/any \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Exceptions/MathExceptions/MathException.h
 
 
@@ -318,6 +320,8 @@ CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: /home/v_s2/Desktop/
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
+/usr/include/c++/13.1.1/any:
+
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/c++/13.1.1/sstream:
@@ -355,6 +359,8 @@ CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: /home/v_s2/Desktop/
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/stdlib.h:
+
+/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h:
 
 /usr/include/c++/13.1.1/bits/hashtable_policy.h:
 

@@ -67,3 +67,9 @@ class CanvasException : public EngineException
 public:
 	static EngineException IncorrectSizes(int height, int width);
 };
+
+class ConfigurationException : public EngineException
+{
+public:
+	static EngineException FileNotFound(const std::string& path);
+};

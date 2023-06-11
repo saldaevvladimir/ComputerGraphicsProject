@@ -2,7 +2,7 @@
 #include <cmath>
 
 
-float Round(float number) 
+float Round(float number, float precision) 
 {
-    return round(number * DEC) / DEC + 0.0f; 
+    return round(number / precision) * precision + 0.0f; 
 }

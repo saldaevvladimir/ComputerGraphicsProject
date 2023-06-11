@@ -3,6 +3,8 @@
 #include "../../../../Exceptions/EngineExceptions/EngineException.h"
 
 #include <cmath>
+#include <vector>
+#include <algorithm>
 
 
 namespace Engine
@@ -50,85 +52,52 @@ namespace Engine
     {
         HyperEllipsoid& self = *this;
 
-        Vector params;
-        params = self.FindParams(ray);
+        Vector dir= ray.direction;
+        Point pos = ray.initialPoint - std::get<Point>(self["position"]);
+        int dim = dir.Dim();
 
-        if (params[2] < PRECISION)
-            return INF;
-
-        Vector rayDir = ray.direction;
-
-        float dist1 = 0.0f;
-        float dist2 = 0.0f;
-
-        for (int i = 0; i < rayDir.Dim(); i++)
-        {
-            dist1 += params[0] * rayDir[i];
-            dist2 += params[1] * rayDir[i];
-        }
-
-        return (std::min(fabs(dist1), fabs(dist2)));
-    }
-
-    Vector HyperEllipsoid::FindParams(Ray ray)
-    {
-        HyperEllipsoid& self = *this;
-
-        float a = 0.0f;
-        float b = 0.0f;
-        float c = 0.0f;
-
-        float freeCoef = 0.0f;
-        Vector result({0, 0, 0});
-
-        Point initPoint = ray.initialPoint;
-        Vector dir = ray.direction;
         Vector semiAxes = std::get<Vector>(self["semiAxes"]);
 
-        int dim = initPoint.Dim();
-
-        if (dir.Dim() != dim || semiAxes.Dim() != dim)
-            throw HyperEllipsoidException::IncorrectDimensions(initPoint.Dim(), dir.Dim(), semiAxes.Dim());
+        float p1 = 0.0f;
+        float p2 = 0.0f;
+        float p3 = -1.0f;
 
         for (int i = 0; i < dim; i++)
         {
-            float coef = 1.0f;
-
-            for (int j = 0; j < dim; j++)
-            {
-                if (i == j)
-                    continue;
-
-                coef *= std::pow(semiAxes[j], 2);
-            }
-
-            a += coef * std::pow(dir[i], 2);
-            b += coef * initPoint[i];
-            c += coef * std::pow(initPoint[i], 2);
-
-            freeCoef *= std::pow(semiAxes[i], 2);
+            p1 += std::pow(dir[i], 2) / std::pow(semiAxes[i], 2);
+            p2 += 2 * pos[i] * dir[i] / std::pow(semiAxes[i], 2);
+            p3 += std::pow(pos[i], 2) / std::pow(semiAxes[i], 2);
         }
 
-        c -= freeCoef;
-        b *= 2;
-        float Dis = std::pow(b, 2) - 4 * a * c;
+        float t1 = (-p2 + std::sqrt(std::pow(p2, 2)-4*p1*p3)) / 2 * p1;
+        float t2 = (-p2 - std::sqrt(std::pow(p2, 2)-4*p1*p3)) / 2 * p1;
 
-        if (Dis < 0)
+        std::vector<float> t;
+
+        for (auto y : {t1, t2}) 
+            if (typeid(y) == typeid(int) || typeid(y) == typeid(float)) 
+              t.push_back(y);
+
+        for (auto it = t.begin(); it != t.end();) 
         {
-            result[2] = 0.0f; // flag
+            if (*it <= 0) 
+              it = t.erase(it);
+            else 
+              ++it;
         }
-        else
-        {
-            float sln1 = (-b + (float)std::sqrt(Dis)) / (2 * a);
-            float sln2 = (-b - (float)std::sqrt(Dis)) / (2 * a);
-            std::cout << a << " " << b << " " << Dis << std::endl;
 
-            result[0] = sln1;
-            result[1] = sln2;
-            result[2] = 1.0f; // flag
-        }
-        
-        return result;
+        if (t.size() == 0)
+            return INF;
+
+        float tMin = *std::min_element(t.begin(), t.end());
+
+        Vector intersection(dim);
+        for (int i = 0; i < dim; i++)
+        intersection[i] = pos[i] + dir[i] * tMin;
+
+        Vector temp = self.cs.space.AsVector(pos);
+
+        return Round((intersection - temp).Length());
     }
 
     void HyperEllipsoid::operator = (Entity entity)

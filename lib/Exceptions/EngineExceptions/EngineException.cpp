@@ -55,10 +55,19 @@ EngineException HyperEllipsoidException::IncorrectDimensions(int pointDim, int d
 		"semiAxes: " + std::to_string(semiAxesDim) + ")");
 }
 
+
 // CanvasException
 
 EngineException CanvasException::IncorrectSizes(int height, int width)
 {
 	return EngineException("incorrect canvas sizes (height: " + 
 		std::to_string(height) + " width: " + std::to_string(width) + ")");
+}
+
+
+// ConfigurationException
+
+EngineException ConfigurationException::FileNotFound(const std::string& path)
+{
+	return EngineException("file not found (path: " + path + ")");
 }
