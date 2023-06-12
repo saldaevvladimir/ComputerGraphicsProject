@@ -22,15 +22,14 @@ int main()
     CoordinateSystem cs(init, vs);
 
     EntitiesList el;
-    EventSystem es;
 
-    Game game(cs, el, es);
+    Game game(cs, el);
 
     Game::GameEntity gameE(game);
     Game::Object obj(gameE);
 
-    HyperEllipsoid ellipsoid(obj, Point({0,0,25}), Vector({0,1,0}), Vector({10,10,10}));
-    HyperPlane plane(obj, Point({0,0,25}), Vector({0,0,1}));
+    HyperEllipsoid ellipsoid(game, Point({0,0,25}), Vector({0,1,0}), Vector({10,10,10}));
+    HyperPlane plane(game, Point({0,0,25}), Vector({0,0,1}));
 
     game.gameEntities.Append(ellipsoid);
 

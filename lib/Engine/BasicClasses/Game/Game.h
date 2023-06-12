@@ -3,8 +3,6 @@
 
 #include "../Ray/Ray.h"
 #include "../EntitiesList/EntitiesList.h"
-#include "../Configuration/Configuration.h"
-#include "../EventSystem/EventSystem.h"
 
 #include <variant>
 #include <string>
@@ -18,13 +16,12 @@ namespace Engine
 	public:
 		EntitiesList gameEntities;
 		CoordinateSystem cs;
-		EventSystem es;
 
 		Game();
 
-		Game(CoordinateSystem cs, EntitiesList gameEntities, EventSystem es);
+		Game(CoordinateSystem cs, EntitiesList gameEntities);
 
-		EventSystem GetEventSystem();
+		void Append(Entity entity);
 
 		void operator = (Game game);
 
@@ -52,6 +49,8 @@ namespace Engine
 		public:
 			Object();
 
+			Object(Game& game);
+
 			Object(GameEntity& gameEntity);
 
 			Object(GameEntity& gameEntity, Point position, Vector direction);
@@ -72,6 +71,8 @@ namespace Engine
 		{
 		public:
 			Camera();
+
+			Camera(Game game, float hfov, float drawDistance);
 
 			Camera(Game::Object& object, float hfov, float drawDistance);
 

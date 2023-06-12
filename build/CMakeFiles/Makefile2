@@ -87,7 +87,7 @@ all: CMakeFiles/HYPER_ELLIPSOID.dir/all
 all: CMakeFiles/EVENT_SYSTEM.dir/all
 all: CMakeFiles/CONFIGURATION.dir/all
 all: CMakeFiles/CONSOLE.dir/all
-all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+all: CMakeFiles/ENGINE.dir/all
 all: CMakeFiles/MathTests.dir/all
 all: CMakeFiles/EngineTests.dir/all
 all: CMakeFiles/GameTests.dir/all
@@ -123,7 +123,7 @@ clean: CMakeFiles/HYPER_ELLIPSOID.dir/clean
 clean: CMakeFiles/EVENT_SYSTEM.dir/clean
 clean: CMakeFiles/CONFIGURATION.dir/clean
 clean: CMakeFiles/CONSOLE.dir/clean
-clean: CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean
+clean: CMakeFiles/ENGINE.dir/clean
 clean: CMakeFiles/MathTests.dir/clean
 clean: CMakeFiles/EngineTests.dir/clean
 clean: CMakeFiles/GameTests.dir/clean
@@ -515,9 +515,9 @@ CMakeFiles/ENTITY.dir/clean:
 # Target rules for target CMakeFiles/ENTITIES_LIST.dir
 
 # All Build rule for target.
-CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/POINT.dir/all
@@ -552,9 +552,9 @@ CMakeFiles/ENTITIES_LIST.dir/clean:
 # Target rules for target CMakeFiles/GAME.dir
 
 # All Build rule for target.
-CMakeFiles/GAME.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/POINT.dir/all
@@ -565,8 +565,6 @@ CMakeFiles/GAME.dir/all: CMakeFiles/RAY.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/IDENTIFIER.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/ENTITY.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
-CMakeFiles/GAME.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/GAME.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=27,28 "Built target GAME"
@@ -574,7 +572,7 @@ CMakeFiles/GAME.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME.dir/rule
@@ -592,9 +590,9 @@ CMakeFiles/GAME.dir/clean:
 # Target rules for target CMakeFiles/GAME_ENTITY.dir
 
 # All Build rule for target.
-CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/POINT.dir/all
@@ -606,8 +604,6 @@ CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/IDENTIFIER.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ENTITY.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/GAME.dir/all
-CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=31,32 "Built target GAME_ENTITY"
@@ -615,7 +611,7 @@ CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_ENTITY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_ENTITY.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_ENTITY.dir/rule
@@ -633,9 +629,9 @@ CMakeFiles/GAME_ENTITY.dir/clean:
 # Target rules for target CMakeFiles/GAME_OBJECT.dir
 
 # All Build rule for target.
-CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/POINT.dir/all
@@ -648,8 +644,6 @@ CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ENTITY.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/GAME.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/GAME_ENTITY.dir/all
-CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=33,34 "Built target GAME_OBJECT"
@@ -657,7 +651,7 @@ CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_OBJECT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_OBJECT.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_OBJECT.dir/rule
@@ -675,9 +669,9 @@ CMakeFiles/GAME_OBJECT.dir/clean:
 # Target rules for target CMakeFiles/GAME_CAMERA.dir
 
 # All Build rule for target.
-CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/POINT.dir/all
@@ -691,8 +685,6 @@ CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/GAME.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/GAME_ENTITY.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/GAME_OBJECT.dir/all
-CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=29,30 "Built target GAME_CAMERA"
@@ -700,7 +692,7 @@ CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_CAMERA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_CAMERA.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_CAMERA.dir/rule
@@ -718,9 +710,9 @@ CMakeFiles/GAME_CAMERA.dir/clean:
 # Target rules for target CMakeFiles/CANVAS.dir
 
 # All Build rule for target.
-CMakeFiles/CANVAS.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/CANVAS.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/POINT.dir/all
@@ -737,8 +729,6 @@ CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME_OBJECT.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME_CAMERA.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/HYPER_PLANE.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
-CMakeFiles/CANVAS.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/CANVAS.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=5,6 "Built target CANVAS"
@@ -746,7 +736,7 @@ CMakeFiles/CANVAS.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CANVAS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CANVAS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/CANVAS.dir/rule
@@ -764,9 +754,9 @@ CMakeFiles/CANVAS.dir/clean:
 # Target rules for target CMakeFiles/HYPER_PLANE.dir
 
 # All Build rule for target.
-CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/POINT.dir/all
@@ -778,8 +768,6 @@ CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/IDENTIFIER.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ENTITY.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/GAME.dir/all
-CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=41,42 "Built target HYPER_PLANE"
@@ -787,7 +775,7 @@ CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HYPER_PLANE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HYPER_PLANE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/HYPER_PLANE.dir/rule
@@ -805,9 +793,9 @@ CMakeFiles/HYPER_PLANE.dir/clean:
 # Target rules for target CMakeFiles/HYPER_ELLIPSOID.dir
 
 # All Build rule for target.
-CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/POINT.dir/all
@@ -819,8 +807,6 @@ CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/IDENTIFIER.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ENTITY.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/GAME.dir/all
-CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=39,40 "Built target HYPER_ELLIPSOID"
@@ -828,7 +814,7 @@ CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HYPER_ELLIPSOID.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HYPER_ELLIPSOID.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/HYPER_ELLIPSOID.dir/rule
@@ -898,9 +884,9 @@ CMakeFiles/CONFIGURATION.dir/clean:
 # Target rules for target CMakeFiles/CONSOLE.dir
 
 # All Build rule for target.
-CMakeFiles/CONSOLE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/CONSOLE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/POINT.dir/all
@@ -918,8 +904,6 @@ CMakeFiles/CONSOLE.dir/all: CMakeFiles/GAME_CAMERA.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/CANVAS.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/HYPER_PLANE.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
-CMakeFiles/CONSOLE.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/CONSOLE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=9,10 "Built target CONSOLE"
@@ -927,7 +911,7 @@ CMakeFiles/CONSOLE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CONSOLE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CONSOLE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/CONSOLE.dir/rule
@@ -942,52 +926,48 @@ CMakeFiles/CONSOLE.dir/clean:
 .PHONY : CMakeFiles/CONSOLE.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ENGINE_BASIC_CLASSES.dir
+# Target rules for target CMakeFiles/ENGINE.dir
 
 # All Build rule for target.
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ACCURACY.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATRIX.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/VECTOR.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/POINT.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/FUNCTIONS.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/VECTOR_SPACE.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/COORDINATE_SYSTEM.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/RAY.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/IDENTIFIER.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ENTITY.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/GAME.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/GAME_ENTITY.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/GAME_OBJECT.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/GAME_CAMERA.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/CANVAS.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/HYPER_PLANE.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/CONFIGURATION.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/CONSOLE.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=13,14 "Built target ENGINE_BASIC_CLASSES"
-.PHONY : CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/MATRIX.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/VECTOR.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/POINT.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/FUNCTIONS.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/VECTOR_SPACE.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/COORDINATE_SYSTEM.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/RAY.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/IDENTIFIER.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/ENTITY.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/ENTITIES_LIST.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/GAME.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/GAME_ENTITY.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/GAME_OBJECT.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/GAME_CAMERA.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/HYPER_PLANE.dir/all
+CMakeFiles/ENGINE.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=13,14 "Built target ENGINE"
+.PHONY : CMakeFiles/ENGINE.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 48
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+CMakeFiles/ENGINE.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 40
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENGINE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
-.PHONY : CMakeFiles/ENGINE_BASIC_CLASSES.dir/rule
+.PHONY : CMakeFiles/ENGINE.dir/rule
 
 # Convenience name for target.
-ENGINE_BASIC_CLASSES: CMakeFiles/ENGINE_BASIC_CLASSES.dir/rule
-.PHONY : ENGINE_BASIC_CLASSES
+ENGINE: CMakeFiles/ENGINE.dir/rule
+.PHONY : ENGINE
 
 # clean rule for target.
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean
-.PHONY : CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean
+CMakeFiles/ENGINE.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/clean
+.PHONY : CMakeFiles/ENGINE.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/MathTests.dir
@@ -1027,9 +1007,9 @@ CMakeFiles/MathTests.dir/clean:
 # Target rules for target CMakeFiles/EngineTests.dir
 
 # All Build rule for target.
-CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/POINT.dir/all
@@ -1044,13 +1024,9 @@ CMakeFiles/EngineTests.dir/all: CMakeFiles/GAME.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/GAME_ENTITY.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/GAME_OBJECT.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/GAME_CAMERA.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/CANVAS.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/HYPER_PLANE.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/CONFIGURATION.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/CONSOLE.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=23,24 "Built target EngineTests"
@@ -1058,7 +1034,7 @@ CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EngineTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EngineTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/EngineTests.dir/rule
@@ -1076,9 +1052,9 @@ CMakeFiles/EngineTests.dir/clean:
 # Target rules for target CMakeFiles/GameTests.dir
 
 # All Build rule for target.
-CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/POINT.dir/all
@@ -1093,13 +1069,9 @@ CMakeFiles/GameTests.dir/all: CMakeFiles/GAME.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/GAME_ENTITY.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/GAME_OBJECT.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/GAME_CAMERA.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/CANVAS.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/HYPER_PLANE.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/CONFIGURATION.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/CONSOLE.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=35,36 "Built target GameTests"
@@ -1107,7 +1079,7 @@ CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GameTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GameTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GameTests.dir/rule
@@ -1125,9 +1097,9 @@ CMakeFiles/GameTests.dir/clean:
 # Target rules for target CMakeFiles/GraphicsEngine.dir
 
 # All Build rule for target.
-CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ACCURACY.dir/all
+CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/POINT.dir/all
@@ -1149,7 +1121,7 @@ CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/CONFIGURATION.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/CONSOLE.dir/all
-CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
+CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=37,38 "Built target GraphicsEngine"

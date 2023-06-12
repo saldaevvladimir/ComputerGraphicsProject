@@ -9,6 +9,17 @@
 
 namespace Engine
 {
+    HyperEllipsoid::HyperEllipsoid(Game game, Point position, Vector direction, Vector semiAxes)
+    {
+        this->cs = game.cs;
+
+        this->properties["position"] = position;
+        this->properties["direction"] = direction.Normalize();
+        this->properties["semiAxes"] = semiAxes;
+
+        this->properties["type"] = std::string("HyperEllipsoid");
+    }
+
     HyperEllipsoid::HyperEllipsoid(Game::Object object, Point position, Vector direction, Vector semiAxes)
     {
         this->cs = object.cs;

@@ -245,6 +245,9 @@ COORDINATE_SYSTEM_LIB_DEPENDS:STATIC=general;VECTOR_SPACE;
 ENGINE_BASIC_CLASSES_LIB_DEPENDS:STATIC=general;RAY;general;IDENTIFIER;general;ENTITY;general;ENTITIES_LIST;general;GAME;general;GAME_ENTITY;general;GAME_OBJECT;general;GAME_CAMERA;general;CANVAS;general;HYPER_PLANE;general;HYPER_ELLIPSOID;general;EVENT_SYSTEM;general;CONFIGURATION;general;CONSOLE;
 
 //Dependencies for the target
+ENGINE_LIB_DEPENDS:STATIC=general;RAY;general;IDENTIFIER;general;ENTITY;general;ENTITIES_LIST;general;GAME;general;GAME_ENTITY;general;GAME_OBJECT;general;GAME_CAMERA;general;HYPER_PLANE;general;HYPER_ELLIPSOID;
+
+//Dependencies for the target
 ENTITIES_LIST_LIB_DEPENDS:STATIC=general;ENTITY;general;ENGINE_EXCEPTION;
 
 //Dependencies for the target
@@ -260,7 +263,7 @@ GAME_CAMERA_LIB_DEPENDS:STATIC=general;GAME_OBJECT;
 GAME_ENTITY_LIB_DEPENDS:STATIC=general;GAME;
 
 //Dependencies for the target
-GAME_LIB_DEPENDS:STATIC=general;RAY;general;ENTITIES_LIST;general;MATH_EXCEPTION;general;CONFIGURATION;general;EVENT_SYSTEM;
+GAME_LIB_DEPENDS:STATIC=general;RAY;general;ENTITIES_LIST;general;MATH_EXCEPTION;
 
 //Dependencies for the target
 GAME_OBJECT_LIB_DEPENDS:STATIC=general;GAME;general;GAME_ENTITY;

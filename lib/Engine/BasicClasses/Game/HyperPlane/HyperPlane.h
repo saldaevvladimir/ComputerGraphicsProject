@@ -8,6 +8,8 @@ namespace Engine
     class HyperPlane : public Game::Object
     {
     public:
+        HyperPlane(Game game, Point position, Vector normal);
+
         HyperPlane(Game::Object object, Point position, Vector normal);
 
         HyperPlane(Entity entity);

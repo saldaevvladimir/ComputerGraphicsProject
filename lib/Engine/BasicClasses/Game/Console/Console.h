@@ -7,18 +7,16 @@
 #include <string>
 
 
-namespace Engine
+
+class Console : public Canvas
 {
-    class Console : public Canvas
-    {
-    public:
-        Console(int height, int width, Game game, Game::Camera camera, std::string charmap = DEFAULT);
+public:
+    Console(int height, int width, Engine::Game game, Engine::Game::Camera camera, std::string charmap = DEFAULT);
 
-        void Draw() override;
+    void Draw() override;
 
-        void Clear();
+    void Clear();
 
-        void SetCursorPosition(int x, int y);
+    void SetCursorPosition(int x, int y);
 
-    };
-}
+};

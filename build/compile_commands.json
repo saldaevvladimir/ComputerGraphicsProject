@@ -85,18 +85,6 @@
 },
 {
   "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp",
-  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp",
-  "output": "CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o"
-},
-{
-  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.cpp",
-  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.cpp",
-  "output": "CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.o"
-},
-{
-  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
   "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp",
   "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp",
   "output": "CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o"
@@ -139,15 +127,27 @@
 },
 {
   "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp",
+  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp",
+  "output": "CMakeFiles/EVENT_SYSTEM.dir/lib/Engine/BasicClasses/EventSystem/EventSystem.cpp.o"
+},
+{
+  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
+  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.cpp",
+  "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.cpp",
+  "output": "CMakeFiles/CONFIGURATION.dir/lib/Engine/BasicClasses/Configuration/Configuration.cpp.o"
+},
+{
+  "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
   "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/CONSOLE.dir/lib/Engine/BasicClasses/Game/Console/Console.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Console/Console.cpp",
   "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Console/Console.cpp",
   "output": "CMakeFiles/CONSOLE.dir/lib/Engine/BasicClasses/Game/Console/Console.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",
-  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
+  "command": "/usr/bin/g++  -I/home/v_s2/Desktop/ComputerGraphicsProject/./googletest/googletest/include -g -o CMakeFiles/ENGINE.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
   "file": "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp",
-  "output": "CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o"
+  "output": "CMakeFiles/ENGINE.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o"
 },
 {
   "directory": "/home/v_s2/Desktop/ComputerGraphicsProject/build",

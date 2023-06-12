@@ -92,9 +92,7 @@ GameTests_EXTERNAL_OBJECTS =
 
 GameTests: CMakeFiles/GameTests.dir/tests/UnitTests/GameTests.cpp.o
 GameTests: CMakeFiles/GameTests.dir/build.make
-GameTests: libENGINE_BASIC_CLASSES.a
-GameTests: libCONSOLE.a
-GameTests: libCANVAS.a
+GameTests: libENGINE.a
 GameTests: libGAME_CAMERA.a
 GameTests: libGAME_OBJECT.a
 GameTests: libGAME_ENTITY.a
@@ -109,13 +107,11 @@ GameTests: libVECTOR_SPACE.a
 GameTests: libPOINT.a
 GameTests: libFUNCTIONS.a
 GameTests: libVECTOR.a
-GameTests: libIDENTIFIER.a
-GameTests: libEVENT_SYSTEM.a
-GameTests: libCONFIGURATION.a
-GameTests: libENGINE_EXCEPTION.a
 GameTests: libMATRIX.a
-GameTests: libMATH_EXCEPTION.a
 GameTests: libACCURACY.a
+GameTests: libIDENTIFIER.a
+GameTests: libENGINE_EXCEPTION.a
+GameTests: libMATH_EXCEPTION.a
 GameTests: CMakeFiles/GameTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable GameTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameTests.dir/link.txt --verbose=$(VERBOSE)

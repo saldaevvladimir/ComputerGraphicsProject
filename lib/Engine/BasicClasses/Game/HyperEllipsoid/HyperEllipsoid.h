@@ -8,6 +8,8 @@ namespace Engine
     class HyperEllipsoid : public Game::Object
     {
     public:
+        HyperEllipsoid(Game game, Point position, Vector diriction, Vector semiAxes);
+        
         HyperEllipsoid(Game::Object object, Point position, Vector diriction, Vector semiAxes);
 
         HyperEllipsoid(Entity entity);

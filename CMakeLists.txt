@@ -98,7 +98,7 @@ target_link_libraries(ALL_MATH
     PUBLIC COORDINATE_SYSTEM
 )
         
-# ENGINE_BASIC_CLASSES
+# ENGINE
 
 add_library(RAY 
     STATIC ./lib/Engine/BasicClasses/Ray/Ray.cpp
@@ -180,8 +180,6 @@ target_link_libraries(GAME
     PUBLIC RAY
     PUBLIC ENTITIES_LIST
     PUBLIC MATH_EXCEPTION
-    PUBLIC CONFIGURATION
-    PUBLIC EVENT_SYSTEM
 )
 
 target_link_libraries(GAME_ENTITY
@@ -218,11 +216,11 @@ target_link_libraries(CONSOLE
     PUBLIC MATRIX
 )
 
-add_library(ENGINE_BASIC_CLASSES
+add_library(ENGINE
     STATIC lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp
 )
 
-target_link_libraries(ENGINE_BASIC_CLASSES
+target_link_libraries(ENGINE
     PUBLIC RAY
     PUBLIC IDENTIFIER
     PUBLIC ENTITY
@@ -231,12 +229,8 @@ target_link_libraries(ENGINE_BASIC_CLASSES
     PUBLIC GAME_ENTITY
     PUBLIC GAME_OBJECT
     PUBLIC GAME_CAMERA
-    PUBLIC CANVAS
     PUBLIC HYPER_PLANE
     PUBLIC HYPER_ELLIPSOID
-    PUBLIC EVENT_SYSTEM
-    PUBLIC CONFIGURATION
-    PUBLIC CONSOLE
 )
 
 # ENGINE_VISUALIZATION
@@ -273,13 +267,13 @@ target_link_libraries(MathTests
 target_link_libraries(EngineTests
     PUBLIC gtest
     PUBLIC gtest_main
-    PUBLIC ENGINE_BASIC_CLASSES
+    PUBLIC ENGINE
 )
 
 target_link_libraries(GameTests
     PUBLIC gtest
     PUBLIC gtest_main
-    PUBLIC ENGINE_BASIC_CLASSES
+    PUBLIC ENGINE
 )
 
 
@@ -305,7 +299,11 @@ add_executable(GraphicsEngine src/Main.cpp)
 
 target_link_libraries(GraphicsEngine
     PUBLIC ALL_MATH
-    PUBLIC ENGINE_BASIC_CLASSES
+    PUBLIC ENGINE
+    PUBLIC CONFIGURATION
+    PUBLIC EVENT_SYSTEM
+    PUBLIC CANVAS
+    PUBLIC CONSOLE
 )
 
 # copying binary files frome /build/ to /bin/

@@ -271,25 +271,13 @@ CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop
   /usr/include/c++/13.1.1/bits/allocated_ptr.h \
   /usr/include/c++/13.1.1/bits/list.tcc \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.h \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h \
-  /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h \
-  /usr/include/c++/13.1.1/functional \
-  /usr/include/c++/13.1.1/bits/std_function.h \
-  /usr/include/c++/13.1.1/unordered_map \
-  /usr/include/c++/13.1.1/bits/unordered_map.h \
-  /usr/include/c++/13.1.1/array \
-  /usr/include/c++/13.1.1/compare \
-  /usr/include/c++/13.1.1/bits/stl_algo.h \
-  /usr/include/c++/13.1.1/bits/algorithmfwd.h \
-  /usr/include/c++/13.1.1/bits/stl_heap.h \
-  /usr/include/c++/13.1.1/bits/uniform_int_dist.h \
-  /usr/include/c++/13.1.1/bits/stl_tempbuf.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperPlane/HyperPlane.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Console/Console.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/gtest.h \
   /usr/include/c++/13.1.1/memory \
+  /usr/include/c++/13.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.1.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13.1.1/bits/align.h \
   /usr/include/c++/13.1.1/bits/unique_ptr.h \
@@ -350,6 +338,16 @@ CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop
   /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/gtest-matchers.h \
   /usr/include/c++/13.1.1/atomic \
+  /usr/include/c++/13.1.1/functional \
+  /usr/include/c++/13.1.1/bits/std_function.h \
+  /usr/include/c++/13.1.1/unordered_map \
+  /usr/include/c++/13.1.1/bits/unordered_map.h \
+  /usr/include/c++/13.1.1/array \
+  /usr/include/c++/13.1.1/compare \
+  /usr/include/c++/13.1.1/bits/stl_algo.h \
+  /usr/include/c++/13.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/13.1.1/bits/stl_heap.h \
+  /usr/include/c++/13.1.1/bits/uniform_int_dist.h \
   /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/gtest-printers.h \
   /usr/include/c++/13.1.1/utility \
   /usr/include/c++/13.1.1/bits/stl_relops.h \
@@ -443,6 +441,16 @@ CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop
 
 /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/gtest-printers.h:
 
+/usr/include/c++/13.1.1/bits/uniform_int_dist.h:
+
+/usr/include/c++/13.1.1/bits/stl_heap.h:
+
+/usr/include/c++/13.1.1/array:
+
+/usr/include/c++/13.1.1/unordered_map:
+
+/usr/include/c++/13.1.1/bits/std_function.h:
+
 /usr/include/c++/13.1.1/atomic:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/googletest/googletest/include/gtest/internal/gtest-filepath.h:
@@ -534,18 +542,6 @@ CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/HyperEllipsoid/HyperEllipsoid.h:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Canvas/Canvas.h:
-
-/usr/include/c++/13.1.1/bits/uniform_int_dist.h:
-
-/usr/include/c++/13.1.1/bits/stl_heap.h:
-
-/usr/include/c++/13.1.1/array:
-
-/usr/include/c++/13.1.1/unordered_map:
-
-/usr/include/c++/13.1.1/bits/std_function.h:
-
-/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/EventSystem/EventSystem.h:
 
 /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.h:
 
@@ -898,8 +894,6 @@ CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o: /home/v_s2/Desktop
 /usr/include/c++/13.1.1/bits/algorithmfwd.h:
 
 /usr/include/c++/13.1.1/tuple:
-
-/home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Configuration/Configuration.h:
 
 /usr/include/bits/types/clockid_t.h:
 

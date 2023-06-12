@@ -439,17 +439,17 @@ CONSOLE/fast:
 .PHONY : CONSOLE/fast
 
 #=============================================================================
-# Target rules for targets named ENGINE_BASIC_CLASSES
+# Target rules for targets named ENGINE
 
 # Build rule for target.
-ENGINE_BASIC_CLASSES: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ENGINE_BASIC_CLASSES
-.PHONY : ENGINE_BASIC_CLASSES
+ENGINE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ENGINE
+.PHONY : ENGINE
 
 # fast build rule for target.
-ENGINE_BASIC_CLASSES/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/build
-.PHONY : ENGINE_BASIC_CLASSES/fast
+ENGINE/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/build
+.PHONY : ENGINE/fast
 
 #=============================================================================
 # Target rules for targets named MathTests
@@ -508,7 +508,7 @@ lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.o: lib/Engine/BasicClass
 
 # target to build an object file
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.o
 
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i: lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i
@@ -516,7 +516,7 @@ lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.i: lib/Engine/BasicClass
 
 # target to preprocess a source file
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.i
 
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.s: lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
@@ -524,7 +524,7 @@ lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.s: lib/Engine/BasicClass
 
 # target to generate assembly for a file
 lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE.dir/build.make CMakeFiles/ENGINE.dir/lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
 .PHONY : lib/Engine/BasicClasses/AllBasicClasses/AllBasicClasses.cpp.s
 
 lib/Engine/BasicClasses/Canvas/Canvas.o: lib/Engine/BasicClasses/Canvas/Canvas.cpp.o
@@ -1214,7 +1214,7 @@ help:
 	@echo "... CONFIGURATION"
 	@echo "... CONSOLE"
 	@echo "... COORDINATE_SYSTEM"
-	@echo "... ENGINE_BASIC_CLASSES"
+	@echo "... ENGINE"
 	@echo "... ENGINE_EXCEPTION"
 	@echo "... ENTITIES_LIST"
 	@echo "... ENTITY"

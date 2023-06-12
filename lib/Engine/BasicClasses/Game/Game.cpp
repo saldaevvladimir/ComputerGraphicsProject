@@ -9,22 +9,21 @@ namespace Engine
 	{
 		this->cs = CoordinateSystem();
 		this->gameEntities = EntitiesList();
-		this->es = EventSystem();
 	}
 
-    Game::Game(CoordinateSystem cs, EntitiesList gameEntities, EventSystem es)
+    Game::Game(CoordinateSystem cs, EntitiesList gameEntities)
 	{
 		if (!cs.IsInitialized())
 			throw CoordinateSystemException::NotInitialized();
 			
 		this->cs = cs;
 		this->gameEntities = gameEntities;
-		this->es = es;
 	}
 
-	EventSystem Game::GetEventSystem()
+	void Game::Append(Entity entity)
 	{
-		return this->es;
+		Game& self = *this;
+		self.gameEntities.Append(entity);
 	}
 
 	void Game::operator = (Game game)

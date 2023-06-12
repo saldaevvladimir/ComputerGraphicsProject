@@ -11,6 +11,15 @@ namespace Engine
 	{
 
 	}
+
+	Game::Camera::Camera(Game game, float hfov, float drawDistance)
+	{
+		this->cs = game.cs;
+
+		this->properties["hfov"] = hfov;
+		this->properties["vfov"] = hfov * 9 / 16.0f;
+		this->properties["drawDistance"] = drawDistance;
+	}
 	
     Game::Camera::Camera(Game::Object& object, float hfov, float drawDistance)
 	{

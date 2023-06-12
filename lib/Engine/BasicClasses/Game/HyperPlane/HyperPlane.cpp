@@ -5,6 +5,16 @@
 
 namespace Engine
 {
+    HyperPlane::HyperPlane(Game game, Point position, Vector normal)
+    {
+        this->cs = game.cs;
+        
+        this->properties["position"] = position;
+        this->properties["normal"] = normal;
+
+        this->properties["type"] = std::string("HyperPlane");
+    }
+
     HyperPlane::HyperPlane(Game::Object object, Point position, Vector normal)
     {
         this->cs = object.cs;

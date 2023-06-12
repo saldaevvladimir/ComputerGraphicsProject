@@ -9,6 +9,11 @@ namespace Engine
 		this->cs = CoordinateSystem();
 	}
 
+	Game::Object::Object(Game& game) : GameEntity(game)
+	{
+		
+	}
+
 	Game::Object::Object(GameEntity& gameEntity)
 	{
 		this->cs = gameEntity.cs;

@@ -8,25 +8,24 @@
 #include "../Game/HyperPlane/HyperPlane.h"
 
 
-namespace Engine
+
+class Canvas
 {
-    class Canvas
-    {
-    public:
-        int height;
-        int width;
-        Matrix distances;
-        Game game;
-        Game::Camera camera;
-        std::string charmap;
+public:
+    int height;
+    int width;
+    Matrix distances;
+    Engine::Game game;
+    Engine::Game::Camera camera;
+    std::string charmap;
 
-        Canvas(int height, int width, Game game, Game::Camera camera, std::string charmap = DEFAULT);
+    Canvas(int height, int width, Engine::Game game, Engine::Game::Camera camera, std::string charmap = DEFAULT);
 
-        virtual void Draw();
+    virtual void Draw();
 
-        float GetIntersectionDistance(Entity entity, Ray ray);
+    float GetIntersectionDistance(Engine::Entity entity, Engine::Ray ray);
 
-        void Update();
+    void Update();
 
-    };
-}
+};
+

@@ -24,9 +24,7 @@ TEST(ObjectTests, MoveTest)
 
     Engine::EntitiesList lst;
 
-    Engine::EventSystem es;
-
-    Engine::Game game(cs, lst, es);
+    Engine::Game game(cs, lst);
 
     Engine::Game::GameEntity gameEntity(game);
 
@@ -63,9 +61,7 @@ TEST(ObjectTests, PlanarRotate)
 
     Engine::EntitiesList lst;
 
-    Engine::EventSystem es;
-
-    Engine::Game game(cs, lst, es);
+    Engine::Game game(cs, lst);
 
     Engine::Game::GameEntity gameEntity(game);
 
@@ -102,9 +98,7 @@ TEST(ObjectTests, Rotate3D)
 
     Engine::EntitiesList lst;
 
-    Engine::EventSystem es;
-
-    Engine::Game game(cs, lst, es);
+    Engine::Game game(cs, lst);
 
     Engine::Game::GameEntity gameEntity(game);
 
@@ -138,9 +132,7 @@ TEST(HyperPlaneTests, IntersectionDistanceTest)
     VectorSpace vs(b, dim);
     CoordinateSystem cs(init, vs);
 
-    Engine::EventSystem es;
-
-    Engine::Game game(cs, Engine::EntitiesList(), es);
+    Engine::Game game(cs, Engine::EntitiesList());
 
     Engine::Game::GameEntity gameEntity(game);
 
@@ -180,10 +172,8 @@ TEST(HyperEllipsoidTests, IntersectionDistanceTest)
 
     VectorSpace vs(b, dim);
     CoordinateSystem cs(init, vs);
-
-    Engine::EventSystem es;
  
-    Engine::Game game(cs, Engine::EntitiesList(), es);
+    Engine::Game game(cs, Engine::EntitiesList());
 
     Engine::Game::GameEntity gameEntity(game);
 

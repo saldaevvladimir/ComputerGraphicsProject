@@ -7,27 +7,25 @@
 #include <string>
 
 
-namespace Engine
+
+class Configuration
 {
-    class Configuration
-    {
-    public:
-        std::string filepath = "";
-        
-        std::map<std::string, std::any> configuration;
+public:
+    std::string filepath = "";
+    
+    std::map<std::string, std::any> configuration;
 
-        Configuration(std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
+    Configuration(std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
 
-        void SetVariable(std::string name, std::any value);
+    void SetVariable(std::string name, std::any value);
 
-        std::any GetVariable(const std::string& name);
+    std::any GetVariable(const std::string& name);
 
-        void RemoveVariable(const std::string& name);
+    void RemoveVariable(const std::string& name);
 
-        void ExecuteFile(const std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
+    void ExecuteFile(const std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
 
-        void Save(std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
+    void Save(std::string filepath = DEFAULT_CONFIGURATION_FILE_PATH);
 
-        std::any& operator [] (std::string name);
-    };
-}
+    std::any& operator [] (std::string name);
+};

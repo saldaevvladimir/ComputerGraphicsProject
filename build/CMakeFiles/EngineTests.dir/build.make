@@ -92,9 +92,7 @@ EngineTests_EXTERNAL_OBJECTS =
 
 EngineTests: CMakeFiles/EngineTests.dir/tests/UnitTests/EngineTests.cpp.o
 EngineTests: CMakeFiles/EngineTests.dir/build.make
-EngineTests: libENGINE_BASIC_CLASSES.a
-EngineTests: libCONSOLE.a
-EngineTests: libCANVAS.a
+EngineTests: libENGINE.a
 EngineTests: libGAME_CAMERA.a
 EngineTests: libGAME_OBJECT.a
 EngineTests: libGAME_ENTITY.a
@@ -109,13 +107,11 @@ EngineTests: libVECTOR_SPACE.a
 EngineTests: libPOINT.a
 EngineTests: libFUNCTIONS.a
 EngineTests: libVECTOR.a
-EngineTests: libIDENTIFIER.a
-EngineTests: libEVENT_SYSTEM.a
-EngineTests: libCONFIGURATION.a
-EngineTests: libENGINE_EXCEPTION.a
 EngineTests: libMATRIX.a
-EngineTests: libMATH_EXCEPTION.a
 EngineTests: libACCURACY.a
+EngineTests: libIDENTIFIER.a
+EngineTests: libENGINE_EXCEPTION.a
+EngineTests: libMATH_EXCEPTION.a
 EngineTests: CMakeFiles/EngineTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EngineTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EngineTests.dir/link.txt --verbose=$(VERBOSE)
