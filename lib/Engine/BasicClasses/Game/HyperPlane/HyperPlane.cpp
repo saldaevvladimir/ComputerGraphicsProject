@@ -13,37 +13,33 @@ namespace Engine
         this->properties["position"] = position;
         this->properties["normal"] = normal;
 
-        Vector direction = std::any_cast<Vector>(object.GetProperty("direction"));
-        direction = direction.Normalize();
-
-        this->properties["direction"] = direction;
-
-        this->properties["type"] = "HyperPlane";
+        this->properties["type"] = std::string("HyperPlane");
     }
 
     HyperPlane::HyperPlane(Entity entity)
     {
-        *this = entity;
+        this->cs = entity.cs;
+        this->properties = entity.properties;
     }
 
     void HyperPlane::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
     {
         HyperPlane& self = *this;
-        Vector direction = std::any_cast<Vector>(self.GetProperty("direction"));
+        Vector normal = std::any_cast<Vector>(self.GetProperty("normal"));
 
-        direction = direction.Rotate(axisIndex1, axisIndex2, angle);
+        normal = normal.Rotate(axisIndex1, axisIndex2, angle);
 
-        self.SetDirection(direction);
+        self.SetProperty("normal", normal);
     }
 
     void HyperPlane::Rotate3D(float angle1, float angle2, float angle3)
     {
         HyperPlane& self = *this;
-        Vector direction = std::any_cast<Vector>(self.GetProperty("direction"));
+        Vector normal = std::any_cast<Vector>(self.GetProperty("normal"));
 
-        direction = direction.Rotate3D(angle1, angle2, angle3);
+        normal = normal.Rotate3D(angle1, angle2, angle3);
 
-        self.SetDirection(direction);
+        self.SetProperty("normal", normal);
     }
 
     float HyperPlane::IntersectionDistance(Ray ray)

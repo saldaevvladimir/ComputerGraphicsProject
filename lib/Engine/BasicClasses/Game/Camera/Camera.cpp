@@ -18,7 +18,7 @@ namespace Engine
 		this->properties = object.properties;
 
 		this->properties["hfov"] = hfov;
-		this->properties["vfov"] = hfov * 0.66f;
+		this->properties["vfov"] = hfov * 9 / 16.0f;
 		this->properties["drawDistance"] = drawDistance;
 	}
 
@@ -38,7 +38,7 @@ namespace Engine
 		this->properties = object.properties;
 
 		this->properties["hfov"] = hfov;
-		this->properties["vfov"] = hfov * 1.5f;
+		this->properties["vfov"] = hfov * 9 / 16.0f;
 		this->properties["lookAt"] = lookAt;
 		this->properties["drawDistance"] = drawDistance;
 	}
@@ -82,7 +82,7 @@ namespace Engine
 
 		std::vector<std::vector<Ray>> rayMatrix(height, std::vector<Ray>(width));
 
-		for (int r = 0; r < width; r++)
+		for (int r = 0; r < height; r++)
 		{
 			float curAngleX = deltaAlpha * r - zeroAngleX;
 			
@@ -90,9 +90,9 @@ namespace Engine
 			{
 				float curAngleY = deltaBetta * c - zeroAngleY;
 
-				Vector projectionDir = direction.Rotate(RxAxis, Matrix::ConvertToRadian(curAngleX));
+				Vector projectionDir = direction.Rotate(RxAxis, curAngleX);
 
-				projectionDir = projectionDir.Rotate(RyAxis, Matrix::ConvertToRadian(curAngleY));
+				projectionDir = projectionDir.Rotate(RyAxis, curAngleY);
 
 				projectionDir = float(std::pow(direction.Length(), 2)) / Vector::ScalarProduct(direction, projectionDir) * projectionDir;
 			

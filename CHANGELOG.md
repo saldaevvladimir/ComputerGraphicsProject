@@ -1,5 +1,9 @@
 # Change log
 
+# 2.2.1 (12.06.2023)
+
+Fixed bug in HyperEllipsoid::IntersectionDistance method (the distances for all rays to the ellipsoid were the same)
+
 # 2.2.0 (11.06.2023)
 
 added implementatino of the Configuration class

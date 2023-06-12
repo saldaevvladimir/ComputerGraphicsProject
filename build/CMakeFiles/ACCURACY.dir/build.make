@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ACCURACY.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/ACCURACY.dir/progress.make
 include CMakeFiles/ACCURACY.dir/flags.make
 
 CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: CMakeFiles/ACCURACY.dir/flags.make
-CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp
+CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp
 CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o: CMakeFiles/ACCURACY.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -MF CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o.d -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -c /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -MF CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o.d -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp
 
 CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp > CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp > CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.i
 
 CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Accuracy/Accuracy.cpp -o CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.s
 
 # Object files for target ACCURACY
 ACCURACY_OBJECTS = \
@@ -93,7 +93,7 @@ ACCURACY_EXTERNAL_OBJECTS =
 libACCURACY.a: CMakeFiles/ACCURACY.dir/lib/Math/Accuracy/Accuracy.cpp.o
 libACCURACY.a: CMakeFiles/ACCURACY.dir/build.make
 libACCURACY.a: CMakeFiles/ACCURACY.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libACCURACY.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libACCURACY.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ACCURACY.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ACCURACY.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/ACCURACY.dir/clean:
 .PHONY : CMakeFiles/ACCURACY.dir/clean
 
 CMakeFiles/ACCURACY.dir/depend:
-	cd /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles/ACCURACY.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/ACCURACY.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ACCURACY.dir/depend
 

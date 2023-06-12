@@ -289,11 +289,19 @@ Matrix Matrix::RotationMatrix(int size, int axisIndex1, int axisIndex2, float an
 
 	int n = (axisIndex1 + axisIndex2 % 2 == 0);
 
-	rotationMatrix[axisIndex1][axisIndex1] = Round(float(cos(angle)));
-	rotationMatrix[axisIndex2][axisIndex2] = Round(float(cos(angle)));
+	float angleCos = Round(float(cos(angle)));
+	float angleSin = Round(float(sin(angle)));
 
-	rotationMatrix[axisIndex2][axisIndex1] = Round(float(sin(angle) * std::pow(-1, n)));
-	rotationMatrix[axisIndex1][axisIndex2] = Round(float(sin(angle) * std::pow(-1, n + 1)));
+	if (angle == M_PI / 2 || angle == M_PI * 1.5f)
+		angleCos = 0.0f;
+	else if (angle == 0 || angle == M_PI)
+		angleSin = 0.0f;
+
+	rotationMatrix[axisIndex1][axisIndex1] = angleCos;
+	rotationMatrix[axisIndex2][axisIndex2] = angleCos;
+
+	rotationMatrix[axisIndex2][axisIndex1] = angleSin * std::pow(-1, n);
+	rotationMatrix[axisIndex1][axisIndex2] = angleSin * std::pow(-1, n + 1);
 
 	return rotationMatrix;
 }

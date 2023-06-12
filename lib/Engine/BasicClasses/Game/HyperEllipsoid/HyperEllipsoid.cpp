@@ -18,12 +18,13 @@ namespace Engine
         this->properties["direction"] = direction.Normalize();
         this->properties["semiAxes"] = semiAxes;
 
-        this->properties["type"] = "HyperEllipsoid";
+        this->properties["type"] = std::string("HyperEllipsoid");
     }
 
     HyperEllipsoid::HyperEllipsoid(Entity entity)
     {
-        *this = entity;
+        this->cs = entity.cs;
+        this->properties = entity.properties;
     }
 
     void HyperEllipsoid::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
@@ -52,52 +53,81 @@ namespace Engine
     {
         HyperEllipsoid& self = *this;
 
-        Vector dir= ray.direction;
-        Point pos = ray.initialPoint - std::any_cast<Point>(self["position"]);
-        int dim = dir.Dim();
+        Vector params = self.FindParams(ray);
 
-        Vector semiAxes = std::any_cast<Vector>(self["semiAxes"]);
-
-        float p1 = 0.0f;
-        float p2 = 0.0f;
-        float p3 = -1.0f;
-
-        for (int i = 0; i < dim; i++)
-        {
-            p1 += std::pow(dir[i], 2) / std::pow(semiAxes[i], 2);
-            p2 += 2 * pos[i] * dir[i] / std::pow(semiAxes[i], 2);
-            p3 += std::pow(pos[i], 2) / std::pow(semiAxes[i], 2);
-        }
-
-        float t1 = (-p2 + std::sqrt(std::pow(p2, 2)-4*p1*p3)) / 2 * p1;
-        float t2 = (-p2 - std::sqrt(std::pow(p2, 2)-4*p1*p3)) / 2 * p1;
-
-        std::vector<float> t;
-
-        for (auto y : {t1, t2}) 
-            if (typeid(y) == typeid(int) || typeid(y) == typeid(float)) 
-              t.push_back(y);
-
-        for (auto it = t.begin(); it != t.end();) 
-        {
-            if (*it <= 0) 
-              it = t.erase(it);
-            else 
-              ++it;
-        }
-
-        if (t.size() == 0)
+        if (params[2] == 0)
             return INF;
 
-        float tMin = *std::min_element(t.begin(), t.end());
+        Vector rayDir = ray.direction;
 
-        Vector intersection(dim);
+        float distance1 = 0.0f;
+        float distance2 = 0.0f;
+
+        for (int i = 0; i < rayDir.Dim(); i++)
+        {
+            distance1 += (float)std::pow(params[0] * rayDir[i], 2);
+            distance2 += (float)std::pow(params[1] * rayDir[i], 2);
+        }
+        if (distance1 < distance2)
+            return Round(std::sqrt(distance1));
+        else
+            return Round(std::sqrt(distance2));
+    }
+
+    Vector HyperEllipsoid::FindParams(Ray ray)
+    {
+        HyperEllipsoid& self = *this;
+
+        Vector result(3);
+
+        float a = 0.0f;
+        float b = 0.0f;
+        float c = 0.0f;
+
+        float freeCoef = 1.0f;
+
+        Point startRay = ray.initialPoint;
+        Vector rayDir = ray.direction;
+        Vector semiAxes = std::any_cast<Vector>(self.GetProperty("semiAxes"));
+        Point pos = std::any_cast<Point>(self.GetProperty("position"));
+
+        int dim = startRay.Dim();
+
+        if (rayDir.Dim() != dim || semiAxes.Dim() != dim)
+            throw HyperEllipsoidException::IncorrectDimensions(startRay.Dim(), rayDir.Dim(), semiAxes.Dim());
+
         for (int i = 0; i < dim; i++)
-        intersection[i] = pos[i] + dir[i] * tMin;
+        {
+            float coef = 1.0f;
 
-        Vector temp = self.cs.space.AsVector(pos);
+            for (int j = 0; j < dim; j++)
+            {
+                if (i == j)
+                    continue;
+                coef *= std::pow(semiAxes[j], 2);
+            }
+            a += coef * std::pow(rayDir[i], 2);
+            b += coef * (startRay[i] - pos[i]);
+            c += coef * std::pow(startRay[i] - pos[i], 2);
 
-        return Round((intersection - temp).Length());
+            freeCoef *= std::pow(semiAxes[i], 2);
+        }
+
+        c -= freeCoef;
+        b = 2 * b;
+        float Dis = std::pow(b, 2) - 4 * a * c;
+
+        if (Dis < 0)
+            return result;
+
+        float ans1 = (-b + (float)std::sqrt(Dis)) / (2 * a);
+        float ans2 = (-b - (float)std::sqrt(Dis)) / (2 * a);
+
+        result[0] = ans1;
+        result[1] = ans2;
+        result[2] = 1.0f; // flag 
+
+        return result;
     }
 
     void HyperEllipsoid::operator = (Entity entity)

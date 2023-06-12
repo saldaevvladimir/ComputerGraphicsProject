@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -137,14 +137,14 @@ clean: CMakeFiles/GraphicsEngine.dir/clean
 CMakeFiles/MATH_EXCEPTION.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATH_EXCEPTION.dir/build.make CMakeFiles/MATH_EXCEPTION.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=45,46 "Built target MATH_EXCEPTION"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=45,46 "Built target MATH_EXCEPTION"
 .PHONY : CMakeFiles/MATH_EXCEPTION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MATH_EXCEPTION.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MATH_EXCEPTION.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/MATH_EXCEPTION.dir/rule
 
 # Convenience name for target.
@@ -163,14 +163,14 @@ CMakeFiles/MATH_EXCEPTION.dir/clean:
 CMakeFiles/ENGINE_EXCEPTION.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_EXCEPTION.dir/build.make CMakeFiles/ENGINE_EXCEPTION.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=15,16 "Built target ENGINE_EXCEPTION"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=15,16 "Built target ENGINE_EXCEPTION"
 .PHONY : CMakeFiles/ENGINE_EXCEPTION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ENGINE_EXCEPTION.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENGINE_EXCEPTION.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ENGINE_EXCEPTION.dir/rule
 
 # Convenience name for target.
@@ -189,14 +189,14 @@ CMakeFiles/ENGINE_EXCEPTION.dir/clean:
 CMakeFiles/ACCURACY.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ACCURACY.dir/build.make CMakeFiles/ACCURACY.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=1,2 "Built target ACCURACY"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=1,2 "Built target ACCURACY"
 .PHONY : CMakeFiles/ACCURACY.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ACCURACY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ACCURACY.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ACCURACY.dir/rule
 
 # Convenience name for target.
@@ -212,18 +212,18 @@ CMakeFiles/ACCURACY.dir/clean:
 # Target rules for target CMakeFiles/MATRIX.dir
 
 # All Build rule for target.
-CMakeFiles/MATRIX.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/MATRIX.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/MATRIX.dir/all: CMakeFiles/ACCURACY.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MATRIX.dir/build.make CMakeFiles/MATRIX.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=47,48 "Built target MATRIX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=47,48 "Built target MATRIX"
 .PHONY : CMakeFiles/MATRIX.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MATRIX.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MATRIX.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/MATRIX.dir/rule
 
 # Convenience name for target.
@@ -239,19 +239,19 @@ CMakeFiles/MATRIX.dir/clean:
 # Target rules for target CMakeFiles/VECTOR.dir
 
 # All Build rule for target.
-CMakeFiles/VECTOR.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/VECTOR.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/VECTOR.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/VECTOR.dir/all: CMakeFiles/MATRIX.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR.dir/build.make CMakeFiles/VECTOR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=55,56 "Built target VECTOR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=55,56 "Built target VECTOR"
 .PHONY : CMakeFiles/VECTOR.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VECTOR.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VECTOR.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/VECTOR.dir/rule
 
 # Convenience name for target.
@@ -267,20 +267,20 @@ CMakeFiles/VECTOR.dir/clean:
 # Target rules for target CMakeFiles/POINT.dir
 
 # All Build rule for target.
-CMakeFiles/POINT.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/POINT.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/POINT.dir/all: CMakeFiles/VECTOR.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/POINT.dir/build.make CMakeFiles/POINT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=51,52 "Built target POINT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=51,52 "Built target POINT"
 .PHONY : CMakeFiles/POINT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/POINT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/POINT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/POINT.dir/rule
 
 # Convenience name for target.
@@ -296,20 +296,20 @@ CMakeFiles/POINT.dir/clean:
 # Target rules for target CMakeFiles/FUNCTIONS.dir
 
 # All Build rule for target.
-CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/FUNCTIONS.dir/all: CMakeFiles/VECTOR.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FUNCTIONS.dir/build.make CMakeFiles/FUNCTIONS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=25,26 "Built target FUNCTIONS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=25,26 "Built target FUNCTIONS"
 .PHONY : CMakeFiles/FUNCTIONS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FUNCTIONS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FUNCTIONS.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/FUNCTIONS.dir/rule
 
 # Convenience name for target.
@@ -325,22 +325,22 @@ CMakeFiles/FUNCTIONS.dir/clean:
 # Target rules for target CMakeFiles/VECTOR_SPACE.dir
 
 # All Build rule for target.
-CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/POINT.dir/all
 CMakeFiles/VECTOR_SPACE.dir/all: CMakeFiles/FUNCTIONS.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR_SPACE.dir/build.make CMakeFiles/VECTOR_SPACE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VECTOR_SPACE.dir/build.make CMakeFiles/VECTOR_SPACE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=57,58 "Built target VECTOR_SPACE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=57,58 "Built target VECTOR_SPACE"
 .PHONY : CMakeFiles/VECTOR_SPACE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VECTOR_SPACE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VECTOR_SPACE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/VECTOR_SPACE.dir/rule
 
 # Convenience name for target.
@@ -356,8 +356,8 @@ CMakeFiles/VECTOR_SPACE.dir/clean:
 # Target rules for target CMakeFiles/COORDINATE_SYSTEM.dir
 
 # All Build rule for target.
-CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/POINT.dir/all
@@ -365,14 +365,14 @@ CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/FUNCTIONS.dir/all
 CMakeFiles/COORDINATE_SYSTEM.dir/all: CMakeFiles/VECTOR_SPACE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COORDINATE_SYSTEM.dir/build.make CMakeFiles/COORDINATE_SYSTEM.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COORDINATE_SYSTEM.dir/build.make CMakeFiles/COORDINATE_SYSTEM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=11,12 "Built target COORDINATE_SYSTEM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=11,12 "Built target COORDINATE_SYSTEM"
 .PHONY : CMakeFiles/COORDINATE_SYSTEM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/COORDINATE_SYSTEM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/COORDINATE_SYSTEM.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/COORDINATE_SYSTEM.dir/rule
 
 # Convenience name for target.
@@ -388,8 +388,8 @@ CMakeFiles/COORDINATE_SYSTEM.dir/clean:
 # Target rules for target CMakeFiles/ALL_MATH.dir
 
 # All Build rule for target.
-CMakeFiles/ALL_MATH.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/ALL_MATH.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/POINT.dir/all
@@ -398,14 +398,14 @@ CMakeFiles/ALL_MATH.dir/all: CMakeFiles/VECTOR_SPACE.dir/all
 CMakeFiles/ALL_MATH.dir/all: CMakeFiles/COORDINATE_SYSTEM.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALL_MATH.dir/build.make CMakeFiles/ALL_MATH.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALL_MATH.dir/build.make CMakeFiles/ALL_MATH.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=3,4 "Built target ALL_MATH"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=3,4 "Built target ALL_MATH"
 .PHONY : CMakeFiles/ALL_MATH.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ALL_MATH.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ALL_MATH.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ALL_MATH.dir/rule
 
 # Convenience name for target.
@@ -421,8 +421,8 @@ CMakeFiles/ALL_MATH.dir/clean:
 # Target rules for target CMakeFiles/RAY.dir
 
 # All Build rule for target.
-CMakeFiles/RAY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/RAY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/POINT.dir/all
@@ -431,14 +431,14 @@ CMakeFiles/RAY.dir/all: CMakeFiles/VECTOR_SPACE.dir/all
 CMakeFiles/RAY.dir/all: CMakeFiles/COORDINATE_SYSTEM.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RAY.dir/build.make CMakeFiles/RAY.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RAY.dir/build.make CMakeFiles/RAY.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=53,54 "Built target RAY"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=53,54 "Built target RAY"
 .PHONY : CMakeFiles/RAY.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RAY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RAY.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/RAY.dir/rule
 
 # Convenience name for target.
@@ -457,14 +457,14 @@ CMakeFiles/RAY.dir/clean:
 CMakeFiles/IDENTIFIER.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IDENTIFIER.dir/build.make CMakeFiles/IDENTIFIER.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IDENTIFIER.dir/build.make CMakeFiles/IDENTIFIER.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=43,44 "Built target IDENTIFIER"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=43,44 "Built target IDENTIFIER"
 .PHONY : CMakeFiles/IDENTIFIER.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IDENTIFIER.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/IDENTIFIER.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/IDENTIFIER.dir/rule
 
 # Convenience name for target.
@@ -480,8 +480,8 @@ CMakeFiles/IDENTIFIER.dir/clean:
 # Target rules for target CMakeFiles/ENTITY.dir
 
 # All Build rule for target.
-CMakeFiles/ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/POINT.dir/all
@@ -492,14 +492,14 @@ CMakeFiles/ENTITY.dir/all: CMakeFiles/RAY.dir/all
 CMakeFiles/ENTITY.dir/all: CMakeFiles/IDENTIFIER.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITY.dir/build.make CMakeFiles/ENTITY.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=19,20 "Built target ENTITY"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=19,20 "Built target ENTITY"
 .PHONY : CMakeFiles/ENTITY.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ENTITY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENTITY.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ENTITY.dir/rule
 
 # Convenience name for target.
@@ -516,8 +516,8 @@ CMakeFiles/ENTITY.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/POINT.dir/all
@@ -529,14 +529,14 @@ CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/IDENTIFIER.dir/all
 CMakeFiles/ENTITIES_LIST.dir/all: CMakeFiles/ENTITY.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITIES_LIST.dir/build.make CMakeFiles/ENTITIES_LIST.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENTITIES_LIST.dir/build.make CMakeFiles/ENTITIES_LIST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=17,18 "Built target ENTITIES_LIST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=17,18 "Built target ENTITIES_LIST"
 .PHONY : CMakeFiles/ENTITIES_LIST.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ENTITIES_LIST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENTITIES_LIST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ENTITIES_LIST.dir/rule
 
 # Convenience name for target.
@@ -553,8 +553,8 @@ CMakeFiles/ENTITIES_LIST.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GAME.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GAME.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GAME.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/POINT.dir/all
@@ -569,14 +569,14 @@ CMakeFiles/GAME.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/GAME.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME.dir/build.make CMakeFiles/GAME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=27,28 "Built target GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=27,28 "Built target GAME"
 .PHONY : CMakeFiles/GAME.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME.dir/rule
 
 # Convenience name for target.
@@ -593,8 +593,8 @@ CMakeFiles/GAME.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/POINT.dir/all
@@ -610,14 +610,14 @@ CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/GAME_ENTITY.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_ENTITY.dir/build.make CMakeFiles/GAME_ENTITY.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=31,32 "Built target GAME_ENTITY"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=31,32 "Built target GAME_ENTITY"
 .PHONY : CMakeFiles/GAME_ENTITY.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_ENTITY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_ENTITY.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_ENTITY.dir/rule
 
 # Convenience name for target.
@@ -634,8 +634,8 @@ CMakeFiles/GAME_ENTITY.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/POINT.dir/all
@@ -652,14 +652,14 @@ CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/GAME_OBJECT.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_OBJECT.dir/build.make CMakeFiles/GAME_OBJECT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=33,34 "Built target GAME_OBJECT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=33,34 "Built target GAME_OBJECT"
 .PHONY : CMakeFiles/GAME_OBJECT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_OBJECT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_OBJECT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_OBJECT.dir/rule
 
 # Convenience name for target.
@@ -676,8 +676,8 @@ CMakeFiles/GAME_OBJECT.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/POINT.dir/all
@@ -695,14 +695,14 @@ CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/GAME_CAMERA.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GAME_CAMERA.dir/build.make CMakeFiles/GAME_CAMERA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=29,30 "Built target GAME_CAMERA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=29,30 "Built target GAME_CAMERA"
 .PHONY : CMakeFiles/GAME_CAMERA.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GAME_CAMERA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GAME_CAMERA.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GAME_CAMERA.dir/rule
 
 # Convenience name for target.
@@ -719,8 +719,8 @@ CMakeFiles/GAME_CAMERA.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/CANVAS.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/CANVAS.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/CANVAS.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/POINT.dir/all
@@ -735,18 +735,20 @@ CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME_ENTITY.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME_OBJECT.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/GAME_CAMERA.dir/all
+CMakeFiles/CANVAS.dir/all: CMakeFiles/HYPER_PLANE.dir/all
+CMakeFiles/CANVAS.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/CANVAS.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CANVAS.dir/build.make CMakeFiles/CANVAS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=5,6 "Built target CANVAS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=5,6 "Built target CANVAS"
 .PHONY : CMakeFiles/CANVAS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CANVAS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CANVAS.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/CANVAS.dir/rule
 
 # Convenience name for target.
@@ -763,8 +765,8 @@ CMakeFiles/CANVAS.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/POINT.dir/all
@@ -780,14 +782,14 @@ CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/HYPER_PLANE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_PLANE.dir/build.make CMakeFiles/HYPER_PLANE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=41,42 "Built target HYPER_PLANE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=41,42 "Built target HYPER_PLANE"
 .PHONY : CMakeFiles/HYPER_PLANE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HYPER_PLANE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HYPER_PLANE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/HYPER_PLANE.dir/rule
 
 # Convenience name for target.
@@ -804,8 +806,8 @@ CMakeFiles/HYPER_PLANE.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/POINT.dir/all
@@ -821,14 +823,14 @@ CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/HYPER_ELLIPSOID.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HYPER_ELLIPSOID.dir/build.make CMakeFiles/HYPER_ELLIPSOID.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=39,40 "Built target HYPER_ELLIPSOID"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=39,40 "Built target HYPER_ELLIPSOID"
 .PHONY : CMakeFiles/HYPER_ELLIPSOID.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HYPER_ELLIPSOID.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HYPER_ELLIPSOID.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/HYPER_ELLIPSOID.dir/rule
 
 # Convenience name for target.
@@ -847,14 +849,14 @@ CMakeFiles/HYPER_ELLIPSOID.dir/clean:
 CMakeFiles/EVENT_SYSTEM.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EVENT_SYSTEM.dir/build.make CMakeFiles/EVENT_SYSTEM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=21,22 "Built target EVENT_SYSTEM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=21,22 "Built target EVENT_SYSTEM"
 .PHONY : CMakeFiles/EVENT_SYSTEM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EVENT_SYSTEM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EVENT_SYSTEM.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/EVENT_SYSTEM.dir/rule
 
 # Convenience name for target.
@@ -873,14 +875,14 @@ CMakeFiles/EVENT_SYSTEM.dir/clean:
 CMakeFiles/CONFIGURATION.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONFIGURATION.dir/build.make CMakeFiles/CONFIGURATION.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=7,8 "Built target CONFIGURATION"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=7,8 "Built target CONFIGURATION"
 .PHONY : CMakeFiles/CONFIGURATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CONFIGURATION.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CONFIGURATION.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/CONFIGURATION.dir/rule
 
 # Convenience name for target.
@@ -897,8 +899,8 @@ CMakeFiles/CONFIGURATION.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/CONSOLE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/CONSOLE.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/POINT.dir/all
@@ -914,18 +916,20 @@ CMakeFiles/CONSOLE.dir/all: CMakeFiles/GAME_ENTITY.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/GAME_OBJECT.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/GAME_CAMERA.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/CANVAS.dir/all
+CMakeFiles/CONSOLE.dir/all: CMakeFiles/HYPER_PLANE.dir/all
+CMakeFiles/CONSOLE.dir/all: CMakeFiles/HYPER_ELLIPSOID.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/EVENT_SYSTEM.dir/all
 CMakeFiles/CONSOLE.dir/all: CMakeFiles/CONFIGURATION.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CONSOLE.dir/build.make CMakeFiles/CONSOLE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=9,10 "Built target CONSOLE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=9,10 "Built target CONSOLE"
 .PHONY : CMakeFiles/CONSOLE.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CONSOLE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CONSOLE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/CONSOLE.dir/rule
 
 # Convenience name for target.
@@ -942,8 +946,8 @@ CMakeFiles/CONSOLE.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/POINT.dir/all
@@ -966,14 +970,14 @@ CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/CONFIGURATION.dir/all
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all: CMakeFiles/CONSOLE.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ENGINE_BASIC_CLASSES.dir/build.make CMakeFiles/ENGINE_BASIC_CLASSES.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=13,14 "Built target ENGINE_BASIC_CLASSES"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=13,14 "Built target ENGINE_BASIC_CLASSES"
 .PHONY : CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ENGINE_BASIC_CLASSES.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/ENGINE_BASIC_CLASSES.dir/rule
 
 # Convenience name for target.
@@ -989,8 +993,8 @@ CMakeFiles/ENGINE_BASIC_CLASSES.dir/clean:
 # Target rules for target CMakeFiles/MathTests.dir
 
 # All Build rule for target.
-CMakeFiles/MathTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/MathTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/POINT.dir/all
@@ -1000,14 +1004,14 @@ CMakeFiles/MathTests.dir/all: CMakeFiles/COORDINATE_SYSTEM.dir/all
 CMakeFiles/MathTests.dir/all: CMakeFiles/ALL_MATH.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathTests.dir/build.make CMakeFiles/MathTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MathTests.dir/build.make CMakeFiles/MathTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=49,50 "Built target MathTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=49,50 "Built target MathTests"
 .PHONY : CMakeFiles/MathTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MathTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MathTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/MathTests.dir/rule
 
 # Convenience name for target.
@@ -1024,8 +1028,8 @@ CMakeFiles/MathTests.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/EngineTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/EngineTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/POINT.dir/all
@@ -1049,14 +1053,14 @@ CMakeFiles/EngineTests.dir/all: CMakeFiles/CONSOLE.dir/all
 CMakeFiles/EngineTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=23,24 "Built target EngineTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=23,24 "Built target EngineTests"
 .PHONY : CMakeFiles/EngineTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EngineTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 50
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EngineTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/EngineTests.dir/rule
 
 # Convenience name for target.
@@ -1073,8 +1077,8 @@ CMakeFiles/EngineTests.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GameTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GameTests.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/POINT.dir/all
@@ -1098,14 +1102,14 @@ CMakeFiles/GameTests.dir/all: CMakeFiles/CONSOLE.dir/all
 CMakeFiles/GameTests.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameTests.dir/build.make CMakeFiles/GameTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=35,36 "Built target GameTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=35,36 "Built target GameTests"
 .PHONY : CMakeFiles/GameTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GameTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 50
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GameTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GameTests.dir/rule
 
 # Convenience name for target.
@@ -1122,8 +1126,8 @@ CMakeFiles/GameTests.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE_EXCEPTION.dir/all
-CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATH_EXCEPTION.dir/all
+CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ACCURACY.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/MATRIX.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/VECTOR.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/POINT.dir/all
@@ -1148,14 +1152,14 @@ CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/CONSOLE.dir/all
 CMakeFiles/GraphicsEngine.dir/all: CMakeFiles/ENGINE_BASIC_CLASSES.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GraphicsEngine.dir/build.make CMakeFiles/GraphicsEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=37,38 "Built target GraphicsEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=37,38 "Built target GraphicsEngine"
 .PHONY : CMakeFiles/GraphicsEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GraphicsEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GraphicsEngine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles 0
 .PHONY : CMakeFiles/GraphicsEngine.dir/rule
 
 # Convenience name for target.

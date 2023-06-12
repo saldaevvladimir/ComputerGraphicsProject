@@ -201,6 +201,8 @@ target_link_libraries(CANVAS
     PUBLIC MATRIX
     PUBLIC GAME
     PUBLIC GAME_CAMERA
+    PUBLIC HYPER_ELLIPSOID
+    PUBLIC HYPER_PLANE
 )
 
 target_link_libraries(HYPER_PLANE

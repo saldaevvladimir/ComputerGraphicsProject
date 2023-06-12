@@ -35,8 +35,8 @@ MathException MatrixException::NotInitialized(int height, int width)
 
 MathException MatrixException::IncorrectElementIndexes(int matHeight, int matWidth, int rowIndex, int colIndex)
 {
-	return MathException("incorrect indexes of matrix element (matrix sizes: " + std::to_string(matHeight) + "x" + std::to_string(matWidth) + ") "
-		+ "(elemetn indexes: " + std::to_string(rowIndex) + " " + std::to_string(colIndex) + ")");
+	return MathException("incorrect indexes of matrix element (matrix sizes: " + std::to_string(matHeight) + "x" + std::to_string(matWidth) + 
+	" element indexes: " + std::to_string(rowIndex) + " " + std::to_string(colIndex) + ")");
 }
 
 MathException MatrixException::EmptyArray()

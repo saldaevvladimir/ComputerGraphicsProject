@@ -18,5 +18,7 @@ namespace Engine
 
         void Clear();
 
+        void SetCursorPosition(int x, int y);
+
     };
 }

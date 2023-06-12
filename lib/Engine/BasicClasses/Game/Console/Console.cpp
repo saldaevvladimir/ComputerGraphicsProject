@@ -24,9 +24,9 @@ namespace Engine
 
         float delta = drawDist / charmapSize;
 
-        for (int r = 1; r <= console.height; r++)
+        for (int r = 0; r < console.height; r++)
         {
-            for(int c = 1; c <= console.width; c++)
+            for(int c = 0; c < console.width; c++)
             {
                 if (console.distances[r][c] > drawDist || console.distances[r][c] == INF)
                 {
@@ -47,7 +47,7 @@ namespace Engine
         std::cout << "\033[2J\033[1;1H";
     }
 
-    void SetCursorPosition(int x, int y)
+    void Console::SetCursorPosition(int x, int y)
     {
         if (x > 0 && y > 0)
         {

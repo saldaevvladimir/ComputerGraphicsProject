@@ -27,27 +27,18 @@ namespace Engine
 
     void Canvas::Draw()
     {
-        // Console.Clear();
-        // float deltaDist = camera.GetProperty("drawDistance") / charmap.Length;
-
-        // for (int i = 0; i < n; i++) 
-        // {
-        //     for (int j = 0; j < m; j++)
-        //     {
-        //         if (distances[i, j] > camera.GetProperty("drawDistance") || distances[i, j] == float.PositiveInfinity)
-        //             System.Console.Write(' ');
-        //         else
-        //         {
-        //             char outChar = charmap[charmap.Length - 1 - (int)(distances[i,j] / deltaDist)];
-        //             System.Console.Write(outChar);
-        //         }
-                
-        //     }
-        //     System.Console.WriteLine();
-
-        // }
-        // System.Console.SetCursorPosition(n / 2, m / 2);
+        
     }
+
+    // float Canvas::GetIntersectionDistance(HyperPlane entity, Ray ray)
+    // {
+    //     return entity.IntersectionDistance(ray);
+    // }
+
+    // float Canvas::GetIntersectionDistance(HyperEllipsoid entity, Ray ray)
+    // {
+    //     return entity.IntersectionDistance(ray);
+    // }
 
     float Canvas::GetIntersectionDistance(Entity entity, Ray ray)
     {
@@ -80,9 +71,7 @@ namespace Engine
     {
         Canvas& self = *this;
 
-        std::vector<std::vector<Engine::Ray>> rayMatrix;
-        
-        rayMatrix = self.camera.GetRaysMatrix(self.height, self.width);
+        std::vector<std::vector<Ray>> rayMatrix = self.camera.GetRaysMatrix(self.height, self.width);
 
         for (int r = 0; r < self.height; r++)
         {

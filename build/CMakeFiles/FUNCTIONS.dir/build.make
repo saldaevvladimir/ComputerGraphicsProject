@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FUNCTIONS.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/FUNCTIONS.dir/progress.make
 include CMakeFiles/FUNCTIONS.dir/flags.make
 
 CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: CMakeFiles/FUNCTIONS.dir/flags.make
-CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp
+CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp
 CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o: CMakeFiles/FUNCTIONS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -MF CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o.d -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -c /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -MF CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o.d -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp
 
 CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp > CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp > CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.i
 
 CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/Functions/Functions.cpp -o CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.s
 
 # Object files for target FUNCTIONS
 FUNCTIONS_OBJECTS = \
@@ -93,7 +93,7 @@ FUNCTIONS_EXTERNAL_OBJECTS =
 libFUNCTIONS.a: CMakeFiles/FUNCTIONS.dir/lib/Math/Functions/Functions.cpp.o
 libFUNCTIONS.a: CMakeFiles/FUNCTIONS.dir/build.make
 libFUNCTIONS.a: CMakeFiles/FUNCTIONS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libFUNCTIONS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libFUNCTIONS.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/FUNCTIONS.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FUNCTIONS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/FUNCTIONS.dir/clean:
 .PHONY : CMakeFiles/FUNCTIONS.dir/clean
 
 CMakeFiles/FUNCTIONS.dir/depend:
-	cd /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles/FUNCTIONS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/FUNCTIONS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FUNCTIONS.dir/depend
 

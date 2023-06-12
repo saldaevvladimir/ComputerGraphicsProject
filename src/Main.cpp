@@ -10,47 +10,40 @@
 int main()
 {
     using namespace std;
+    using namespace Engine;
 
-    int dim = 3;
-    Vector* b = new Vector[dim];
-    b[0] = Vector({1, 0, 0}); b[1] = Vector({0, 0, 1}); b[2] = Vector({0, 0, 1});
+    Vector* b = new Vector[3];
+    b[0] = Vector({1,0,0}); b[1] = Vector({0,1,0}); b[2] = Vector({0,0,1});
 
-    Engine::Game game(CoordinateSystem(Point({0, 0, 0}), VectorSpace(b, dim)), Engine::EntitiesList(), Engine::EventSystem());
+    VectorSpace vs(b, 3);
 
-    CoordinateSystem cs(Point({0, 0, 0}), VectorSpace(b, dim));
+    Point init({0,0,0});
 
-    Engine::Game::GameEntity g(game);
+    CoordinateSystem cs(init, vs);
 
-    Engine::Game::Object obj(g, Point({6, 0, 0}), Vector({1, 0, 0}));
+    EntitiesList el;
+    EventSystem es;
 
-    Engine::HyperEllipsoid ellipsoid(obj, Point({6, 0, 0}), Vector({1, 0, 0}), Vector({1, 1, 1}));
+    Game game(cs, el, es);
 
-    Engine::HyperPlane plane(obj, Point({0, 6, 0}), Vector({0, 1, 0}));
+    Game::GameEntity gameE(game);
+    Game::Object obj(gameE);
+
+    HyperEllipsoid ellipsoid(obj, Point({0,0,25}), Vector({0,1,0}), Vector({10,10,10}));
+    HyperPlane plane(obj, Point({0,0,25}), Vector({0,0,1}));
 
     game.gameEntities.Append(ellipsoid);
 
+    Game::Camera camera(obj, M_PI / 2, 40.0f);
+    camera.SetPosition(Point({0,0,0}));
+    camera.SetDirection(Vector({0, 0, 1}));
 
-    float hfov = 1.75f;
-    float drawDist = 10.0f;
-    Point camPos({0, 0, 0});
-    Vector camDir({1, 0, 0});
+    Console console(100, 100, game, camera);
 
-    Engine::Game::Camera camera(obj, hfov, drawDist);
-    camera.SetPosition(Point({0, 0, 0}));
-    camera.SetDirection(Vector({1, 0, 0}));
-
-    int h = 30, w = 100;
-    Engine::Console console(h, w, game, camera); // charmap = default
-    console.Canvas::Update();
-
+    console.Update();
     console.Draw();
 
-    cout << endl << endl << endl;
-    cout << "**********************************************" << endl;
-    cout << "***** end ***** end ****** end ***** end *****" << endl;
-    cout << "**********************************************" << endl;
 
     return 0;
 }
-
 

@@ -4,6 +4,8 @@
 
 #include "../../../../lib/Math/Matrix/Matrix.h"
 #include "../Game/Game.h"
+#include "../Game/HyperEllipsoid/HyperEllipsoid.h"
+#include "../Game/HyperPlane/HyperPlane.h"
 
 
 namespace Engine
