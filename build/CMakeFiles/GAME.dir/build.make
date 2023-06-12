@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/v_s2/Desktop/ComputerGraphicsProject
+CMAKE_SOURCE_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/v_s2/Desktop/ComputerGraphicsProject/build
+CMAKE_BINARY_DIR = /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GAME.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/GAME.dir/progress.make
 include CMakeFiles/GAME.dir/flags.make
 
 CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: CMakeFiles/GAME.dir/flags.make
-CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp
+CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp
 CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o: CMakeFiles/GAME.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -MF CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o.d -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -c /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -MF CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o.d -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o -c /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp
 
 CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp > CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp > CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.i
 
 CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Engine/BasicClasses/Game/Game.cpp -o CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.s
 
 # Object files for target GAME
 GAME_OBJECTS = \
@@ -93,7 +93,7 @@ GAME_EXTERNAL_OBJECTS =
 libGAME.a: CMakeFiles/GAME.dir/lib/Engine/BasicClasses/Game/Game.cpp.o
 libGAME.a: CMakeFiles/GAME.dir/build.make
 libGAME.a: CMakeFiles/GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGAME.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGAME.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GAME.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GAME.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/GAME.dir/clean:
 .PHONY : CMakeFiles/GAME.dir/clean
 
 CMakeFiles/GAME.dir/depend:
-	cd /home/v_s2/Desktop/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build /home/v_s2/Desktop/ComputerGraphicsProject/build/CMakeFiles/GAME.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build /home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/build/CMakeFiles/GAME.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GAME.dir/depend
 

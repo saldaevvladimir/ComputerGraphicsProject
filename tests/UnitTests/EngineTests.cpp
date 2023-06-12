@@ -37,7 +37,7 @@ TEST(ObjectTests, MoveTest)
 
     obj.Move(4.0f);
 
-    Point testNewPos = std::get<Point>(obj.GetProperty("position"));
+    Point testNewPos = std::any_cast<Point>(obj.GetProperty("position"));
 
     Point newPos({ 4, 0, 0 });
 
@@ -78,7 +78,7 @@ TEST(ObjectTests, PlanarRotate)
 
     Vector newDir({ 0, -1, 0 });
 
-    Vector testDir = std::get<Vector>(obj.GetProperty("direction"));
+    Vector testDir = std::any_cast<Vector>(obj.GetProperty("direction"));
 
     bool correctDir = (testDir == newDir);
 
@@ -117,7 +117,7 @@ TEST(ObjectTests, Rotate3D)
 
     Vector newDir({ 1, 0, 0 });
 
-    Vector testDir = std::get<Vector>(obj.GetProperty("direction"));
+    Vector testDir = std::any_cast<Vector>(obj.GetProperty("direction"));
 
     bool correctDir = (testDir == newDir);
 

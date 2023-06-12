@@ -7,6 +7,7 @@
 #include "../../../Engine/BasicClasses/Ray/Ray.h"
 
 #include <map>
+#include <any>
 #include <variant>
 #include <string>
 
@@ -19,15 +20,15 @@ namespace Engine
 	public:
 		Identifier identifier;
 		CoordinateSystem cs;
-		std::map <std::string, PropertyType> properties;
+		std::map <std::string, std::any> properties;
 
 		Entity() {};
 
 		Entity(CoordinateSystem cs);
 
-		void SetProperty(const std::string& key, const PropertyType& value);
+		void SetProperty(const std::string& key, const std::any& value);
 
-		const PropertyType& GetProperty(const std::string& key);
+		const std::any& GetProperty(const std::string& key);
 
 		void RemoveProperty(const std::string& key);
 
@@ -35,7 +36,7 @@ namespace Engine
 		
 		virtual float IntersectionDistance(Ray ray);
 
-		PropertyType& operator [] (const std::string& key);
+		std::any& operator [] (const std::string& key);
 
 		
 	};

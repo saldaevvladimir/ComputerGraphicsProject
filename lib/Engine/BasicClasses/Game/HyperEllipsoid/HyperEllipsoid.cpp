@@ -30,7 +30,7 @@ namespace Engine
     {
         HyperEllipsoid& self = *this;
 
-        Vector direction = std::get<Vector>(self["direction"]);
+        Vector direction = std::any_cast<Vector>(self["direction"]);
 
         direction = direction.Rotate(axisIndex1, axisIndex2, angle);
 
@@ -41,7 +41,7 @@ namespace Engine
     {
         HyperEllipsoid& self = *this;
 
-        Vector direction = std::get<Vector>(self["direction"]);
+        Vector direction = std::any_cast<Vector>(self["direction"]);
 
         direction = direction.Rotate3D(angle1, angle2, angle3);
 
@@ -53,10 +53,10 @@ namespace Engine
         HyperEllipsoid& self = *this;
 
         Vector dir= ray.direction;
-        Point pos = ray.initialPoint - std::get<Point>(self["position"]);
+        Point pos = ray.initialPoint - std::any_cast<Point>(self["position"]);
         int dim = dir.Dim();
 
-        Vector semiAxes = std::get<Vector>(self["semiAxes"]);
+        Vector semiAxes = std::any_cast<Vector>(self["semiAxes"]);
 
         float p1 = 0.0f;
         float p2 = 0.0f;
@@ -104,9 +104,9 @@ namespace Engine
     {
         if (entity.HasProperty("type"))
         {
-            if (std::get<std::string>(entity["type"]) != "HyperEllipsoid")
+            if (std::any_cast<std::string>(entity["type"]) != "HyperEllipsoid")
             {
-                throw EngineException::IncorrectArgumentType("HyperEllipsoid", std::get<std::string>(entity["type"]));
+                throw EngineException::IncorrectArgumentType("HyperEllipsoid", std::any_cast<std::string>(entity["type"]));
             }
             else
             {

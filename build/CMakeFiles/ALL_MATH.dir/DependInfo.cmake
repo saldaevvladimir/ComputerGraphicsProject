@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/v_s2/Desktop/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp" "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o" "gcc" "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o.d"
+  "/home/v_s2/Desktop/test_branches/3/ComputerGraphicsProject/lib/Math/AllMath/AllMath.cpp" "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o" "gcc" "CMakeFiles/ALL_MATH.dir/lib/Math/AllMath/AllMath.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

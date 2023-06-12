@@ -1,20 +1,22 @@
 #pragma once
 
 #include "../../../../Math/Matrix/Matrix.h"
+#include "../Game.h"
+#include "../../Canvas/Canvas.h"
 
 #include <string>
 
 
 namespace Engine
 {
-    class Console
+    class Console : public Canvas
     {
     public:
-        std::string charmap = " .:;><+r*zsvfwqkP694VOGbUAKXH8RD#$B0MNWQ%&@";
+        Console(int height, int width, Game game, Game::Camera camera, std::string charmap = DEFAULT);
 
-        Console(std::string charmap);
+        void Draw() override;
 
-        void Draw(Matrix distances, float drawDistance);
+        void Clear();
 
     };
 }

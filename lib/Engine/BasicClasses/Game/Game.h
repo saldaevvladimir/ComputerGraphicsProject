@@ -26,8 +26,6 @@ namespace Engine
 
 		EventSystem GetEventSystem();
 
-		void ApplyConfiguration(Configuration config);
-
 		void operator = (Game game);
 
 		void Run();
@@ -73,6 +71,7 @@ namespace Engine
 		class Camera : public Game::Object
 		{
 		public:
+			Camera();
 
 			Camera(Game::Object& object, float hfov, float drawDistance);
 

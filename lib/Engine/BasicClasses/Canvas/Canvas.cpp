@@ -12,21 +12,48 @@
 
 namespace Engine
 {
-    Canvas::Canvas(int height, int width, Game game)
+    Canvas::Canvas(int height, int width, Game game, Game::Camera camera, std::string charmap)
     {
         if (!Matrix::CorrectSizes(height, width))
             throw CanvasException::IncorrectSizes(height, width);
 
         this->height = height;
         this->width = width;
+        this->distances = Matrix(height, width);
         this->game = game;
+        this->camera = camera;
+        this->charmap = charmap;
+    }
+
+    void Canvas::Draw()
+    {
+        // Console.Clear();
+        // float deltaDist = camera.GetProperty("drawDistance") / charmap.Length;
+
+        // for (int i = 0; i < n; i++) 
+        // {
+        //     for (int j = 0; j < m; j++)
+        //     {
+        //         if (distances[i, j] > camera.GetProperty("drawDistance") || distances[i, j] == float.PositiveInfinity)
+        //             System.Console.Write(' ');
+        //         else
+        //         {
+        //             char outChar = charmap[charmap.Length - 1 - (int)(distances[i,j] / deltaDist)];
+        //             System.Console.Write(outChar);
+        //         }
+                
+        //     }
+        //     System.Console.WriteLine();
+
+        // }
+        // System.Console.SetCursorPosition(n / 2, m / 2);
     }
 
     float Canvas::GetIntersectionDistance(Entity entity, Ray ray)
     {
         if (entity.HasProperty("type"))
         {
-            std::string type = std::get<std::string>(entity["type"]);
+            std::string type = std::any_cast<std::string>(entity["type"]);
 
             if (type == "HyperPlane")
             {
@@ -40,8 +67,7 @@ namespace Engine
             }
             else
             {
-                // there are only 2 types now
-                return -1.0f;
+                return INF;
             }
         }
         else
@@ -50,14 +76,13 @@ namespace Engine
         }
     }
 
-    void Canvas::Update(Game::Camera camera)
+    void Canvas::Update()
     {
         Canvas& self = *this;
-        std::size_t w = self.width;
 
         std::vector<std::vector<Engine::Ray>> rayMatrix;
         
-        rayMatrix = camera.GetRaysMatrix(self.height, self.width);
+        rayMatrix = self.camera.GetRaysMatrix(self.height, self.width);
 
         for (int r = 0; r < self.height; r++)
         {

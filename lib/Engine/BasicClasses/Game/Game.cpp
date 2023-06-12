@@ -27,16 +27,6 @@ namespace Engine
 		return this->es;
 	}
 
-	void Game::ApplyConfiguration(Configuration config)
-	{
-		Game& self = *this;
-
-		for (const auto& [key, val] : config.configuration)
-		{
-			//self[key] = val;
-		}
-	}
-
 	void Game::operator = (Game game)
 	{
 		Game& self = *this;

@@ -200,6 +200,7 @@ target_link_libraries(GAME_CAMERA
 target_link_libraries(CANVAS
     PUBLIC MATRIX
     PUBLIC GAME
+    PUBLIC GAME_CAMERA
 )
 
 target_link_libraries(HYPER_PLANE
@@ -211,6 +212,7 @@ target_link_libraries(HYPER_ELLIPSOID
 )
 
 target_link_libraries(CONSOLE
+    PUBLIC CANVAS
     PUBLIC MATRIX
 )
 

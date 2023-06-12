@@ -10,12 +10,12 @@ namespace Engine
 		this->cs = cs;
 	}
 
-	void Entity::SetProperty(const std::string& key, const PropertyType& value)
+	void Entity::SetProperty(const std::string& key, const std::any& value)
 	{
 		properties[key] = value;
 	}
 
-	const PropertyType& Entity::GetProperty(const std::string& key)
+	const std::any& Entity::GetProperty(const std::string& key)
 	{
 		Engine::Entity& self = *this;
 
@@ -40,7 +40,7 @@ namespace Engine
 		return INF;
 	}
 
-	PropertyType& Entity::operator [] (const std::string& key)
+	std::any& Entity::operator [] (const std::string& key)
 	{
 		Engine::Entity& self = *this;
 

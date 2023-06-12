@@ -28,8 +28,8 @@ namespace Engine
 	{
 		Game::Object& object = *this;
 		
-		Point position = std::get<Point>(object.GetProperty("position"));
-		Vector direction = this->cs.space.Normalize(std::get<Vector>(object.GetProperty("direction")));
+		Point position = std::any_cast<Point>(object.GetProperty("position"));
+		Vector direction = this->cs.space.Normalize(std::any_cast<Vector>(object.GetProperty("direction")));
 
 		position = position + direction * distance;
 		
@@ -40,7 +40,7 @@ namespace Engine
 	{
 		Game::Object& object = *this;
 
-		Vector direction = std::get<Vector>(object.GetProperty("direction"));
+		Vector direction = std::any_cast<Vector>(object.GetProperty("direction"));
 
 		object.SetDirection(direction.Rotate(axisIndex1, axisIndex2, angle));
 	}
@@ -49,7 +49,7 @@ namespace Engine
 	{
 		Game::Object& object = *this;
 
-		Vector direction = std::get<Vector>(object.GetProperty("direction"));
+		Vector direction = std::any_cast<Vector>(object.GetProperty("direction"));
 
 		object.SetDirection(direction.Rotate3D(angle1, angle2, angle3));
 	}

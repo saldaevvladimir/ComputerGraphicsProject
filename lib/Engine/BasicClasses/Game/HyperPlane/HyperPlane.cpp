@@ -13,7 +13,7 @@ namespace Engine
         this->properties["position"] = position;
         this->properties["normal"] = normal;
 
-        Vector direction = std::get<Vector>(object.GetProperty("direction"));
+        Vector direction = std::any_cast<Vector>(object.GetProperty("direction"));
         direction = direction.Normalize();
 
         this->properties["direction"] = direction;
@@ -29,7 +29,7 @@ namespace Engine
     void HyperPlane::PlanarRotate(int axisIndex1, int axisIndex2, float angle)
     {
         HyperPlane& self = *this;
-        Vector direction = std::get<Vector>(self.GetProperty("direction"));
+        Vector direction = std::any_cast<Vector>(self.GetProperty("direction"));
 
         direction = direction.Rotate(axisIndex1, axisIndex2, angle);
 
@@ -39,7 +39,7 @@ namespace Engine
     void HyperPlane::Rotate3D(float angle1, float angle2, float angle3)
     {
         HyperPlane& self = *this;
-        Vector direction = std::get<Vector>(self.GetProperty("direction"));
+        Vector direction = std::any_cast<Vector>(self.GetProperty("direction"));
 
         direction = direction.Rotate3D(angle1, angle2, angle3);
 
@@ -53,8 +53,8 @@ namespace Engine
         Point rayPoint = ray.initialPoint;
         Vector rayDir = ray.direction;
 
-        Point planePoint = std::get<Point>(self["position"]);
-        Vector normal = std::get<Vector>(self["normal"]);
+        Point planePoint = std::any_cast<Point>(self["position"]);
+        Vector normal = std::any_cast<Vector>(self["normal"]);
 
         if (normal % rayDir == 0.0f)
         {
@@ -78,9 +78,9 @@ namespace Engine
     {
         if (entity.HasProperty("type"))
         {
-            if (std::get<std::string>(entity["type"]) != "HyperPlane")
+            if (std::any_cast<std::string>(entity["type"]) != "HyperPlane")
             {
-                throw EngineException::IncorrectArgumentType("HyperPlane", std::get<std::string>(entity["type"]));
+                throw EngineException::IncorrectArgumentType("HyperPlane", std::any_cast<std::string>(entity["type"]));
             }
             else
             {

@@ -7,12 +7,18 @@
 
 namespace Engine
 {
+	Game::Camera::Camera()
+	{
+
+	}
+	
     Game::Camera::Camera(Game::Object& object, float hfov, float drawDistance)
 	{
 		this->cs = object.cs;
 		this->properties = object.properties;
 
 		this->properties["hfov"] = hfov;
+		this->properties["vfov"] = hfov * 0.66f;
 		this->properties["drawDistance"] = drawDistance;
 	}
 
@@ -32,6 +38,7 @@ namespace Engine
 		this->properties = object.properties;
 
 		this->properties["hfov"] = hfov;
+		this->properties["vfov"] = hfov * 1.5f;
 		this->properties["lookAt"] = lookAt;
 		this->properties["drawDistance"] = drawDistance;
 	}
@@ -51,24 +58,24 @@ namespace Engine
 	{
 		Game::Camera& self = *this;
 
-		float deltaAlpha = Round(std::get<float>(self.GetProperty("hfov")) / float(height));
+		float deltaAlpha = Round(std::any_cast<float>(self.GetProperty("hfov")) / float(height));
 	
-		float deltaBetta = Round(std::get<float>(self.GetProperty("vfov")) / float(width));
+		float deltaBetta = Round(std::any_cast<float>(self.GetProperty("vfov")) / float(width));
 	
-		float zeroAngleX = Round(std::get<float>(self.GetProperty("hfov")) / 2.0f);
+		float zeroAngleX = Round(std::any_cast<float>(self.GetProperty("hfov")) / 2.0f);
 
-		float zeroAngleY = Round(std::get<float>(self.GetProperty("vfov")) / 2.0f);
+		float zeroAngleY = Round(std::any_cast<float>(self.GetProperty("vfov")) / 2.0f);
 
 		Vector direction;
-		Point position = std::get<Point>(self.GetProperty("position"));
+		Point position = std::any_cast<Point>(self.GetProperty("position"));
 
 		if (self.HasProperty("direction"))
 		{
-			direction = std::get<Vector>(self.GetProperty("direction"));
+			direction = std::any_cast<Vector>(self.GetProperty("direction"));
 		}
 		else
 		{
-			Point lookAt = std::get<Point>(self.GetProperty("lookAt"));
+			Point lookAt = std::any_cast<Point>(self.GetProperty("lookAt"));
 
 			direction = position.GetDirectionToPoint(lookAt);
 		}

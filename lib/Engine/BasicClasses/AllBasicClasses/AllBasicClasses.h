@@ -9,3 +9,4 @@
 #include "../Game/HyperPlane/HyperPlane.h"
 #include "../Game/HyperEllipsoid/HyperEllipsoid.h"
 #include "../EventSystem/EventSystem.h"
+#include "../Game/Console/Console.h"
