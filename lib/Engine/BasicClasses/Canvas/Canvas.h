@@ -1,6 +1,6 @@
 # pragma once
 
-#define DEFAULT ".:;><+r*zsvfwqkP694VOGbUAKXH8RD#$B0MNWQ%&@"
+#define DEFAULT ".:;><+*zsvfwqkP694VOGbUAKXH8RD#$B0MNWQ%&@"
 
 #include "../../../../lib/Math/Matrix/Matrix.h"
 #include "../Game/Game.h"

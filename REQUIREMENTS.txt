@@ -1,1 +1,20 @@
-all requirements will be added here later
+all used libraries:
+iostream
+fstream
+ostream
+vector
+map
+variant
+any
+json/json.h
+string
+functional
+cmath
+exception
+unordered_set
+chrono
+sstream
+iomanip
+algorithm
+list
+gtest (in project files)
